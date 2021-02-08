@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name -Chip)(type KiCad)(uri ${KIPRJMOD}/../library/footprint/Chip.pretty)(options "")(descr ""))
+  (lib (name -Connector)(type KiCad)(uri ${KIPRJMOD}/../library/footprint/Connector.pretty)(options "")(descr ""))
+  (lib (name -Discrete)(type KiCad)(uri ${KIPRJMOD}/../library/footprint/Discrete.pretty)(options "")(descr ""))
+  (lib (name -Passive)(type KiCad)(uri ${KIPRJMOD}/../library/footprint/Passive.pretty)(options "")(descr ""))
+  (lib (name -Jumper)(type KiCad)(uri ${KIPRJMOD}/../library/footprint/Jumper.pretty)(options "")(descr ""))
+)
