@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP Antenna
-D Antenna with extra pin
-K antenna
-F ~
-$ENDCMP
-#
-#End Doc Library

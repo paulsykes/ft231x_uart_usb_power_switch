@@ -1,8 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP VBUS
-D Power symbol creates a global label with name "VBUS"
-K power-flag
-$ENDCMP
-#
-#End Doc Library
