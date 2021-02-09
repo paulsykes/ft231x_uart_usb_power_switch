@@ -38,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: fabrication
-          path: 'hardware/kicad/ft231x_breakout_usb_power_switch/fabrication'
+          path: 'hardware/kicad/ft231x_breakout_usb_power_switch'
