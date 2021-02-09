@@ -29,7 +29,7 @@ jobs:
         # Required - kibot config file
           config: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kibot.yaml'
         # optional - prefix to output defined in config
-          dir: 'hardware/kicad/ft231x_breakout_usb_power_switch'
+          dir: output
         # optional - schematic file
           schema: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
         # optional - PCB design file
@@ -37,5 +37,5 @@ jobs:
       - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
-          name: fabrication
-          path: 'hardware/kicad/ft231x_breakout_usb_power_switch'
+          name: output
+          path: output
