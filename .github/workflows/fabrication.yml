@@ -44,7 +44,7 @@ jobs:
 
     - name: Run DRC
       run: |
-        make -C hardware/kicad/ft231x_breakout_usb_power_switch/ drc¬
+        make -C hardware/kicad/ft231x_breakout_usb_power_switch/ drc
     - name: Retrieve results
       uses: actions/upload-artifact@v1
       with:
