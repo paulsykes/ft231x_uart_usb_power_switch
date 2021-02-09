@@ -23,19 +23,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: KiBot Get
+      - name: KiBot Clone
         uses: INTI-CMNB/KiBot@v0.9.0
         with:
         # Required - kibot config file
           config: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kibot.yaml'
         # optional - prefix to output defined in config
-          dir: 'hardware/kicad/ft231x_breakout_usb_power_switch/output'
+          dir: 'hardware/kicad/ft231x_breakout_usb_power_switch'
         # optional - schematic file
           schema: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
         # optional - PCB design file
           board: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
-      - name: upload results
+      - name: Upload Results
         uses: actions/upload-artifact@v2
         with:
-          name: output
-          path: 'hardware/kicad/ft231x_breakout_usb_power_switch/output'
+          name: fabrication
+          path: 'hardware/kicad/ft231x_breakout_usb_power_switch/fabrication'
