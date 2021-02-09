@@ -1,23 +1,13 @@
 #!/usr/bin/make
 
-.PHONY: erc drc sch_fab pcb_fab erc_and_fab drc_and_fab
+NAME = ft231x_breakout_usb_power_switch
+PCB = ${NAME}.kicad_pcb
+KIBOT_CFG = ${NAME}.kibot.yaml
 
-all: erc_and_fab drc_and_fab
+all: pcb_files
 
-erc:
-	kiplot -d fabrication -s run_drc,update_xml -i
+pcb_files:
+	kibot -b $(PCB) -c $(KIBOT_CFG)
 
-drc:
-	kiplot -d fabrication -s run_erc,update_xml -i
-
-sch_fab:
-	kiplot -d fabrication -s run_erc,run_drc  print_sch interactive_bom bom_html bom_csv
-
-pcb_fab:
-	kiplot -d fabrication -s all print_front print_bottom gerbers excellon_drill gerber_drills position
-
-erc_and_fab:
-	kiplot -d fabrication -s run_drc  print_sch interactive_bom bom_html bom_csv
-
-drc_and_fab:
-	kiplot -d fabrication -s run_erc,update_xml print_front print_bottom gerbers excellon_drill gerber_drills position
+clean:
+	rm -rf fabrication drc_result.rpt ${NAME}.erc
