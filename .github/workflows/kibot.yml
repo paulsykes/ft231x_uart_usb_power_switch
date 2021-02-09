@@ -1,0 +1,41 @@
+name: CI
+
+name: example
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
+      - '.github/workflows/fabrication.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
+      - '.github/workflows/fabrication.yml'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  example:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2¬
+    - uses: INTI-CMNB/KiBot@v0.7.0
+      with:
+      # Required - kibot config file
+        config: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kibot.yaml'
+      # optional - prefix to output defined in config
+        dir: 'hardware/kicad/ft231x_breakout_usb_power_switch/output'
+      # optional - schematic file
+        schema: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
+      # optional - PCB design file
+        board: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
+    - name: upload results
+      uses: actions/upload-artifact@v2
+      with:
+        name: output
+        path: 'hardware/kicad/ft231x_breakout_usb_power_switch/output
