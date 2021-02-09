@@ -9,12 +9,14 @@ on:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
       - '.github/workflows/kibot.yml'
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kibot.yaml'
   pull_request:
     branches: [ main ]
     paths:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
       - '.github/workflows/kibot.yml'
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kibot.yaml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
