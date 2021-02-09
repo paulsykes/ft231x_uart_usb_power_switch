@@ -1454,6 +1454,4 @@ F 3 "" H 7550 6200 60  0000 C CNN
 	1    7550 6300
 	1    0    0    -1  
 $EndComp
-Text Notes 2500 4200 0    50   ~ 0
-test9
 $EndSCHEMATC
