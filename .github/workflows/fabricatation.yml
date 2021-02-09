@@ -6,15 +6,15 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'ft231x_breakout_usb_power_switch/hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
-      - 'ft231x_breakout_usb_power_switch/hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
-      - '.github/workflows/fabricate.yml'
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
+      - '.github/workflows/fabrication.yml'
   pull_request:
     branches: [ master ]
     paths:
-      - 'ft231x_breakout_usb_power_switch/hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'¬
-      - 'ft231x_breakout_usb_power_switch/hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
-      - '.github/workflows/fabricate.yml'
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'¬
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
+      - '.github/workflows/fabrication.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -27,9 +27,9 @@ jobs:
 
     - name: Run ERC
       run: |
-        make -C ft231x_breakout_usb_power_switch/hardware/kicad/ft231x_breakout_usb_power_switch/ erc
+        make -C hardware/kicad/ft231x_breakout_usb_power_switch/ erc
     - name: Retrieve results
       uses: actions/upload-artifact@v1
       with:
         name: ERC_Output
-        path: ft231x_breakout_usb_power_switch/hardware/kicad/ft231x_breakout_usb_power_switch/fabrication
+        path: hardware/kicad/ft231x_breakout_usb_power_switch/fabrication
