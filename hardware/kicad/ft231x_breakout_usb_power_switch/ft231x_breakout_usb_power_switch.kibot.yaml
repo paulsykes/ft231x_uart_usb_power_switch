@@ -15,7 +15,7 @@ outputs:
   - name: 'ibom_example'
     comment: 'Generates an interactive web page useful to identify the position of the components in the PCB.'
     type: 'ibom'
-    dir: 'output/ibom_dir'
+    dir: 'fabrication/ibom_dir'
     options:
       # [string=''] List of comma separated blacklisted components or prefixes with *. E.g. 'X1,MH*'.
       # IBoM option, avoid using in conjunction with KiBot variants/filters
