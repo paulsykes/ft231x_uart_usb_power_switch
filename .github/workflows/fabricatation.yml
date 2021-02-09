@@ -12,7 +12,7 @@ on:
   pull_request:
     branches: [ master ]
     paths:
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'¬
+      - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.sch'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kicad_pcb'
       - '.github/workflows/fabrication.yml'
 
