@@ -437,7 +437,7 @@ F 3 "" H 1550 5700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 2650 5200 0    50   ~ 0
-RXLED
+RXLEDD
 Wire Wire Line
 	2300 5700 2250 5700
 Wire Wire Line
