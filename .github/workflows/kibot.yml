@@ -24,7 +24,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: KiBot Get
-        uses: INTI-CMNB/KiBot@v0.7.0
+        uses: INTI-CMNB/KiBot@v0.9.0
         with:
         # Required - kibot config file
           config: 'hardware/kicad/ft231x_breakout_usb_power_switch/ft231x_breakout_usb_power_switch.kibot.yaml'
