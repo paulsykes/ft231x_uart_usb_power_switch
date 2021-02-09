@@ -6,6 +6,11 @@ K FTDI USB UART interface converter
 F https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf
 $ENDCMP
 #
+$CMP SN74LVC1G04DBVR
+D Single Inverter Gate
+K Inverter
+$ENDCMP
+#
 $CMP TPS2553DBVR
 D Single channel precision adjustable current-limited power switches
 K power switcher current limited usb port

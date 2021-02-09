@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Conn_01x06
+D Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+$ENDCMP
+#
 $CMP Conn_01x08
 D Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)
 K connector
@@ -15,7 +20,6 @@ $ENDCMP
 $CMP USB_A_ALT
 D USB Type A connector
 K connector USB
-F  ~
 $ENDCMP
 #
 $CMP USB_B_Micro_ALT

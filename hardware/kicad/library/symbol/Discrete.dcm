@@ -6,6 +6,11 @@ K N-Channel Switching MOSFET
 F https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf
 $ENDCMP
 #
+$CMP LED
+D Light emitting diode
+K LED diode
+$ENDCMP
+#
 $CMP SRV05-4
 D ESD Protection Diodes with Low Clamping Voltage, SOT-23-6
 K ESD protection diodes

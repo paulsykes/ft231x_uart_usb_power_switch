@@ -75,7 +75,7 @@ P 10000 1950
 F 0 "J2" H 10200 2300 50  0000 R CNN
 F 1 "USB_A_ALT" H 9800 1600 50  0000 R CNN
 F 2 "-Connector:TE_292303-1" H 10150 1900 50  0001 C CNN
-F 3 " ~" H 10150 1900 50  0001 C CNN
+F 3 "" H 10150 1900 50  0001 C CNN
 	1    10000 1950
 	-1   0    0    -1  
 $EndComp
@@ -437,7 +437,7 @@ F 3 "" H 1550 5700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 2650 5200 0    50   ~ 0
-RXLEDD
+RXLED
 Wire Wire Line
 	2300 5700 2250 5700
 Wire Wire Line
