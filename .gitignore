@@ -30,6 +30,8 @@ fp-info-cache
 *.xml
 *.csv
 
+kicad/ft231x_breakout_usb_power_switch/fabrication
+
 ###########
 # FreeCAD #
 ###########
