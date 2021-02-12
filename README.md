@@ -2,12 +2,23 @@
 FT231X USB to serial UART breakout with integrated current limited USB power switch.
 
 - USB power output switched by FT231X CBUS0 pin
-- Active low over current alert readable by FT231X CBUS3 pin (500 mA)
+- Active low, over current status readable by FT231X CBUS3 pin (500 mA)
 
 On power up, the USB power output is switched on.
 
-How to Switch On & Off USB Power Output
----------------------------------------
+Switching USB Power Output & Reading Over Current Status 
+--------------------------------------------------------
+### Linux (sudo)
+First we determine the base GPIO address of the breakout. To do this, look for new entries in /sys/class/gpio after you connect the breakout.
+```
+ls /sys/class/gpio/    
+export  gpiochip508@  unexport
+```
+In this case, the base address is 508.  
+CBUS0, which is FT231X GPIO0, will map to 508.  
+CBUS3, which is FT231X GPIO3, will map to 511.
+
+#### How to Switch On & Off USB Power Output
 Export CBUS0 (GPIO0)
 ```
 $ echo 508 | sudo tee /sys/class/gpio/export
@@ -21,8 +32,7 @@ Set GPIO (GPIO0) High: (on)
 echo high | sudo tee /sys/class/gpio/gpio508/direction
 ```
 
-How to Read Over Current Status Flag
-------------------------------------
+#### How to Read Over Current Status Flag
 Export CBUS3 (GPIO3)
 ```
 echo 511 | sudo tee /sys/class/gpio/export
