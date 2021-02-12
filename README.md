@@ -11,8 +11,8 @@ Switching USB Power Output & Reading Over Current Status
 ### Linux (sudo)
 First we determine the base GPIO address of the breakout. To do this, look for new entries in /sys/class/gpio after you connect the breakout.
 ```
-ls /sys/class/gpio/    
-export  gpiochip508@  unexport
+$ ls /sys/class/gpio/    
+$ export  gpiochip508@  unexport
 ```
 In this case, the base address is 508.  
 CBUS0, which is FT231X GPIO0, will map to 508.  
