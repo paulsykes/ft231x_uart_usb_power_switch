@@ -25,21 +25,21 @@ $ echo 508 | sudo tee /sys/class/gpio/export
 ```
 Set CBUS0 (GPIO0) Low: (off)
 ```
-echo low | sudo tee /sys/class/gpio/gpio508/direction
+$ echo low | sudo tee /sys/class/gpio/gpio508/direction
 ```
 Set GPIO (GPIO0) High: (on)
 ```
-echo high | sudo tee /sys/class/gpio/gpio508/direction
+$ echo high | sudo tee /sys/class/gpio/gpio508/direction
 ```
 
 #### How to Read Over Current Status Flag
 Export CBUS3 (GPIO3)
 ```
-echo 511 | sudo tee /sys/class/gpio/export
+$ echo 511 | sudo tee /sys/class/gpio/export
 ```
 Set direction to input
 ```
-echo in | sudo tee /sys/class/gpio/gpio511/direction
+$ echo in | sudo tee /sys/class/gpio/gpio511/direction
 ```
 Read input status (1 = Okay, 0 = Over Current)
 ```
@@ -55,12 +55,12 @@ I would recommend using [ftx_prog](https://github.com/richardeoin/ftx-prog) to s
 
 Configure CBUS0 and CBUS3 as GPIO
 ```
-sudo ./ftx_prog --cbus 0 GPIO
-sudo ./ftx_prog --cbus 3 GPIO
+$ sudo ./ftx_prog --cbus 0 GPIO
+$ sudo ./ftx_prog --cbus 3 GPIO
 ```
 Disable remote wakeup
 ```
-sudo ./ftx_prog --remote-wakeup false
+$ sudo ./ftx_prog --remote-wakeup false
 ```
 
 License Information
