@@ -1,4 +1,5 @@
-# FT231X Breakout with USB Power Switch
+FT231X Breakout with USB Power Switch
+=====================================
 FT231X USB to serial UART breakout with integrated current limited USB power switch.
 
 - USB power output switched by FT231X CBUS0 pin
