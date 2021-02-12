@@ -2,7 +2,7 @@
 FT231X USB to serial UART breakout with integrated current limited USB power switch.
 
 - USB power output switched by FT231X CBUS0 pin
-- Active low over current alert readable by FT231X CBUS3 pin
+- Active low over current alert readable by FT231X CBUS3 pin (500 mA)
 
 In the default state, the USB power output is switched on.
 
