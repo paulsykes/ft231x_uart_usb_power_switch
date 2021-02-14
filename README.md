@@ -7,6 +7,8 @@ FT231X USB to serial UART breakout with integrated current limited USB power swi
 
 On power up, the USB power output is switched on.
 
+[Read the Docs](https://paulsykes.me/ft231x_breakout_usb_power_switch)
+
 Switching USB Power Output & Reading Over Current Status 
 --------------------------------------------------------
 ### Linux (sudo)
