@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Welcome to FT231X Breakout with USB Power Switch’s documentation! &mdash; FT231X Breakout with USB Power Switch 1.0 documentation</title>
+  <title>FT231X EEPROM &mdash; FT231X Breakout with USB Power Switch 1.0 documentation</title>
   
 
   
@@ -38,7 +38,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Switching USB Power Output" href="usbpower.html" /> 
+    <link rel="prev" title="Current Limit" href="currentlimit.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -52,7 +52,7 @@
           
 
           
-            <a href="#" class="icon icon-home"> FT231X Breakout with USB Power Switch
+            <a href="index.html" class="icon icon-home"> FT231X Breakout with USB Power Switch
           
 
           
@@ -83,11 +83,11 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="usbpower.html">Switching USB Power Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overcurrent.html">Reading Over Current Status Flag</a></li>
 <li class="toctree-l1"><a class="reference internal" href="currentlimit.html">Current Limit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eeprom.html">FT231X EEPROM</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FT231X EEPROM</a></li>
 </ul>
 
             
@@ -103,7 +103,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="#">FT231X Breakout with USB Power Switch</a>
+          <a href="index.html">FT231X Breakout with USB Power Switch</a>
         
       </nav>
 
@@ -134,15 +134,15 @@
 
   <ul class="wy-breadcrumbs">
     
-      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Welcome to FT231X Breakout with USB Power Switch’s documentation!</li>
+      <li>FT231X EEPROM</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/eeprom.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -155,17 +155,20 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="welcome-to-ft231x-breakout-with-usb-power-switch-s-documentation">
-<h1>Welcome to FT231X Breakout with USB Power Switch’s documentation!<a class="headerlink" href="#welcome-to-ft231x-breakout-with-usb-power-switch-s-documentation" title="Permalink to this headline">¶</a></h1>
-<p>FT231X USB to serial UART breakout with integrated current limited USB power switch.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="usbpower.html">Switching USB Power Output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overcurrent.html">Reading Over Current Status Flag</a></li>
-<li class="toctree-l1"><a class="reference internal" href="currentlimit.html">Current Limit</a></li>
-<li class="toctree-l1"><a class="reference internal" href="eeprom.html">FT231X EEPROM</a></li>
-</ul>
-</div>
+  <div class="section" id="ft231x-eeprom">
+<h1>FT231X EEPROM<a class="headerlink" href="#ft231x-eeprom" title="Permalink to this headline">¶</a></h1>
+<p>This section is only applicable if you have built your own FT231X Breakout with USB Power Switch.
+The FT231X has a EEPROM that can be used for storing configuration data, by default the CBUS0 and CBUS3 pins are not configured as GPIO.
+Use [ftx_prog](<a class="reference external" href="https://github.com/richardeoin/ftx-prog">https://github.com/richardeoin/ftx-prog</a>), to set the following:-</p>
+<p>Configure CBUS0 and CBUS3 as GPIO
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">./ftx_prog</span> <span class="pre">--cbus</span> <span class="pre">0</span> <span class="pre">GPIO</span>
+<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">./ftx_prog</span> <span class="pre">--cbus</span> <span class="pre">3</span> <span class="pre">GPIO</span>
+<span class="pre">`</span></code>
+Disable remote wakeup
+<code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">./ftx_prog</span> <span class="pre">--remote-wakeup</span> <span class="pre">false</span>
+<span class="pre">`</span></code></p>
 </div>
 
 
@@ -174,7 +177,7 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="usbpower.html" class="btn btn-neutral float-right" title="Switching USB Power Output" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="currentlimit.html" class="btn btn-neutral float-left" title="Current Limit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

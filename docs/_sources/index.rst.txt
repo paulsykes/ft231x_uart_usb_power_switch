@@ -6,15 +6,14 @@
 Welcome to FT231X Breakout with USB Power Switch's documentation!
 =================================================================
 
+FT231X USB to serial UART breakout with integrated current limited USB power switch.
+
+
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
 
+   usbpower
+   overcurrent
+   currentlimit
+   eeprom
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
