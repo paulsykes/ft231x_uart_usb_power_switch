@@ -15,7 +15,7 @@ outputs:
   - name: 'ibom_example'
     comment: 'Generates an interactive web page useful to identify the position of the components in the PCB.'
     type: 'ibom'
-    dir: 'fabrication/ibom_dir'
+    dir: 'ibom_dir'
     options:
       # [string=''] List of comma separated blacklisted components or prefixes with *. E.g. 'X1,MH*'.
       # IBoM option, avoid using in conjunction with KiBot variants/filters
@@ -95,7 +95,7 @@ outputs:
   - name: 'gerbers'
     comment: "Gerbers for the board house"
     type: gerber
-    dir: fabrication/gerber_dir
+    dir: gerber_dir
     options:
       # generic layer options
       exclude_edge_layer: false
@@ -123,7 +123,7 @@ outputs:
   - name: pcb_top_g
     comment: "PCB render top green"
     type: pcbdraw
-    dir: fabrication/pcbdraw_dir
+    dir: pcbdraw_dir
     options:
       format: jpg
       show_components: none
@@ -132,10 +132,17 @@ outputs:
   - name: pcb_bot_g
     comment: "PCB render bottom green"
     type: pcbdraw
-    dir: fabrication/pcbdraw_dir
+    dir: pcbdraw_dir
     options:
       format: jpg
       bottom: True
       show_components: none
       dpi: 600
 
+  - name: step
+    comment: "Generate 3D model (STEP)"
+    type: step
+    dir: 3d
+    options:
+      metric_units: true
+      origin: 85,66.2
