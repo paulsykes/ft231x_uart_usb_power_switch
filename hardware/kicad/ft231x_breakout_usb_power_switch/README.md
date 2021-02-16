@@ -18,3 +18,10 @@ Fabrication outputs will generated inside the [fabrication](fabrication) folder.
 ``` 
 $ make
 ```
+
+Delete Fabrication Outputs
+----------------------------
+To delete all fabrication outputs.
+``` 
+$ make clean
+```
