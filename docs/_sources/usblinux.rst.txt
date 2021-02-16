@@ -1,31 +1,23 @@
-=====
-Linux
-=====
+.. include:: basegpiolinux.rst
 
-.. toctree::
-   :maxdepth: 1
+In this case, the base address is **508**.
+ * CBUS0, which is FT231X GPIO0, will map to **508**.
 
-   basegpiolinux
-
-How to Switch On & Off USB Power Output
----------------------------------------
-This example assume a GPIO base address of 508.
-
-Export CBUS0 (GPIO0)
+Export CBUS0 (GPIO0).
 
 .. code-block:: console
 
-    $ echo 508 | sudo tee /sys/class/gpio/export
+    $ echo 508 > /sys/class/gpio/export
 
-Set CBUS0 (GPIO0) Low: (off)
-
-.. code-block:: console
-
-    $ echo low | sudo tee /sys/class/gpio/gpio508/direction
-
-Set CBUS0 (GPIO0) High: (on)
+Switch off, set CBUS0 (GPIO0) low.
 
 .. code-block:: console
 
-    $ echo high | sudo tee /sys/class/gpio/gpio508/direction
+    $ echo low > /sys/class/gpio/gpio508/direction
+
+Switch on, set CBUS0 (GPIO0) high.
+
+.. code-block:: console
+
+    $ echo high > /sys/class/gpio/gpio508/direction
 

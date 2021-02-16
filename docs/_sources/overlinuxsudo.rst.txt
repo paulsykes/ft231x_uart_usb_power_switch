@@ -7,13 +7,13 @@ Export CBUS3 (GPIO3).
 
 .. code-block:: console
 
-    $ echo 511 > /sys/class/gpio/export
+    $ echo 511 | sudo tee /sys/class/gpio/export
 
 Set direction to input.
 
 .. code-block:: console
 
-    $ echo in > /sys/class/gpio/gpio511/direction
+    $ echo in | sudo tee /sys/class/gpio/gpio511/direction
 
 Read input status (1 = Okay, 0 = Over Current).
 

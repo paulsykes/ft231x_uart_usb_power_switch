@@ -7,17 +7,17 @@ Export CBUS0 (GPIO0).
 
 .. code-block:: console
 
-    $ echo 508 > /sys/class/gpio/export
+    $ echo 508 | sudo tee /sys/class/gpio/export
 
 Switch off, set CBUS0 (GPIO0) low.
 
 .. code-block:: console
 
-    $ echo low > /sys/class/gpio/gpio508/direction
+    $ echo low | sudo tee /sys/class/gpio/gpio508/direction
 
 Switch on, set CBUS0 (GPIO0) high.
 
 .. code-block:: console
 
-    $ echo high > /sys/class/gpio/gpio508/direction
+    $ echo high | sudo tee /sys/class/gpio/gpio508/direction
 

@@ -1,3 +1,1 @@
-===
-Mac
-===
+**Pull requests welcome**

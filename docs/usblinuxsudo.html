@@ -142,7 +142,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/usbmac.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/usblinuxsudo.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -155,7 +155,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <p><strong>Pull requests welcome</strong></p>
+  <p>First we determine the base GPIO address of the breakout. To do this, look for new entries in /sys/class/gpio after you connect the breakout.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ls /sys/class/gpio/
+<span class="gp">$ </span><span class="nb">export</span>  gpiochip508@  unexport
+</pre></div>
+</div>
+<dl class="simple">
+<dt>In this case, the base address is <strong>508</strong>.</dt><dd><ul class="simple">
+<li><p>CBUS0, which is FT231X GPIO0, will map to <strong>508</strong>.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Export CBUS0 (GPIO0).</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="m">508</span> <span class="p">|</span> sudo tee /sys/class/gpio/export
+</pre></div>
+</div>
+<p>Switch off, set CBUS0 (GPIO0) low.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> low <span class="p">|</span> sudo tee /sys/class/gpio/gpio508/direction
+</pre></div>
+</div>
+<p>Switch on, set CBUS0 (GPIO0) high.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> high <span class="p">|</span> sudo tee /sys/class/gpio/gpio508/direction
+</pre></div>
+</div>
 
 
            </div>

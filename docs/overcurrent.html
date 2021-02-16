@@ -7,12 +7,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>Reading Over Current Status Flag &mdash; FT231X Breakout with USB Power Switch 1.0 documentation</title>
+  <title>Reading Over Current Status Flag &mdash; FT231X Breakout USB Power Switch 1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
 
   
   
@@ -32,14 +33,15 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
+        <script src="_static/tabs.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Linux" href="overlinux.html" />
-    <link rel="prev" title="Mac" href="usbmac.html" /> 
+    <link rel="next" title="Current Limit" href="currentlimit.html" />
+    <link rel="prev" title="Switching USB Power Output" href="usbpower.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -53,7 +55,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> FT231X Breakout with USB Power Switch
+            <a href="index.html" class="icon icon-home"> FT231X Breakout USB Power Switch
           
 
           
@@ -86,10 +88,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="usbpower.html">Switching USB Power Output</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Reading Over Current Status Flag</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overlinux.html">Linux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overwindows.html">Windows</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overmac.html">Mac</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reading Over Current Status Flag</a><ul class="simple">
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="currentlimit.html">Current Limit</a></li>
@@ -109,7 +108,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">FT231X Breakout with USB Power Switch</a>
+          <a href="index.html">FT231X Breakout USB Power Switch</a>
         
       </nav>
 
@@ -164,12 +163,59 @@
   <div class="section" id="reading-over-current-status-flag">
 <h1>Reading Over Current Status Flag<a class="headerlink" href="#reading-over-current-status-flag" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overlinux.html">Linux</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overwindows.html">Windows</a></li>
-<li class="toctree-l1"><a class="reference internal" href="overmac.html">Mac</a></li>
-</ul>
 </div>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" role="tablist"><button aria-controls="panel-0-TGludXggKHN1ZG8p" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-TGludXggKHN1ZG8p" name="TGludXggKHN1ZG8p" role="tab" tabindex="0">Linux (sudo)</button><button aria-controls="panel-0-TGludXg=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TGludXg=" name="TGludXg=" role="tab" tabindex="-1">Linux</button><button aria-controls="panel-0-TWFjIE9TWA==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TWFjIE9TWA==" name="TWFjIE9TWA==" role="tab" tabindex="-1">Mac OSX</button><button aria-controls="panel-0-V2luZG93cw==" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="-1">Windows</button></div><div aria-labelledby="tab-0-TGludXggKHN1ZG8p" class="sphinx-tabs-panel group-tab" id="panel-0-TGludXggKHN1ZG8p" name="TGludXggKHN1ZG8p" role="tabpanel" tabindex="0"><p>First we determine the base GPIO address of the breakout. To do this, look for new entries in /sys/class/gpio after you connect the breakout.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ls /sys/class/gpio/
+<span class="gp">$ </span><span class="nb">export</span>  gpiochip508@  unexport
+</pre></div>
+</div>
+<dl class="simple">
+<dt>In this case, the base address is <strong>508</strong>.</dt><dd><ul class="simple">
+<li><p>CBUS3, which is FT231X GPIO3, will map to <strong>511</strong>.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Export CBUS3 (GPIO3).</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="m">511</span> <span class="p">|</span> sudo tee /sys/class/gpio/export
+</pre></div>
+</div>
+<p>Set direction to input.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="k">in</span> <span class="p">|</span> sudo tee /sys/class/gpio/gpio511/direction
+</pre></div>
+</div>
+<p>Read input status (1 = Okay, 0 = Over Current).</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>cat /sys/class/gpio/gpio511/value
+<span class="go">1</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-TGludXg=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TGludXg=" name="TGludXg=" role="tabpanel" tabindex="0"><p>First we determine the base GPIO address of the breakout. To do this, look for new entries in /sys/class/gpio after you connect the breakout.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>ls /sys/class/gpio/
+<span class="gp">$ </span><span class="nb">export</span>  gpiochip508@  unexport
+</pre></div>
+</div>
+<dl class="simple">
+<dt>In this case, the base address is <strong>508</strong>.</dt><dd><ul class="simple">
+<li><p>CBUS3, which is FT231X GPIO3, will map to <strong>511</strong>.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Export CBUS3 (GPIO3).</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="m">511</span> &gt; /sys/class/gpio/export
+</pre></div>
+</div>
+<p>Set direction to input.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">echo</span> <span class="k">in</span> &gt; /sys/class/gpio/gpio511/direction
+</pre></div>
+</div>
+<p>Read input status (1 = Okay, 0 = Over Current).</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>cat /sys/class/gpio/gpio511/value
+<span class="go">1</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-TWFjIE9TWA==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TWFjIE9TWA==" name="TWFjIE9TWA==" role="tabpanel" tabindex="0"><p><strong>Pull requests welcome</strong></p>
+</div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><p><strong>Windows</strong></p>
+</div></div>
 </div>
 
 
@@ -178,8 +224,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="overlinux.html" class="btn btn-neutral float-right" title="Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="usbmac.html" class="btn btn-neutral float-left" title="Mac" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="currentlimit.html" class="btn btn-neutral float-right" title="Current Limit" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usbpower.html" class="btn btn-neutral float-left" title="Switching USB Power Output" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

@@ -7,12 +7,13 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>FT231X EEPROM &mdash; FT231X Breakout with USB Power Switch 1.0 documentation</title>
+  <title>FT231X EEPROM &mdash; FT231X Breakout USB Power Switch 1.0 documentation</title>
   
 
   
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/tabs.css" type="text/css" />
 
   
   
@@ -52,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home"> FT231X Breakout with USB Power Switch
+            <a href="index.html" class="icon icon-home"> FT231X Breakout USB Power Switch
           
 
           
@@ -87,7 +88,11 @@
 <li class="toctree-l1"><a class="reference internal" href="usbpower.html">Switching USB Power Output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overcurrent.html">Reading Over Current Status Flag</a></li>
 <li class="toctree-l1"><a class="reference internal" href="currentlimit.html">Current Limit</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">FT231X EEPROM</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FT231X EEPROM</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configure-cbus0-and-cbus3-as-gpio">Configure CBUS0 and CBUS3 as GPIO</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disable-remote-wakeup">Disable Remote Wakeup</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -103,7 +108,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html">FT231X Breakout with USB Power Switch</a>
+          <a href="index.html">FT231X Breakout USB Power Switch</a>
         
       </nav>
 
@@ -157,18 +162,22 @@
             
   <div class="section" id="ft231x-eeprom">
 <h1>FT231X EEPROM<a class="headerlink" href="#ft231x-eeprom" title="Permalink to this headline">¶</a></h1>
-<p>This section is only applicable if you have built your own FT231X Breakout with USB Power Switch.
-The FT231X has a EEPROM that can be used for storing configuration data, by default the CBUS0 and CBUS3 pins are not configured as GPIO.
-Use [ftx_prog](<a class="reference external" href="https://github.com/richardeoin/ftx-prog">https://github.com/richardeoin/ftx-prog</a>), to set the following:-</p>
-<p>Configure CBUS0 and CBUS3 as GPIO
-<code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">./ftx_prog</span> <span class="pre">--cbus</span> <span class="pre">0</span> <span class="pre">GPIO</span>
-<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">./ftx_prog</span> <span class="pre">--cbus</span> <span class="pre">3</span> <span class="pre">GPIO</span>
-<span class="pre">`</span></code>
-Disable remote wakeup
-<code class="docutils literal notranslate"><span class="pre">`</span>
-<span class="pre">$</span> <span class="pre">sudo</span> <span class="pre">./ftx_prog</span> <span class="pre">--remote-wakeup</span> <span class="pre">false</span>
-<span class="pre">`</span></code></p>
+<p><strong>This section is only applicable if you have built your own FT231X Breakout USB Power Switch and are doing initial board bring-up.</strong></p>
+<p>The FT231X has a EEPROM that can be used for storing configuration data, by default the CBUS0 and CBUS3 pins are not configured as GPIO.
+Use <a class="reference external" href="https://github.com/richardeoin/ftx-prog">ftx_prog</a>, to set the following:-</p>
+<div class="section" id="configure-cbus0-and-cbus3-as-gpio">
+<h2>Configure CBUS0 and CBUS3 as GPIO<a class="headerlink" href="#configure-cbus0-and-cbus3-as-gpio" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo ./ftx_prog --cbus <span class="m">0</span> GPIO
+<span class="gp">$ </span>sudo ./ftx_prog --cbus <span class="m">3</span> GPIO
+</pre></div>
+</div>
+</div>
+<div class="section" id="disable-remote-wakeup">
+<h2>Disable Remote Wakeup<a class="headerlink" href="#disable-remote-wakeup" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>sudo ./ftx_prog --remote-wakeup <span class="nb">false</span>
+</pre></div>
+</div>
+</div>
 </div>
 
 
