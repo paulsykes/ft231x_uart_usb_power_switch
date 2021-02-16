@@ -33,7 +33,8 @@ drc_result.rpt
 *.xml
 *.csv
 
-hardware/kicad/ft231x_breakout_usb_power_switch/fabrication
+hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/*
+!hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/!.gitignore
 
 ###########
 # FreeCAD #
