@@ -21,7 +21,7 @@ $ make
 
 Delete Fabrication Outputs
 ----------------------------
-To delete all fabrication outputs.
+Delete all fabrication outputs.
 ``` 
 $ make clean
 ```
