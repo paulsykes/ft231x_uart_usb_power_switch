@@ -18,6 +18,5 @@ Generate HTML Documentation
 ---------------------------
 Compiled documentation will be copied to the docs folder.
 ``` 
-$ cd docsrc
 $ make github
 ```
