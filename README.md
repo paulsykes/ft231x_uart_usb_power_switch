@@ -9,7 +9,8 @@ On power up, the USB power output is switched on.
 
 Documentation
 -------------
-Documentation can be found [here](https://paulsykes.me/ft231x_breakout_usb_power_switch).
+Compiled Documentation can be read [here](https://paulsykes.me/ft231x_breakout_usb_power_switch).  
+Documentation source and build instructions [here](docsrc).
 
 License Information
 -------------------
