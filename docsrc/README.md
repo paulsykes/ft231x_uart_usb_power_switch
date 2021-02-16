@@ -8,8 +8,16 @@ Build Environment
 -----------------
 Create a Python virtual environment and install dependencies. 
 ```
-cd docsrc
-python3 -m venv docsenv
-source docsenv/bin/activate
-pip install -r requirements.txt
+$ cd docsrc
+$ python3 -m venv docsenv
+$ source docsenv/bin/activate
+$ pip install -r requirements.txt
+```
+
+Generate HTML Documentation
+---------------------------
+Compiled documentation will be copied to the docs folder.
+``` 
+$ cd docsrc
+$ make github
 ```
