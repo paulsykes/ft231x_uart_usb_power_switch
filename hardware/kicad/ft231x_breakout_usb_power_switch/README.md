@@ -7,11 +7,12 @@ This document describes how to build the fabrication outputs.
 
 Build Environment
 -----------------
-KiBot installation on Ubuntu/Debian. Get the Debian package from the [releases section](https://github.com/INTI-CMNB/KiBot/releases) and run:
+KiBot installation on Ubuntu/Debian.
 ```
-$ sudo apt install ./kibot*_all.deb
+$ wget https://github.com/INTI-CMNB/KiBot/releases/tag/v0.9.0-3
+$ sudo apt install ./kibot_0.9.0-3_all.deb
 ```
-For other OS please see [KiBot Documentation](https://github.com/skorokithakis/KiBot/blob/master/README.md).
+For other OS, please see [KiBot Documentation](https://github.com/skorokithakis/KiBot/blob/master/README.md).
 
 Generate Fabrication Outputs
 ----------------------------
