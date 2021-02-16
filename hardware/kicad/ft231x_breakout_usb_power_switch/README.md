@@ -7,7 +7,7 @@ Build Environment
 -----------------
 KiBot installation on Ubuntu/Debian.
 ```
-$ wget https://github.com/INTI-CMNB/KiBot/releases/tag/v0.9.0-3
+$ wget https://github.com/INTI-CMNB/KiBot/releases/download/v0.9.0-3/kibot_0.9.0-3_all.deb
 $ sudo apt install ./kibot_0.9.0-3_all.deb
 ```
 For other OS, please see [KiBot Documentation](https://github.com/skorokithakis/KiBot/blob/master/README.md).
