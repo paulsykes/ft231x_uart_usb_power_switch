@@ -4,3 +4,12 @@ The documentation for this project is Built with [Sphinx](https://www.sphinx-doc
 
 This document describes how to build the documentation.
 
+Build Environment
+-----------------
+Create a Python virtual environment and install dependencies. 
+```
+cd docsrc
+python3 -m venv docsenv
+source docsenv/bin/activate
+pip install -r requirements.txt
+```
