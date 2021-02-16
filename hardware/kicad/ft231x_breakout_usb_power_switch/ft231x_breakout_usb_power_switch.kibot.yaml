@@ -119,3 +119,23 @@ outputs:
     layers:
       - 'F.Cu'
       - 'B.Cu'
+
+  - name: pcb_top_g
+    comment: "PCB render top green"
+    type: pcbdraw
+    dir: fabrication/pcbdraw_dir
+    options:
+      format: jpg
+      show_components: none
+      dpi: 600
+
+  - name: pcb_bot_g
+    comment: "PCB render bottom green"
+    type: pcbdraw
+    dir: fabrication/pcbdraw_dir
+    options:
+      format: jpg
+      bottom: True
+      show_components: none
+      dpi: 600
+
