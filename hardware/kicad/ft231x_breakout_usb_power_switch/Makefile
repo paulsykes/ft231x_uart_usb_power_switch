@@ -1,15 +1,36 @@
 #!/usr/bin/make
+DEBUG= 
+MAK=kibot.mak
+NAME=ft231x_breakout_usb_power_switch
+PCB=${NAME}.kicad_pcb
+CONFIG=${NAME}.kibot.yaml
+SCH=${NAME}.sch
+DEST=fabrication
 
-NAME = ft231x_breakout_usb_power_switch
-PCB = ${NAME}.kicad_pcb
-KIBOT_CFG = ${NAME}.kibot.yaml
-SCH = ${NAME}.sch
-DEST = fabrication
+all: erc_and_fab drc_and_fab
 
-all: pcb_files
+$(MAK): $(CONFIG)
+	kibot -e $(SCH) -b $(PCB) -c $< -d $(DEST) -m $@
 
-pcb_files:
-	kibot -e $(SCH) -b $(PCB) -c $(KIBOT_CFG) -d $(DEST)
+erc: $(MAK)
+	$(MAKE) -f $(MAK) run_erc
+
+drc: $(MAK)
+	$(MAKE) -f $(MAK) run_drc
+
+sch_fab: $(MAK)
+	$(MAKE) -f $(MAK) out_sch
+
+pcb_fab: $(MAK)
+	$(MAKE) -f $(MAK) out_pcb
+
+erc_and_fab: $(MAK)
+	$(MAKE) -f $(MAK) all_sch
+
+drc_and_fab: $(MAK)
+	$(MAKE) -f $(MAK) all_pcb
 
 clean:
-	rm -rf fabrication drc_result.rpt ${NAME}.erc
+	rm -rf ${DEST} drc_result.rpt ${NAME}.erc kibot.mak
+
+.PHONY: erc drc sch_fab pcb_fab erc_and_fab drc_and_fab

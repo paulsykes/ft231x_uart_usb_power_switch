@@ -1,173 +1,200 @@
+# Example KiBot config file
 kibot:
   version: 1
 
 preflight:
-  update_xml: true
-  check_zone_fills: true
-  ignore_unconnected: false
-  run_drc: true
   run_erc: true
+  run_drc: true
+  check_zone_fills: false
+  ignore_unconnected: false
+
+global:
+  # We want the revision added to the names for this project
+  output: '%f-%i_%r.%x'
+
+import:
+  - ../configs/Elecrow.kibot.yaml
+  - ../configs/FusionPCB.kibot.yaml
+  - ../configs/JLCPCB.kibot.yaml
+  - ../configs/P-Ban.kibot.yaml
+  - ../configs/PCBWay.kibot.yaml
+
+filters:
+ - name: 'exclude_any'
+   type: 'generic'
+   comment: 'Exclude logos, testpoints, fiducials and power'
+   exclude_any:
+     - column: Reference
+       regex: '^(G|#|TP|F).*'
 
 outputs:
-  # IBoM (Interactive HTML BoM):
-  # For more information: https://github.com/INTI-CMNB/InteractiveHtmlBom
-  # This output is what you get from the InteractiveHtmlBom plug-in (pcbnew).
-  - name: 'ibom_example'
-    comment: 'Generates an interactive web page useful to identify the position of the components in the PCB.'
-    type: 'ibom'
-    dir: 'ibom_dir'
+  - name: 'print_sch'
+    comment: "Print schematic (PDF)"
+    type: pdf_sch_print
+    dir: .
     options:
-      # [string=''] List of comma separated blacklisted components or prefixes with *. E.g. 'X1,MH*'.
-      # IBoM option, avoid using in conjunction with KiBot variants/filters
-      blacklist: ''
-      # [boolean=false] Blacklist components with empty value.
-      # IBoM option, avoid using in conjunction with KiBot variants/filters
-      blacklist_empty_val: false
-      # [number=0] Board rotation in degrees (-180 to 180). Will be rounded to multiple of 5
-      board_rotation: 0
-      # [string='left-right'] [bom-only,left-right,top-bottom] Default BOM view
-      bom_view: 'left-right'
-      # [string='Sourced,Placed'] Comma separated list of checkbox columns
-      checkboxes: 'Sourced,Placed'
-      # [boolean=false] Default to dark mode
-      dark_mode: false
-      # [string|list(string)=''] Name of the filter to mark components as not fitted.
-      # A short-cut to use for simple cases where a variant is an overkill.
-      # Avoid using it in conjunction with with IBoM native filtering options
-      dnf_filter: ''
-      # [string=''] Name of the extra field that indicates do not populate status.
-      # Components with this field not empty will be blacklisted.
-      # IBoM option, avoid using in conjunction with KiBot variants/filters
-      dnp_field: ''
-      # [string=''] Comma separated list of extra fields to pull from netlist or xml file
-      extra_fields: ''
-      # [boolean=false] Hide footprint pads by default
-      hide_pads: false
-      # [boolean=false] Hide silkscreen by default
-      hide_silkscreen: false
-      # [boolean=false] Highlight pin1 by default
-      highlight_pin1: false
-      # [boolean=false] Include netlist information in output.
-      include_nets: false
-      # [boolean=false] Include track/zone information in output. F.Cu and B.Cu layers only
-      include_tracks: false
-      # [string='FB'] [F,FB,B] Default layer view
-      layer_view: 'FB'
-      # [string='ibom'] Output file name format supports substitutions:
-      # %f : original pcb file name without extension.
-      # %p : pcb/project title from pcb metadata.
-      # %c : company from pcb metadata.
-      # %r : revision from pcb metadata.
-      # %d : pcb date from metadata if available, file modification date otherwise.
-      # %D : bom generation date.
-      # %T : bom generation time.
-      # Extension .html will be added automatically.
-      # Note that this name is used only when output is ''
-      name_format: 'ibom'
-      # [string=''] Path to netlist or xml file. You can use '%F.xml' to avoid specifying the project name
-      netlist_file: ''
-      # [boolean=false] Do not blacklist virtual components.
-      # IBoM option, avoid using in conjunction with KiBot variants/filters
-      no_blacklist_virtual: false
-      # [boolean=false] Do not redraw pcb on drag by default
-      no_redraw_on_drag: false
-      # [boolean=false] Normalize extra field name case. E.g. 'MPN' and 'mpn' will be considered the same field
-      normalize_field_case: false
-      # [string='%f-%i%v.%x'] Filename for the output, use '' to use the IBoM filename (%i=ibom, %x=html). Affected by global options
-      output: '%f-%i%v.%x'
-      # [boolean=false] Show fabrication layer by default
-      show_fabrication: false
-      # [string='C,R,L,D,U,Y,X,F,SW,A,~,HS,CNN,J,P,NT,MH'] Default sort order for components. Must contain '~' once
-      sort_order: 'C,R,L,D,U,Y,X,F,SW,A,~,HS,CNN,J,P,NT,MH'
-      # [string=''] Board variant to apply.
-      # Avoid using it in conjunction with with IBoM native filtering options
-      variant: ''
-      # [string=''] Name of the extra field that stores board variant for component.
-      # IBoM option, avoid using in conjunction with KiBot variants/filters
-      variant_field: ''
-      # [string=''] List of board variants to exclude from the BOM.
-      # IBoM option, avoid using in conjunction with KiBot variants/filters
-      variants_blacklist: ''
-      # [string=''] List of board variants to include in the BOM.
-      # IBoM option, avoid using in conjunction with KiBot variants/filters
-      variants_whitelist: ''
+      output: Schematic.pdf
 
-  - name: JLCPCB_gerbers
-    comment: Gerbers compatible with JLCPCB
+  - name: 'print_front'
+    comment: "Print F.Cu+Dwgs.User"
+    type: pdf_pcb_print
+    dir: .
+    options:
+      output_name: PCB_Top.pdf
+    layers:
+      - layer: F.Cu
+      - layer: Dwgs.User
+
+  - name: 'print_bottom'
+    comment: "Print B.Cu+Dwgs.User"
+    type: pdf_pcb_print
+    dir: .
+    options:
+      output_name: PCB_Bottom.pdf
+    layers:
+      - layer: B.Cu
+      - layer: Dwgs.User
+
+  - name: 'interactive_bom'
+    comment: "Interactive Bill of Materials (HTML)"
+    type: ibom
+    dir: BoM
+    options:
+      blacklist: 'DNF*'
+      name_format: '%f_%r_iBoM'
+
+  - name: 'bom_html'
+    comment: "Bill of Materials in HTML format"
+    type: bom
+    dir: BoM
+    options: &bom_options
+      columns:
+        - Row
+        - field: References
+          name: Referencias
+        - field: Part
+          name: Parte
+        - field: Value
+          name: Valor
+        # - field: manf#
+        #   name: P/N
+        # - field: manf
+        #   name: Fabricante
+        # - field: digikey#
+        #   name: 'Cod. Digi-Key'
+        - Footprint
+        # - field: Desc
+        #   name: Descripción
+        - 'Quantity Per PCB'
+      exclude_filter: 'exclude_any'
+      group_fields:  ['digikey#', 'Part']
+      normalize_values: true
+      normalize_locale: true
+      html:
+        logo: '../images/inti.png'
+        digikey_link: 'digikey#'
+        highlight_empty: false
+
+  - name: 'bom_xlsx'
+    comment: "Bill of Materials in XLSX format"
+    type: bom
+    dir: BoM
+    options:
+      <<: *bom_options
+      format: XLSX
+      xlsx:
+        logo: '../images/inti.png'
+        digikey_link: 'digikey#'
+        highlight_empty: false
+
+  - name: 'bom_csv'
+    comment: "Bill of Materials in CSV format"
+    type: bom
+    dir: BoM
+    options:
+      <<: *bom_options
+      format: CSV
+
+  - name: 'gerbers'
+    comment: "Gerbers for the board house"
     type: gerber
-    dir: JLCPCB
-    options: &gerber_options
+    dir: Gerbers
+    options:
+      # generic layer options
       exclude_edge_layer: true
-      exclude_pads_from_silkscreen: true
+      exclude_pads_from_silkscreen: false
+      use_aux_axis_as_origin: false
       plot_sheet_reference: false
       plot_footprint_refs: true
-      plot_footprint_values: false
+      plot_footprint_values: true
       force_plot_invisible_refs_vals: false
       tent_vias: true
-      use_protel_extensions: false
-      create_gerber_job_file: false
-      disable_aperture_macros: true
-      gerber_precision: 4.6
-      use_gerber_x2_attributes: false
-      use_gerber_net_attributes: false
+
+      # gerber options
       line_width: 0.1
-      subtract_mask_from_silk: true
+      subtract_mask_from_silk: false
+      use_protel_extensions: false
+      gerber_precision: 4.6
+      create_gerber_job_file: true
+      use_gerber_x2_attributes: true
+      use_gerber_net_attributes: true
+
     layers:
-      # Note: a more generic approach is to use 'copper' but then the filenames
-      # are slightly different.
-      - F.Cu
-      - B.Cu
-      - F.SilkS
-      - B.SilkS
-      - F.Mask
-      - B.Mask
-      - Edge.Cuts
+      - layer: F.Cu
+        suffix: F_Cu
+      - layer: B.Cu
+        suffix: B_Cu
+      - layer: F.Paste
+        suffix: F_Paste
+      - layer: B.Paste
+        suffix: B_Paste
+      - layer: F.SilkS
+        suffix: F_SilkS
+      - layer: B.SilkS
+        suffix: B_SilkS
+      - layer: F.Mask
+        suffix: F_Mask
+      - layer: B.Mask
+        suffix: B_Mask
+      - layer: Dwgs.User
+        suffix: Dwgs_User
+      - layer: Edge.Cuts
+        suffix: Edge_Cuts
+      - layer: F.Fab
+        suffix: F_Fab
+      - layer: B.Fab
+        suffix: B_Fab
 
-  - name: JLCPCB_drill
-    comment: Drill files compatible with JLCPCB
+  - name: excellon_drill
+    comment: "Excellon drill files"
     type: excellon
-    dir: JLCPCB
+    dir: Drill
     options:
-      pth_and_npth_single_file: false
-      pth_id: '-PTH'
-      npth_id: '-NPTH'
       metric_units: false
-      output: "%f%i.%x"
+      pth_and_npth_single_file: false
+      use_aux_axis_as_origin: false
+      minimal_header: false
+      mirror_y_axis: false
+      report:
+        filename: 'spora_prog-drl.rpt'
+      map:
+        type: 'pdf'
 
-#  - name: JLCPCB
-#    comment: ZIP file for JLCPCB
-#    type: compress
-#    dir: JLCPCB
-#    options:
-#      files:
-#        - from_output: JLCPCB_gerbers
-#          dest: /
-#        - from_output: JLCPCB_drill
-#          dest: /
-
-  - name: pcb_top_g
-    comment: "PCB render top green"
-    type: pcbdraw
-    dir: pcbdraw_dir
+  - name: gerber_drills
+    comment: "Gerber drill files"
+    type: gerb_drill
+    dir: Drill
     options:
-      format: jpg
-      show_components: none
-      dpi: 600
+      use_aux_axis_as_origin: false
 
-  - name: pcb_bot_g
-    comment: "PCB render bottom green"
-    type: pcbdraw
-    dir: pcbdraw_dir
+  - name: 'position'
+    comment: "Pick and place file"
+    type: position
+    dir: Position
     options:
-      format: jpg
-      bottom: True
-      show_components: none
-      dpi: 600
+      format: ASCII   # CSV or ASCII format
+      units: millimeters  # millimeters or inches
+      separate_files_for_front_and_back: true
+      only_smd: true
 
-  - name: step
-    comment: "Generate 3D model (STEP)"
-    type: step
-    dir: 3d
-    options:
-      metric_units: true
-      origin: 85,66.2
+
