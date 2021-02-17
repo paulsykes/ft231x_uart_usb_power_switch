@@ -16,6 +16,7 @@ import:
   - ../configs/Elecrow.kibot.yaml
   - ../configs/FusionPCB.kibot.yaml
   - ../configs/JLCPCB.kibot.yaml
+  - ../configs/JLCPCB_w-stencil.kibot.yaml
   - ../configs/P-Ban.kibot.yaml
   - ../configs/PCBWay.kibot.yaml
 
