@@ -7,8 +7,8 @@ Build Environment
 -----------------
 KiBot installation on Ubuntu/Debian.
 ```
-$ wget https://github.com/INTI-CMNB/KiBot/releases/download/v0.9.0-3/kibot_0.9.0-3_all.deb
-$ sudo apt install ./kibot_0.9.0-3_all.deb
+$ wget https://github.com/INTI-CMNB/KiBot/releases/download/v0.10.0-4/kibot_0.10.0-4_all.deb
+$ sudo apt install ./kibot_0.10.0-4_all.deb
 ```
 For other OS, please see [KiBot Documentation](https://github.com/skorokithakis/KiBot/blob/master/README.md).
 
@@ -16,6 +16,7 @@ Generate Fabrication Outputs
 ----------------------------
 Fabrication outputs will generated inside the [fabrication](fabrication) folder.
 ``` 
+$ cd hardware/kicad/ft231x_breakout_usb_power_switch
 $ make
 ```
 
