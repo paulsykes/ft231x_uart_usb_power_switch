@@ -10,6 +10,7 @@
 *.bck
 *.kicad_pcb-bak
 *.kicad_sch-bak
+*.pro-bak
 *.kicad_prl
 *.sch-bak
 *~
@@ -32,6 +33,10 @@ drc_result.rpt
 # Exported BOM files
 *.xml
 *.csv
+
+# kibot
+kibot.mak
+kibot_error.log
 
 hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/*
 !hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/!.gitignore
