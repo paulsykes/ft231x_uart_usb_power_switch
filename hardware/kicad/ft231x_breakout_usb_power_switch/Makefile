@@ -1,7 +1,7 @@
 #!/usr/bin/make
 DEBUG= 
 MAK=kibot.mak
-NAME=ft231x_breakout_usb_power_switch
+NAME=$(notdir $(CURDIR))
 PCB=${NAME}.kicad_pcb
 CONFIG=${NAME}.kibot.yaml
 SCH=${NAME}.sch
