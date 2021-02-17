@@ -21,6 +21,7 @@ F 0 "U2" H 5850 3200 50  0000 C CNN
 F 1 "FT231XS" H 6750 1500 50  0000 C CNN
 F 2 "-Chip:FT231XS" H 7350 1600 50  0001 C CNN
 F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf" H 6350 2400 50  0001 C CNN
+F 4 "C132160" H 6350 2400 50  0001 C CNN "LCSC#"
 	1    6350 2400
 	1    0    0    -1  
 $EndComp
