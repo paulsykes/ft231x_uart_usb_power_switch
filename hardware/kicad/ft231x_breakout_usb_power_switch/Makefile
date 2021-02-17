@@ -31,6 +31,6 @@ drc_and_fab: $(MAK)
 	$(MAKE) -f $(MAK) all_pcb
 
 clean:
-	rm -rf ${DEST} drc_result.rpt ${NAME}.erc kibot.mak
+	rm -rf ${DEST} drc_result.rpt ${NAME}.erc kibot.mak kibot_error.log
 
 .PHONY: erc drc sch_fab pcb_fab erc_and_fab drc_and_fab
