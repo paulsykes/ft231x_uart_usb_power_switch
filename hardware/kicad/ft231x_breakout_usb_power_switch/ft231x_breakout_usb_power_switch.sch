@@ -422,8 +422,16 @@ U 1 1 603D12E5
 P 4150 3250
 F 0 "C4" H 4000 3350 50  0000 L CNN
 F 1 "4.7uF" H 3900 3150 50  0000 L CNN
-F 2 "-Passive:C_0603" H 4188 3100 50  0001 C CNN
-F 3 "" H 4150 3250 50  0001 C CNN
+F 2 "-Passive:C_0603" H 4188 3100 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X5R_4V-to-50V_26.pdf" H 4150 3250 50  0001 L CNN
+F 4 "4.7uF ±10% 10V X5R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 4150 3250 50  0001 L CNN "Desc"
+F 5 "Yageo" H 4150 3250 50  0001 L CNN "manf"
+F 6 "CC0603KRX5R6BB475" H 4150 3250 50  0001 L CNN "manf#"
+F 7 "Yes" H 4150 3250 50  0001 L CNN "substitute"
+F 8 "C109456" H 4150 3250 50  0001 L CNN "LCSC#"
+F 9 "311-1455-1-ND" H 4150 3250 50  0001 L CNN "digikey#"
+F 10 "1458898" H 4150 3250 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX5R6BB475" H 4150 3250 50  0001 L CNN "mouser#"
 	1    4150 3250
 	1    0    0    -1  
 $EndComp
