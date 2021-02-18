@@ -306,8 +306,16 @@ U 1 1 6036A6E6
 P 3400 3250
 F 0 "C2" H 3250 3350 50  0000 L CNN
 F 1 "10nF" H 3200 3150 50  0000 L CNN
-F 2 "-Passive:C_0603" H 3438 3100 50  0001 C CNN
-F 3 "" H 3400 3250 50  0001 C CNN
+F 2 "-Passive:C_0603" H 3438 3100 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 3400 3250 50  0001 L CNN
+F 4 "10nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 3400 3250 50  0001 L CNN "Desc"
+F 5 "Yageo" H 3400 3250 50  0001 L CNN "manf"
+F 6 "CC0603KRX7R9BB103" H 3400 3250 50  0001 L CNN "manf#"
+F 7 "Yes" H 3400 3250 50  0001 L CNN "substitute"
+F 8 "C100042" H 3400 3250 50  0001 L CNN "LCSC#"
+F 9 "311-1085-2-ND" H 3400 3250 50  0001 L CNN "digikey#"
+F 10 "722236" H 3400 3250 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX7R9BB103" H 3400 3250 50  0001 L CNN "mouser#"
 	1    3400 3250
 	1    0    0    -1  
 $EndComp
