@@ -24,10 +24,11 @@ F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT231X.pdf" H 
 F 4 "USB to UART USB 2.0 UART Interface 20-SSOP" H 6350 2400 50  0001 C CNN "Desc"
 F 5 "FTDI" H 6350 2400 50  0001 C CNN "manf"
 F 6 "FT231XS-R" H 6350 2400 50  0001 C CNN "manf#"
-F 7 "C132160" H 6350 2400 50  0001 C CNN "LCSC#"
-F 8 "768-1129-2-ND" H 6350 2400 50  0001 C CNN "digikey#"
-F 9 "2081328" H 6350 2400 50  0001 C CNN "element14#"
-F 10 "895-FT231XS-R" H 6350 2400 50  0001 C CNN "mouser#"
+F 7 "No" H 6350 2400 50  0001 C CNN "substitute"
+F 8 "C132160" H 6350 2400 50  0001 C CNN "LCSC#"
+F 9 "768-1129-2-ND" H 6350 2400 50  0001 C CNN "digikey#"
+F 10 "2081328" H 6350 2400 50  0001 C CNN "element14#"
+F 11 "895-FT231XS-R" H 6350 2400 50  0001 C CNN "mouser#"
 	1    6350 2400
 	1    0    0    -1  
 $EndComp

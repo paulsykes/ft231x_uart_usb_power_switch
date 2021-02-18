@@ -99,6 +99,8 @@ outputs:
           name: Manufacturer
         - field: manf#
           name: 'Mfr. Part #'
+        - field: substitute
+          name: Substitute
         - field: LCSC#
           name: 'LCSC Part #'
         - field: element14#
