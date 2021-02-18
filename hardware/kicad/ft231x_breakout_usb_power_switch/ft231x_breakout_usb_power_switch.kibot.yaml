@@ -95,12 +95,18 @@ outputs:
           name: Part
         - field: Value
           name: Value
-        - field: manf#
-          name: P/N
         - field: manf
           name: Manufacturer
+        - field: manf#
+          name: 'Mfr. Part #'
+        - field: LCSC#
+          name: 'LCSC Part #'
+        - field: element14#
+          name: 'element14 Part #'
+        - field: mouser#
+          name: 'Mouser Part #'
         - field: digikey#
-          name: 'Cod. Digi-Key'
+          name: 'Digi-Key Part #'
         - Footprint
         - field: Desc
           name: Description
