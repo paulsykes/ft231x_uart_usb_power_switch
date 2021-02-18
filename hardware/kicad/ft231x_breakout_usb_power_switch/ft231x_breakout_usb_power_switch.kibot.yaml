@@ -90,20 +90,20 @@ outputs:
       columns:
         - Row
         - field: References
-          name: Referencias
+          name: References
         - field: Part
-          name: Parte
+          name: Part
         - field: Value
-          name: Valor
-        # - field: manf#
-        #   name: P/N
-        # - field: manf
-        #   name: Fabricante
-        # - field: digikey#
-        #   name: 'Cod. Digi-Key'
+          name: Value
+        - field: manf#
+          name: P/N
+        - field: manf
+          name: Manufacturer
+        - field: digikey#
+          name: 'Cod. Digi-Key'
         - Footprint
-        # - field: Desc
-        #   name: Descripción
+        - field: Desc
+          name: Description
         - 'Quantity Per PCB'
       exclude_filter: 'exclude_any'
       group_fields:  ['digikey#', 'Part']
