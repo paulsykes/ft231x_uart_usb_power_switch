@@ -462,8 +462,16 @@ U 1 1 60418569
 P 1750 5700
 F 0 "D1" H 1850 5550 50  0000 R CNN
 F 1 "LED" H 1700 5550 50  0000 R CNN
-F 2 "-Discrete:LED_0603_1608Metric" H 1750 5700 50  0001 C CNN
-F 3 "" H 1750 5700 50  0001 C CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 1750 5700 50  0001 L CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 5700 50  0001 L CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 5700 50  0001 L CNN "Desc"
+F 5 "Everlight Electronics" H 1750 5700 50  0001 L CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 1750 5700 50  0001 L CNN "manf#"
+F 7 "Yes" H 1750 5700 50  0001 L CNN "substitute"
+F 8 "C72043" H 1750 5700 50  0001 L CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 5700 50  0001 L CNN "digikey#"
+F 10 "" H 1750 5700 50  0001 L CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 1750 5700 50  0001 L CNN "mouser#"
 	1    1750 5700
 	-1   0    0    1   
 $EndComp
@@ -514,8 +522,16 @@ U 1 1 60447444
 P 1750 5200
 F 0 "D2" H 1900 5050 50  0000 R CNN
 F 1 "LED" H 1750 5050 50  0000 R CNN
-F 2 "-Discrete:LED_0603_1608Metric" H 1750 5200 50  0001 C CNN
-F 3 "" H 1750 5200 50  0001 C CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 1750 5200 50  0001 L CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 5200 50  0001 L CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 5200 50  0001 L CNN "Desc"
+F 5 "Everlight Electronics" H 1750 5200 50  0001 L CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 1750 5200 50  0001 L CNN "manf#"
+F 7 "Yes" H 1750 5200 50  0001 L CNN "substitute"
+F 8 "C72043" H 1750 5200 50  0001 L CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 5200 50  0001 L CNN "digikey#"
+F 10 "" H 1750 5200 50  0001 L CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 1750 5200 50  0001 L CNN "mouser#"
 	1    1750 5200
 	-1   0    0    1   
 $EndComp
@@ -1061,7 +1077,15 @@ P 1750 6200
 F 0 "D3" H 1850 6050 50  0000 R CNN
 F 1 "LED" H 1700 6050 50  0000 R CNN
 F 2 "-Discrete:LED_0603_1608Metric" H 1750 6200 50  0001 C CNN
-F 3 "" H 1750 6200 50  0001 C CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 6200 50  0001 C CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 6200 50  0001 C CNN "Desc"
+F 5 "Everlight Electronics" H 1750 6200 50  0001 C CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 1750 6200 50  0001 C CNN "manf#"
+F 7 "Yes" H 1750 6200 50  0001 C CNN "substitute"
+F 8 "C72043" H 1750 6200 50  0001 C CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 6200 50  0001 C CNN "digikey#"
+F 10 "" H 1750 6200 50  0001 C CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 1750 6200 50  0001 C CNN "mouser#"
 	1    1750 6200
 	-1   0    0    1   
 $EndComp
@@ -1131,7 +1155,15 @@ P 2400 7100
 F 0 "D4" H 2450 6950 50  0000 C CNN
 F 1 "LED" H 2300 6950 50  0000 C CNN
 F 2 "-Discrete:LED_0603_1608Metric" H 2400 7100 50  0001 C CNN
-F 3 "" H 2400 7100 50  0001 C CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 2400 7100 50  0001 C CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 2400 7100 50  0001 C CNN "Desc"
+F 5 "Everlight Electronics" H 2400 7100 50  0001 C CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 2400 7100 50  0001 C CNN "manf#"
+F 7 "Yes" H 2400 7100 50  0001 C CNN "substitute"
+F 8 "C72043" H 2400 7100 50  0001 C CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 2400 7100 50  0001 C CNN "digikey#"
+F 10 "" H 2400 7100 50  0001 C CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 2400 7100 50  0001 C CNN "mouser#"
 	1    2400 7100
 	-1   0    0    1   
 $EndComp
