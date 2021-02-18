@@ -162,8 +162,16 @@ U 1 1 601A71C1
 P 1200 3250
 F 0 "C1" H 1100 3350 50  0000 L CNN
 F 1 "0.1uF" H 950 3150 50  0000 L CNN
-F 2 "-Passive:C_0603" H 1238 3100 50  0001 C CNN
-F 3 "" H 1200 3250 50  0001 C CNN
+F 2 "-Passive:C_0603" H 1238 3100 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 1200 3250 50  0001 L CNN
+F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 1200 3250 50  0001 L CNN "Desc"
+F 5 "Yageo" H 1200 3250 50  0001 L CNN "manf"
+F 6 "CC0603KRX7R9BB104" H 1200 3250 50  0001 L CNN "manf#"
+F 7 "Yes" H 1200 3250 50  0001 L CNN "substitute"
+F 8 "C14663" H 1200 3250 50  0001 L CNN "LCSC#"
+F 9 "311-1344-1-ND" H 1200 3250 50  0001 L CNN "digikey#"
+F 10 "1362556" H 1200 3250 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX7R9BB104" H 1200 3250 50  0001 L CNN "mouser#"
 	1    1200 3250
 	1    0    0    -1  
 $EndComp
@@ -349,7 +357,15 @@ P 3800 3250
 F 0 "C3" H 3650 3350 50  0000 L CNN
 F 1 "0.1uF" H 3550 3150 50  0000 L CNN
 F 2 "-Passive:C_0603" H 3838 3100 50  0001 C CNN
-F 3 "" H 3800 3250 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 3800 3250 50  0001 C CNN
+F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 3800 3250 50  0001 C CNN "Des"
+F 5 "Yageo" H 3800 3250 50  0001 C CNN "manf"
+F 6 "CC0603KRX7R9BB104" H 3800 3250 50  0001 C CNN "manf#"
+F 7 "Yes" H 3800 3250 50  0001 C CNN "substitute"
+F 8 "C14663" H 3800 3250 50  0001 C CNN "LCSC#"
+F 9 "311-1344-1-ND" H 3800 3250 50  0001 C CNN "digikey#"
+F 10 "1362556" H 3800 3250 50  0001 C CNN "element14#"
+F 11 "603-CC603KRX7R9BB104" H 3800 3250 50  0001 C CNN "mouser#"
 	1    3800 3250
 	1    0    0    -1  
 $EndComp

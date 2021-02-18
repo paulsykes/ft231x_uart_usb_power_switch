@@ -114,7 +114,7 @@ outputs:
           name: Description
         - 'Quantity Per PCB'
       exclude_filter: 'exclude_any'
-      group_fields:  ['digikey#', 'Part']
+      group_fields:  ['digikey#', 'Part', 'Value']
       normalize_values: true
       normalize_locale: true
       html:
