@@ -49,8 +49,16 @@ U 1 1 6018115C
 P 4800 3250
 F 0 "C6" H 4800 3350 50  0000 L CNN
 F 1 "47pF" H 4800 3150 50  0000 L CNN
-F 2 "-Passive:C_0603" H 4838 3100 50  0001 C CNN
-F 3 "" H 4800 3250 50  0001 C CNN
+F 2 "-Passive:C_0603" H 4838 3100 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 4800 3250 50  0001 L CNN
+F 4 "47pF ±5% 50V NP0 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 4800 3250 50  0001 L CNN "Desc"
+F 5 "Yageo" H 4800 3250 50  0001 L CNN "manf"
+F 6 "CC0603JRNPO9BN470" H 4800 3250 50  0001 L CNN "manf#"
+F 7 "Yes" H 4800 3250 50  0001 L CNN "substitute"
+F 8 "C105622" H 4800 3250 50  0001 L CNN "LCSC#"
+F 9 "311-1065-1-ND" H 4800 3250 50  0001 L CNN "digikey#"
+F 10 "722042" H 4800 3250 50  0001 L CNN "element14#"
+F 11 "603-CC603JRNPO9BN470" H 4800 3250 50  0001 L CNN "mouser#"
 	1    4800 3250
 	1    0    0    -1  
 $EndComp
@@ -140,8 +148,16 @@ U 1 1 6019E34E
 P 4550 3250
 F 0 "C5" H 4550 3350 50  0000 L CNN
 F 1 "47pF" H 4550 3150 50  0000 L CNN
-F 2 "-Passive:C_0603" H 4588 3100 50  0001 C CNN
-F 3 "" H 4550 3250 50  0001 C CNN
+F 2 "-Passive:C_0603" H 4588 3100 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GP_NP0_16V-to-50V_18.pdf" H 4550 3250 50  0001 L CNN
+F 4 "47pF ±5% 50V NP0 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 4550 3250 50  0001 L CNN "Desc"
+F 5 "Yageo" H 4550 3250 50  0001 L CNN "manf"
+F 6 "CC0603JRNPO9BN470" H 4550 3250 50  0001 L CNN "manf#"
+F 7 "Yes" H 4550 3250 50  0001 L CNN "substitute"
+F 8 "C105622" H 4550 3250 50  0001 L CNN "LCSC#"
+F 9 "311-1065-1-ND" H 4550 3250 50  0001 L CNN "digikey#"
+F 10 "722042" H 4550 3250 50  0001 L CNN "element14#"
+F 11 "603-CC603JRNPO9BN470" H 4550 3250 50  0001 L CNN "mouser#"
 	1    4550 3250
 	1    0    0    -1  
 $EndComp
