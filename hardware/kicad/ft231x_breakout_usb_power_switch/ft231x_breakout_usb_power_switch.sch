@@ -68,8 +68,16 @@ U 1 1 601827FF
 P 1650 1950
 F 0 "J1" H 1500 2300 50  0000 C CNN
 F 1 "USB_B_Micro_ALT" H 1950 1600 50  0000 C CNN
-F 2 "-Connector:AMPHENOL_10118194-0001LF" H 1800 1900 50  0001 C CNN
-F 3 "~" H 1800 1900 50  0001 C CNN
+F 2 "-Connector:AMPHENOL_10118194-0001LF" H 1800 1900 50  0001 L CNN
+F 3 "https://www.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_micro.pdf" H 1800 1900 50  0001 L CNN
+F 4 "USB Connectors 5P SMD Micro USB Type B RCPT with Rear Pegs" H 1650 1950 50  0001 L CNN "Desc"
+F 5 "Amphenol ICC" H 1650 1950 50  0001 L CNN "manf"
+F 6 "10118194-0001LF" H 1650 1950 50  0001 L CNN "manf#"
+F 7 "No" H 1650 1950 50  0001 L CNN "substitute"
+F 8 "C132563" H 1650 1950 50  0001 L CNN "LCSC#"
+F 9 "609-4618-1-ND" H 1650 1950 50  0001 L CNN "digikey#"
+F 10 "2668482" H 1650 1950 50  0001 L CNN "element14#"
+F 11 "649-10118194-0001LF" H 1650 1950 50  0001 L CNN "mouser#"
 	1    1650 1950
 	1    0    0    -1  
 $EndComp
@@ -99,7 +107,15 @@ P 10000 1950
 F 0 "J2" H 10200 2300 50  0000 R CNN
 F 1 "USB_A_ALT" H 9800 1600 50  0000 R CNN
 F 2 "-Connector:TE_292303-1" H 10150 1900 50  0001 C CNN
-F 3 "" H 10150 1900 50  0001 C CNN
+F 3 "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=292303&DocType=Customer+Drawing&DocLang=English" H 10150 1900 50  0001 C CNN
+F 4 "USB-A (USB TYPE-A) USB 2.0 Receptacle Connector 4 Position Through Hole, Right Angle" H 10000 1950 50  0001 C CNN "Desc"
+F 5 "TE Connectivity AMP Connectors" H 10000 1950 50  0001 C CNN "manf"
+F 6 "292303-1" H 10000 1950 50  0001 C CNN "manf#"
+F 7 "No" H 10000 1950 50  0001 C CNN "substitute"
+F 8 "C86461" H 10000 1950 50  0001 C CNN "LCSC#"
+F 9 "A31726-ND" H 10000 1950 50  0001 C CNN "digikey#"
+F 10 "1076663" H 10000 1950 50  0001 C CNN "element14#"
+F 11 "571-292303-1" H 10000 1950 50  0001 C CNN "mouser#"
 	1    10000 1950
 	-1   0    0    -1  
 $EndComp
