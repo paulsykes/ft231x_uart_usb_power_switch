@@ -213,8 +213,16 @@ U 1 1 601A7697
 P 1500 3250
 F 0 "R3" H 1600 3150 50  0000 C CNN
 F 1 "10k" V 1500 3250 50  0000 C CNN
-F 2 "-Passive:R_0603" V 1430 3250 50  0001 C CNN
-F 3 "" H 1500 3250 50  0001 C CNN
+F 2 "-Passive:R_0603" V 1430 3250 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 1500 3250 50  0001 L CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 1500 3250 50  0001 L CNN "Desc"
+F 5 "Yageo" H 1500 3250 50  0001 L CNN "manf"
+F 6 "RC0603JR-0710KL" H 1500 3250 50  0001 L CNN "manf#"
+F 7 "Yes" H 1500 3250 50  0001 L CNN "substitute"
+F 8 "C99198" H 1500 3250 50  0001 L CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 1500 3250 50  0001 L CNN "digikey#"
+F 10 "9233504" H 1500 3250 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 1500 3250 50  0001 L CNN "mouser#"
 	1    1500 3250
 	-1   0    0    1   
 $EndComp
@@ -497,8 +505,16 @@ U 1 1 6041DE11
 P 2100 5700
 F 0 "R1" V 2200 5700 50  0000 C CNN
 F 1 "1k" V 2100 5700 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2030 5700 50  0001 C CNN
-F 3 "" H 2100 5700 50  0001 C CNN
+F 2 "-Passive:R_0603" V 2030 5700 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 5700 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2100 5700 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2100 5700 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2100 5700 50  0001 L CNN "manf#"
+F 7 "Yes" V 2100 5700 50  0001 L CNN "substitute"
+F 8 "C14676" V 2100 5700 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2100 5700 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2100 5700 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2100 5700 50  0001 L CNN "mouser#"
 	1    2100 5700
 	0    1    1    0   
 $EndComp
@@ -557,8 +573,16 @@ U 1 1 6044744A
 P 2100 5200
 F 0 "R2" V 2200 5200 50  0000 C CNN
 F 1 "1k" V 2100 5200 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2030 5200 50  0001 C CNN
-F 3 "" H 2100 5200 50  0001 C CNN
+F 2 "-Passive:R_0603" V 2030 5200 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 5200 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2100 5200 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2100 5200 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2100 5200 50  0001 L CNN "manf#"
+F 7 "Yes" V 2100 5200 50  0001 L CNN "substitute"
+F 8 "C14676" V 2100 5200 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2100 5200 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2100 5200 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2100 5200 50  0001 L CNN "mouser#"
 	1    2100 5200
 	0    1    1    0   
 $EndComp
@@ -622,8 +646,16 @@ U 1 1 604CAC29
 P 5650 5400
 F 0 "R9" H 5750 5400 50  0000 C CNN
 F 1 "10k" V 5650 5400 50  0000 C CNN
-F 2 "-Passive:R_0603" V 5580 5400 50  0001 C CNN
-F 3 "" H 5650 5400 50  0001 C CNN
+F 2 "-Passive:R_0603" V 5580 5400 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5650 5400 50  0001 L CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 5650 5400 50  0001 L CNN "Desc"
+F 5 "Yageo" H 5650 5400 50  0001 L CNN "manf"
+F 6 "RC0603JR-0710KL" H 5650 5400 50  0001 L CNN "manf#"
+F 7 "Yes" H 5650 5400 50  0001 L CNN "substitute"
+F 8 "C99198" H 5650 5400 50  0001 L CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 5650 5400 50  0001 L CNN "digikey#"
+F 10 "9233504" H 5650 5400 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 5650 5400 50  0001 L CNN "mouser#"
 	1    5650 5400
 	-1   0    0    1   
 $EndComp
@@ -637,8 +669,16 @@ U 1 1 604C6F61
 P 4950 5400
 F 0 "R8" H 5050 5400 50  0000 C CNN
 F 1 "10k" V 4950 5400 50  0000 C CNN
-F 2 "-Passive:R_0603" V 4880 5400 50  0001 C CNN
-F 3 "" H 4950 5400 50  0001 C CNN
+F 2 "-Passive:R_0603" V 4880 5400 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 4950 5400 50  0001 L CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 4950 5400 50  0001 L CNN "Desc"
+F 5 "Yageo" H 4950 5400 50  0001 L CNN "manf"
+F 6 "RC0603JR-0710KL" H 4950 5400 50  0001 L CNN "manf#"
+F 7 "Yes" H 4950 5400 50  0001 L CNN "substitute"
+F 8 "C99198" H 4950 5400 50  0001 L CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 4950 5400 50  0001 L CNN "digikey#"
+F 10 "9233504" H 4950 5400 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 4950 5400 50  0001 L CNN "mouser#"
 	1    4950 5400
 	-1   0    0    1   
 $EndComp
@@ -691,8 +731,16 @@ U 1 1 605BA2B5
 P 8900 5350
 F 0 "J4" H 8900 4950 50  0000 C CNN
 F 1 "Conn_01x06" V 9000 5300 50  0000 C CNN
-F 2 "-Connector:PinHeader_1x06_P2.54mm_Vertical_Arduino" H 8900 5350 50  0001 C CNN
-F 3 "" H 8900 5350 50  0001 C CNN
+F 2 "-Connector:PinHeader_1x06_P2.54mm_Vertical_Arduino" H 8900 5350 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811151421_Ckmtw-Shenzhen-Cankemeng-C124380_C124380.pdf" H 8900 5350 50  0001 L CNN
+F 4 "Pin Pin Header 6 1 Straight，180degrees 2.54mm Through Hole,P=2.54mm Pin Header & Female Header RoHS" H 8900 5350 50  0001 L CNN "Desc"
+F 5 "Ckmtw(Shenzhen Cankemeng)" H 8900 5350 50  0001 L CNN "manf"
+F 6 "C124380" H 8900 5350 50  0001 L CNN "manf#"
+F 7 "Yes" H 8900 5350 50  0001 L CNN "substitute"
+F 8 "C124380" H 8900 5350 50  0001 L CNN "LCSC#"
+F 9 "" H 8900 5350 50  0001 L CNN "digikey#"
+F 10 "" H 8900 5350 50  0001 L CNN "element14#"
+F 11 "" H 8900 5350 50  0001 L CNN "mouser#"
 	1    8900 5350
 	-1   0    0    1   
 $EndComp
@@ -834,8 +882,16 @@ U 1 1 606F796C
 P 7700 1950
 F 0 "R6" H 7800 1950 50  0000 C CNN
 F 1 "10k" V 7700 1950 50  0000 C CNN
-F 2 "-Passive:R_0603" V 7630 1950 50  0001 C CNN
-F 3 "" H 7700 1950 50  0001 C CNN
+F 2 "-Passive:R_0603" V 7630 1950 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7700 1950 50  0001 L CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7700 1950 50  0001 L CNN "Desc"
+F 5 "Yageo" H 7700 1950 50  0001 L CNN "manf"
+F 6 "RC0603JR-0710KL" H 7700 1950 50  0001 L CNN "manf#"
+F 7 "Yes" H 7700 1950 50  0001 L CNN "substitute"
+F 8 "C99198" H 7700 1950 50  0001 L CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 7700 1950 50  0001 L CNN "digikey#"
+F 10 "9233504" H 7700 1950 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 7700 1950 50  0001 L CNN "mouser#"
 	1    7700 1950
 	1    0    0    -1  
 $EndComp
@@ -944,8 +1000,16 @@ U 1 1 60887D1E
 P 2450 5200
 F 0 "JP2" H 2400 5300 50  0000 L CNN
 F 1 "SolderJumper_2_Bridged_Alt" V 2495 5268 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 5200 50  0001 C CNN
-F 3 "~" H 2425 5200 50  0001 C CNN
+F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 5200 50  0001 L CNN
+F 3 "" H 2425 5200 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 2450 5200 50  0001 L CNN "Desc"
+F 5 "N/A" H 2450 5200 50  0001 L CNN "manf"
+F 6 "N/A" H 2450 5200 50  0001 L CNN "manf#"
+F 7 "No" H 2450 5200 50  0001 L CNN "substitute"
+F 8 "" H 2450 5200 50  0001 L CNN "LCSC#"
+F 9 "" H 2450 5200 50  0001 L CNN "digikey#"
+F 10 "" H 2450 5200 50  0001 L CNN "element14#"
+F 11 "" H 2450 5200 50  0001 L CNN "mouser#"
 	1    2450 5200
 	1    0    0    -1  
 $EndComp
@@ -955,8 +1019,16 @@ U 1 1 6088937A
 P 2450 5700
 F 0 "JP3" H 2400 5800 50  0000 L CNN
 F 1 "SolderJumper_2_Bridged_Alt" V 2495 5768 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 5700 50  0001 C CNN
-F 3 "~" H 2425 5700 50  0001 C CNN
+F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 5700 50  0001 L CNN
+F 3 "" H 2425 5700 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 2450 5700 50  0001 L CNN "Desc"
+F 5 "N/A" H 2450 5700 50  0001 L CNN "manf"
+F 6 "N/A" H 2450 5700 50  0001 L CNN "manf#"
+F 7 "No" H 2450 5700 50  0001 L CNN "substitute"
+F 8 "" H 2450 5700 50  0001 L CNN "LCSC#"
+F 9 "" H 2450 5700 50  0001 L CNN "digikey#"
+F 10 "" H 2450 5700 50  0001 L CNN "element14#"
+F 11 "" H 2450 5700 50  0001 L CNN "mouser#"
 	1    2450 5700
 	1    0    0    -1  
 $EndComp
@@ -1003,8 +1075,16 @@ U 1 1 609A91F3
 P 5400 7100
 F 0 "JP1" V 5400 7168 50  0000 L CNN
 F 1 "SolderJumper_3_Bridged12" V 5445 7168 50  0001 L CNN
-F 2 "-Switch:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5400 7100 50  0001 C CNN
-F 3 "~" H 5400 7100 50  0001 C CNN
+F 2 "-Switch:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5400 7100 50  0001 L CNN
+F 3 "" H 5400 7100 50  0001 L CNN
+F 4 "Solder Jumper 3 Bridged 1-2" V 5400 7100 50  0001 L CNN "Desc"
+F 5 "N/A" V 5400 7100 50  0001 L CNN "manf"
+F 6 "N/A" V 5400 7100 50  0001 L CNN "manf#"
+F 7 "No" V 5400 7100 50  0001 L CNN "substitute"
+F 8 "" V 5400 7100 50  0001 L CNN "LCSC#"
+F 9 "" V 5400 7100 50  0001 L CNN "digikey#"
+F 10 "" V 5400 7100 50  0001 L CNN "element14#"
+F 11 "" V 5400 7100 50  0001 L CNN "mouser#"
 	1    5400 7100
 	0    -1   1    0   
 $EndComp
@@ -1028,8 +1108,16 @@ U 1 1 60A05CD3
 P 7550 2800
 F 0 "JP4" H 7500 2700 50  0000 L CNN
 F 1 "SolderJumper_2_Bridged_Alt" V 7595 2868 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7525 2800 50  0001 C CNN
-F 3 "~" H 7525 2800 50  0001 C CNN
+F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7525 2800 50  0001 L CNN
+F 3 "" H 7525 2800 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 7550 2800 50  0001 L CNN "Desc"
+F 5 "N/A" H 7550 2800 50  0001 L CNN "manf"
+F 6 "N/A" H 7550 2800 50  0001 L CNN "manf#"
+F 7 "No" H 7550 2800 50  0001 L CNN "substitute"
+F 8 "" H 7550 2800 50  0001 L CNN "LCSC#"
+F 9 "" H 7550 2800 50  0001 L CNN "digikey#"
+F 10 "" H 7550 2800 50  0001 L CNN "element14#"
+F 11 "" H 7550 2800 50  0001 L CNN "mouser#"
 	1    7550 2800
 	-1   0    0    1   
 $EndComp
@@ -1039,8 +1127,16 @@ U 1 1 60A09E2C
 P 7550 3100
 F 0 "JP5" H 7500 3000 50  0000 L CNN
 F 1 "SolderJumper_2_Bridged_Alt" V 7595 3168 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7525 3100 50  0001 C CNN
-F 3 "~" H 7525 3100 50  0001 C CNN
+F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7525 3100 50  0001 L CNN
+F 3 "" H 7525 3100 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 7550 3100 50  0001 L CNN "Desc"
+F 5 "N/A" H 7550 3100 50  0001 L CNN "manf"
+F 6 "N/A" H 7550 3100 50  0001 L CNN "manf#"
+F 7 "No" H 7550 3100 50  0001 L CNN "substitute"
+F 8 "" H 7550 3100 50  0001 L CNN "LCSC#"
+F 9 "" H 7550 3100 50  0001 L CNN "digikey#"
+F 10 "" H 7550 3100 50  0001 L CNN "element14#"
+F 11 "" H 7550 3100 50  0001 L CNN "mouser#"
 	1    7550 3100
 	-1   0    0    1   
 $EndComp
@@ -1089,8 +1185,16 @@ U 1 1 60CCDDDE
 P 2100 6200
 F 0 "R10" V 2200 6200 50  0000 C CNN
 F 1 "1k" V 2100 6200 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2030 6200 50  0001 C CNN
-F 3 "" H 2100 6200 50  0001 C CNN
+F 2 "-Passive:R_0603" V 2030 6200 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 6200 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2100 6200 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2100 6200 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2100 6200 50  0001 L CNN "manf#"
+F 7 "Yes" V 2100 6200 50  0001 L CNN "substitute"
+F 8 "C14676" V 2100 6200 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2100 6200 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2100 6200 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2100 6200 50  0001 L CNN "mouser#"
 	1    2100 6200
 	0    1    1    0   
 $EndComp
@@ -1167,8 +1271,16 @@ U 1 1 60E4C5B0
 P 2750 7100
 F 0 "R11" V 2850 7100 50  0000 C CNN
 F 1 "1k" V 2750 7100 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2680 7100 50  0001 C CNN
-F 3 "" H 2750 7100 50  0001 C CNN
+F 2 "-Passive:R_0603" V 2680 7100 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2750 7100 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2750 7100 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2750 7100 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2750 7100 50  0001 L CNN "manf#"
+F 7 "Yes" V 2750 7100 50  0001 L CNN "substitute"
+F 8 "C14676" V 2750 7100 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2750 7100 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2750 7100 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2750 7100 50  0001 L CNN "mouser#"
 	1    2750 7100
 	0    -1   -1   0   
 $EndComp
@@ -1260,8 +1372,16 @@ U 1 1 610BB06B
 P 2450 6200
 F 0 "JP6" H 2400 6300 50  0000 L CNN
 F 1 "SolderJumper_2_Bridged_Alt" V 2495 6268 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 6200 50  0001 C CNN
-F 3 "~" H 2425 6200 50  0001 C CNN
+F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 6200 50  0001 L CNN
+F 3 "" H 2425 6200 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 2450 6200 50  0001 L CNN "Desc"
+F 5 "N/A" H 2450 6200 50  0001 L CNN "manf"
+F 6 "N/A" H 2450 6200 50  0001 L CNN "manf#"
+F 7 "No" H 2450 6200 50  0001 L CNN "substitute"
+F 8 "" H 2450 6200 50  0001 L CNN "LCSC#"
+F 9 "" H 2450 6200 50  0001 L CNN "digikey#"
+F 10 "" H 2450 6200 50  0001 L CNN "element14#"
+F 11 "" H 2450 6200 50  0001 L CNN "mouser#"
 	1    2450 6200
 	1    0    0    -1  
 $EndComp
@@ -1275,8 +1395,16 @@ U 1 1 610CE943
 P 3100 7100
 F 0 "JP7" H 3050 7200 50  0000 L CNN
 F 1 "SolderJumper_2_Bridged_Alt" V 3145 7168 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3075 7100 50  0001 C CNN
-F 3 "~" H 3075 7100 50  0001 C CNN
+F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3075 7100 50  0001 L CNN
+F 3 "" H 3075 7100 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 3100 7100 50  0001 L CNN "Desc"
+F 5 "N/A" H 3100 7100 50  0001 L CNN "manf"
+F 6 "N/A" H 3100 7100 50  0001 L CNN "manf#"
+F 7 "No" H 3100 7100 50  0001 L CNN "substitute"
+F 8 "" H 3100 7100 50  0001 L CNN "LCSC#"
+F 9 "" H 3100 7100 50  0001 L CNN "digikey#"
+F 10 "" H 3100 7100 50  0001 L CNN "element14#"
+F 11 "" H 3100 7100 50  0001 L CNN "mouser#"
 	1    3100 7100
 	1    0    0    -1  
 $EndComp
@@ -1293,7 +1421,15 @@ P 7950 2800
 F 0 "R12" H 8100 2800 50  0000 C CNN
 F 1 "1k" V 7950 2800 50  0000 C CNN
 F 2 "-Passive:R_0603" V 7880 2800 50  0001 C CNN
-F 3 "" H 7950 2800 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7950 2800 50  0001 C CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7950 2800 50  0001 C CNN "Desc"
+F 5 "Yageo" H 7950 2800 50  0001 C CNN "manf"
+F 6 "RC0603JR-071KL" H 7950 2800 50  0001 C CNN "manf#"
+F 7 "Yes" H 7950 2800 50  0001 C CNN "substitute"
+F 8 "C14676" H 7950 2800 50  0001 C CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" H 7950 2800 50  0001 C CNN "digikey#"
+F 10 "9233385" H 7950 2800 50  0001 C CNN "element14#"
+F 11 "603-RC0603JR-071KL" H 7950 2800 50  0001 C CNN "mouser#"
 	1    7950 2800
 	-1   0    0    1   
 $EndComp
@@ -1513,8 +1649,16 @@ U 1 1 61647DA2
 P 10150 3250
 F 0 "R13" H 10050 3150 50  0000 C CNN
 F 1 "10k" V 10150 3250 50  0000 C CNN
-F 2 "-Passive:R_0603" V 10080 3250 50  0001 C CNN
-F 3 "" H 10150 3250 50  0001 C CNN
+F 2 "-Passive:R_0603" V 10080 3250 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 10150 3250 50  0001 L CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 10150 3250 50  0001 L CNN "Desc"
+F 5 "Yageo" H 10150 3250 50  0001 L CNN "manf"
+F 6 "RC0603JR-0710KL" H 10150 3250 50  0001 L CNN "manf#"
+F 7 "Yes" H 10150 3250 50  0001 L CNN "substitute"
+F 8 "C99198" H 10150 3250 50  0001 L CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 10150 3250 50  0001 L CNN "digikey#"
+F 10 "9233504" H 10150 3250 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 10150 3250 50  0001 L CNN "mouser#"
 	1    10150 3250
 	-1   0    0    1   
 $EndComp
@@ -1569,8 +1713,16 @@ U 1 1 6011C66E
 P 7800 5350
 F 0 "J3" H 7800 5750 50  0000 C CNN
 F 1 "Conn_01x08" V 7900 5350 50  0000 C CNN
-F 2 "-Connector:PinHeader_1x08_P2.54mm_Vertical_CBUS" H 7800 5350 50  0001 C CNN
-F 3 "~" H 7800 5350 50  0001 C CNN
+F 2 "-Connector:PinHeader_1x08_P2.54mm_Vertical_CBUS" H 7800 5350 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811091829_Ckmtw-Shenzhen-Cankemeng-C124381_C124381.pdf" H 7800 5350 50  0001 L CNN
+F 4 "Pin Header 8 1 right-angle，180degrees 2.54mm Through Hole,P=2.54mm Pin Header & Female Header RoHS" H 7800 5350 50  0001 L CNN "Desc"
+F 5 "Ckmtw(Shenzhen Cankemeng)" H 7800 5350 50  0001 L CNN "manf"
+F 6 "C124381" H 7800 5350 50  0001 L CNN "manf#"
+F 7 "Yes" H 7800 5350 50  0001 L CNN "substitute"
+F 8 "C124381" H 7800 5350 50  0001 L CNN "LCSC#"
+F 9 "" H 7800 5350 50  0001 L CNN "digikey#"
+F 10 "" H 7800 5350 50  0001 L CNN "element14#"
+F 11 "" H 7800 5350 50  0001 L CNN "mouser#"
 	1    7800 5350
 	-1   0    0    -1  
 $EndComp
@@ -1587,8 +1739,16 @@ U 1 1 6015AC2A
 P 9900 5450
 F 0 "J5" H 9900 4950 50  0000 C CNN
 F 1 "Conn_01x08" V 10000 5450 50  0000 C CNN
-F 2 "-Connector:PinHeader_1x08_P2.54mm_Vertical_CTS" H 9900 5450 50  0001 C CNN
-F 3 "~" H 9900 5450 50  0001 C CNN
+F 2 "-Connector:PinHeader_1x08_P2.54mm_Vertical_CTS" H 9900 5450 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811091829_Ckmtw-Shenzhen-Cankemeng-C124381_C124381.pdf" H 9900 5450 50  0001 L CNN
+F 4 "Pin Header 8 1 right-angle，180degrees 2.54mm Through Hole,P=2.54mm Pin Header & Female Header RoHS" H 9900 5450 50  0001 L CNN "Desc"
+F 5 "Ckmtw(Shenzhen Cankemeng)" H 9900 5450 50  0001 L CNN "manf"
+F 6 "C124381" H 9900 5450 50  0001 L CNN "manf#"
+F 7 "Yes" H 9900 5450 50  0001 L CNN "substitute"
+F 8 "C124381" H 9900 5450 50  0001 L CNN "LCSC#"
+F 9 "" H 9900 5450 50  0001 L CNN "digikey#"
+F 10 "" H 9900 5450 50  0001 L CNN "element14#"
+F 11 "" H 9900 5450 50  0001 L CNN "mouser#"
 	1    9900 5450
 	-1   0    0    1   
 $EndComp
@@ -1632,9 +1792,17 @@ L -Module:PCB PCB1
 U 1 1 602766F4
 P 7550 6300
 F 0 "PCB1" H 7550 6416 40  0000 C CNN
-F 1 "PCB - 2 Layer" H 7550 6300 30  0001 C CNN
-F 2 "" H 7550 6200 60  0001 C CNN
-F 3 "" H 7550 6200 60  0000 C CNN
+F 1 "PCB - 2 Layer" H 7550 6300 30  0000 C CNN
+F 2 "" H 7550 6200 60  0001 L CNN
+F 3 "" H 7550 6200 60  0001 L CNN
+F 4 "PCB, 2 Layer 1.6mm, 1.0 oz Copper, Green Soldermask, White Silkscreen, ENIG,  RoHs" H 7550 6300 50  0001 L CNN "Desc"
+F 5 "N/A" H 7550 6300 50  0001 L CNN "manf"
+F 6 "N/A" H 7550 6300 50  0001 L CNN "manf#"
+F 7 "No" H 7550 6300 50  0001 L CNN "substitute"
+F 8 "" H 7550 6300 50  0001 L CNN "LCSC#"
+F 9 "" H 7550 6300 50  0001 L CNN "digikey#"
+F 10 "" H 7550 6300 50  0001 L CNN "element14#"
+F 11 "" H 7550 6300 50  0001 L CNN "mouser#"
 	1    7550 6300
 	1    0    0    -1  
 $EndComp
