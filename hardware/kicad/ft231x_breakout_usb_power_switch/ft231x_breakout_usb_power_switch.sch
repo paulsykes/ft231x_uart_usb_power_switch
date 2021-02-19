@@ -79,8 +79,16 @@ U 1 1 60185FC1
 P 5050 2050
 F 0 "R5" V 5150 2050 50  0000 C CNN
 F 1 "27R" V 5050 2050 50  0000 C CNN
-F 2 "-Passive:R_0603" V 4980 2050 50  0001 C CNN
-F 3 "" H 5050 2050 50  0001 C CNN
+F 2 "-Passive:R_0603" V 4980 2050 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5050 2050 50  0001 L CNN
+F 4 "27Ω ±1% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 5050 2050 50  0001 L CNN "Desc"
+F 5 "Yageo" V 5050 2050 50  0001 L CNN "manf"
+F 6 "RC0603FR-0727RL" V 5050 2050 50  0001 L CNN "manf#"
+F 7 "Yes" V 5050 2050 50  0001 L CNN "substitute"
+F 8 "C137753" V 5050 2050 50  0001 L CNN "LCSC#"
+F 9 "311-27.0HRTR-ND" V 5050 2050 50  0001 L CNN "digikey#"
+F 10 "9238298" V 5050 2050 50  0001 L CNN "element14#"
+F 11 "603-RC0603FR-0727RL" V 5050 2050 50  0001 L CNN "mouser#"
 	1    5050 2050
 	0    1    1    0   
 $EndComp
@@ -104,8 +112,16 @@ U 1 1 60180B4E
 P 5050 1950
 F 0 "R4" V 4950 1950 50  0000 C CNN
 F 1 "27R" V 5050 1950 50  0000 C CNN
-F 2 "-Passive:R_0603" V 4980 1950 50  0001 C CNN
-F 3 "" H 5050 1950 50  0001 C CNN
+F 2 "-Passive:R_0603" V 4980 1950 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5050 1950 50  0001 L CNN
+F 4 "27Ω ±1% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 5050 1950 50  0001 L CNN "Desc"
+F 5 "Yageo" V 5050 1950 50  0001 L CNN "manf"
+F 6 "RC0603FR-0727RL" V 5050 1950 50  0001 L CNN "manf#"
+F 7 "Yes" V 5050 1950 50  0001 L CNN "substitute"
+F 8 "C137753" V 5050 1950 50  0001 L CNN "LCSC#"
+F 9 "311-27.0HRTR-ND" V 5050 1950 50  0001 L CNN "digikey#"
+F 10 "9238298" V 5050 1950 50  0001 L CNN "element14#"
+F 11 "603-RC0603FR-0727RL" V 5050 1950 50  0001 L CNN "mouser#"
 	1    5050 1950
 	0    1    1    0   
 $EndComp
@@ -799,8 +815,16 @@ U 1 1 606F5C82
 P 9150 2150
 F 0 "R7" H 9250 2150 50  0000 C CNN
 F 1 "52k3" V 9150 2150 50  0000 C CNN
-F 2 "-Passive:R_0603" V 9080 2150 50  0001 C CNN
-F 3 "" H 9150 2150 50  0001 C CNN
+F 2 "-Passive:R_0603" V 9080 2150 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9150 2150 50  0001 L CNN
+F 4 "52.3kΩ ±1% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 9150 2150 50  0001 L CNN "Desc"
+F 5 "Yageo" H 9150 2150 50  0001 L CNN "manf"
+F 6 "RC0603FR-0752K3L" H 9150 2150 50  0001 L CNN "manf#"
+F 7 "Yes" H 9150 2150 50  0001 L CNN "substitute"
+F 8 "C185323" H 9150 2150 50  0001 L CNN "LCSC#"
+F 9 "311-52.3KHRCT-ND" H 9150 2150 50  0001 L CNN "digikey#"
+F 10 "" H 9150 2150 50  0001 L CNN "element14#"
+F 11 "603-RC0603FR-0752K3L" H 9150 2150 50  0001 L CNN "mouser#"
 	1    9150 2150
 	1    0    0    -1  
 $EndComp
@@ -1326,8 +1350,16 @@ U 1 1 613522DE
 P 9700 6300
 F 0 "H3" H 9800 6346 50  0000 L CNN
 F 1 "MountingHole" H 9800 6255 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 9700 6300 50  0001 C CNN
-F 3 "~" H 9700 6300 50  0001 C CNN
+F 2 "-Connector:MountingHole_2.1mm" H 9700 6300 50  0001 L CNN
+F 3 "N/A" H 9700 6300 50  0001 L CNN
+F 4 "M2 mounting hole" H 9700 6300 50  0001 L CNN "Desc"
+F 5 "N/A" H 9700 6300 50  0001 L CNN "manf"
+F 6 "N/A" H 9700 6300 50  0001 L CNN "manf#"
+F 7 "No" H 9700 6300 50  0001 L CNN "substitute"
+F 8 "" H 9700 6300 50  0001 L CNN "LCSC#"
+F 9 "" H 9700 6300 50  0001 L CNN "digikey#"
+F 10 "" H 9700 6300 50  0001 L CNN "element14#"
+F 11 "" H 9700 6300 50  0001 L CNN "mouser#"
 	1    9700 6300
 	1    0    0    -1  
 $EndComp
@@ -1337,8 +1369,16 @@ U 1 1 613532C5
 P 10400 6300
 F 0 "H4" H 10500 6346 50  0000 L CNN
 F 1 "MountingHole" H 10500 6255 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 10400 6300 50  0001 C CNN
-F 3 "~" H 10400 6300 50  0001 C CNN
+F 2 "-Connector:MountingHole_2.1mm" H 10400 6300 50  0001 L CNN
+F 3 "N/A" H 10400 6300 50  0001 L CNN
+F 4 "M2 mounting hole" H 10400 6300 50  0001 L CNN "Desc"
+F 5 "N/A" H 10400 6300 50  0001 L CNN "manf"
+F 6 "N/A" H 10400 6300 50  0001 L CNN "manf#"
+F 7 "No" H 10400 6300 50  0001 L CNN "substitute"
+F 8 "" H 10400 6300 50  0001 L CNN "LCSC#"
+F 9 "" H 10400 6300 50  0001 L CNN "digikey#"
+F 10 "" H 10400 6300 50  0001 L CNN "element14#"
+F 11 "" H 10400 6300 50  0001 L CNN "mouser#"
 	1    10400 6300
 	1    0    0    -1  
 $EndComp
@@ -1348,8 +1388,16 @@ U 1 1 6135359D
 P 8950 6300
 F 0 "H2" H 9050 6346 50  0000 L CNN
 F 1 "MountingHole" H 9050 6255 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 8950 6300 50  0001 C CNN
-F 3 "~" H 8950 6300 50  0001 C CNN
+F 2 "-Connector:MountingHole_2.1mm" H 8950 6300 50  0001 L CNN
+F 3 "N/A" H 8950 6300 50  0001 L CNN
+F 4 "M2 mounting hole" H 8950 6300 50  0001 R CNN "Desc"
+F 5 "N/A" H 8950 6300 50  0001 L CNN "manf"
+F 6 "N/A" H 8950 6300 50  0001 L CNN "manf#"
+F 7 "No" H 8950 6300 50  0001 L CNN "substitute"
+F 8 "" H 8950 6300 50  0001 L CNN "LCSC#"
+F 9 "" H 8950 6300 50  0001 L CNN "digikey#"
+F 10 "" H 8950 6300 50  0001 L CNN "element14#"
+F 11 "" H 8950 6300 50  0001 L CNN "mouser#"
 	1    8950 6300
 	1    0    0    -1  
 $EndComp
@@ -1359,8 +1407,16 @@ U 1 1 61353EB2
 P 8150 6300
 F 0 "H1" H 8250 6346 50  0000 L CNN
 F 1 "MountingHole" H 8250 6255 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 8150 6300 50  0001 C CNN
-F 3 "~" H 8150 6300 50  0001 C CNN
+F 2 "-Connector:MountingHole_2.1mm" H 8150 6300 50  0001 L CNN
+F 3 "N/A" H 8150 6300 50  0001 L CNN
+F 4 "M2 mounting hole" H 8150 6300 50  0001 L CNN "Desc"
+F 5 "N/A" H 8150 6300 50  0001 L CNN "manf"
+F 6 "N/A" H 8150 6300 50  0001 L CNN "manf#"
+F 7 "No" H 8150 6300 50  0001 L CNN "substitute"
+F 8 "" H 8150 6300 50  0001 L CNN "LCSC#"
+F 9 "" H 8150 6300 50  0001 L CNN "digikey#"
+F 10 "" H 8150 6300 50  0001 L CNN "element14#"
+F 11 "" H 8150 6300 50  0001 L CNN "mouser#"
 	1    8150 6300
 	1    0    0    -1  
 $EndComp
