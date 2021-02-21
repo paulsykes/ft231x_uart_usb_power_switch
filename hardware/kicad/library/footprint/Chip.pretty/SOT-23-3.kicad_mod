@@ -1,4 +1,4 @@
-(module 2N7002 (layer F.Cu) (tedit 6020C724)
+(module SOT-23-3 (layer F.Cu) (tedit 6020C724)
   (descr "SOT-23, Standard")
   (tags SOT-23)
   (attr smd)
