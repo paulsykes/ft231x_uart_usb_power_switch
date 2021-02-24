@@ -17,8 +17,8 @@ on:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kibot.yaml'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/Makefile'
       - '.github/workflows/ft231x_breakout_usb_power_switch.yml'
-  tags:
-    - 'v*'
+    tags:
+      - 'v*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
