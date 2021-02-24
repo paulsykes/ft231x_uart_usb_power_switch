@@ -21,4 +21,4 @@ All contents of this repository are released under [Creative Commons Share-alike
 
 Author
 ------
-Paul Sykes, [My Blog](www.paulsykes.me)
+Paul Sykes, [My Blog](https://www.paulsykes.me)
