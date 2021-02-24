@@ -105,7 +105,7 @@ jobs:
         if-no-files-found: warn
 
   Release:
-    needs: ERC
+    needs: [ERC, FabSch]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -114,5 +114,7 @@ jobs:
       - name: Retrieve
         uses: actions/download-artifact@v1
         with:
-          name: ERC_Output
+          name: |
+            ERC_Output
+            FabSch_Output
 
