@@ -102,4 +102,3 @@ jobs:
           hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/
           hardware/kicad/ft231x_breakout_usb_power_switch/kibot_error.log
         if-no-files-found: warn
-
