@@ -13,7 +13,7 @@ Compiled documentation can be read [here](https://paulsykes.me/ft231x_breakout_u
 
 Manufacturing & Releases
 ------------------------
-Fabrication outputs (Gerbers/BoM/etc..) are automatically generated for each release, the latest of which can be found [here](https://github.com/paulsykes/ft231x_breakout_usb_power_switch/releases/latest). Instuctions for generating your own manufacturing outputs can be found [here](hardware/kicad/ft231x_breakout_usb_power_switch).
+Fabrication outputs (Gerbers/BoM/etc..) are automatically generated for each release, the latest of which can be found [here](https://github.com/paulsykes/ft231x_breakout_usb_power_switch/releases/latest). Instructions for generating your own manufacturing outputs can be found [here](hardware/kicad/ft231x_breakout_usb_power_switch).
 
 License Information
 -------------------
