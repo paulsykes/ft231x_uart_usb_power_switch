@@ -1,7 +1,7 @@
 Fabrication
 ===========
-The fabrication outputs (Gebers, BOM) for this project are built using
-[KiBot](https://github.com/INTI-CMNB/KiBot). This document describes how to build the fabrication outputs.
+The fabrication outputs (Gebers/BoM/etc..) for this project are built using
+[KiBot](https://github.com/INTI-CMNB/KiBot). The outputs are automatically generated for each release, the latest of which can be found [here](https://github.com/paulsykes/ft231x_breakout_usb_power_switch/releases/latest).This document will cover generating manufacturing outputs locally.
 
 Build Environment
 -----------------
