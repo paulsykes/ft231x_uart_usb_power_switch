@@ -113,9 +113,12 @@ jobs:
 
       - name: Retrieve
         uses: actions/download-artifact@v2
+        with:
+          path: fabrication
 
       - name: Display structure of downloaded files
         run: ls -R
+        working-directory: fabrication
 
       - name: Create Release
         id: create_release
@@ -127,6 +130,7 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
+
 
 #      - name: Upload Release Asset
 #        id: upload-release-asset 
