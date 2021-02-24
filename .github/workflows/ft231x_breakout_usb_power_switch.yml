@@ -4,6 +4,9 @@ name: "KiCad CI/CD for ft231x_breakout_usb_power_switch"
 # events but only for the master branch
 on:
   push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
     paths:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.sch'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb'
@@ -17,8 +20,6 @@ on:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kibot.yaml'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/Makefile'
       - '.github/workflows/ft231x_breakout_usb_power_switch.yml'
-    tags:
-      - 'v*'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -102,3 +103,16 @@ jobs:
           hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/
           hardware/kicad/ft231x_breakout_usb_power_switch/kibot_error.log
         if-no-files-found: warn
+
+  Release:
+    needs: ERC
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Retrieve
+        uses: actions/download-artifact@v1
+        with:
+          name: ERC_Output
+
