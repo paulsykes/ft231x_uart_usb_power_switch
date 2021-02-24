@@ -118,10 +118,7 @@ jobs:
 
       - name: Zip
         run: |
-          zip -r fabrication.zip ./fabrication/
-
-      - name: Display structure of downloaded files
-        run: ls -R
+          zip -r fabrication.zip ./
         working-directory: fabrication
 
       - name: Create Release
