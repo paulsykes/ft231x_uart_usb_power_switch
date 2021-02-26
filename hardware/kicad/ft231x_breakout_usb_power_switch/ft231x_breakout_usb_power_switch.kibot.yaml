@@ -150,6 +150,32 @@ outputs:
       <<: *bom_options
       format: CSV
 
+  - name: 'bom_partsbox'
+    comment: "BoM for partsbox"
+    type: bom
+    dir: BoM
+    options:
+      output: '%f-%i_%r_partsbox.%x'
+      ref_separator: ','
+      columns:
+        - field: 'Row'
+          name: 'Id'
+        - field: 'References'
+          name: Designator
+        - field: 'Footprint'
+          name: 'Package'
+        - field: 'Quantity Per PCB'
+          name: 'Quantity'
+        - field: 'manf#'
+          name: 'Designation'
+        - field: 'manf'
+          name: 'Supplier and ref'
+      csv:
+        hide_pcb_info: true
+        hide_stats_info: true
+        quote_all: false
+        separator: ';'
+
   - name: 'gerbers'
     comment: "Gerbers for the board house"
     type: gerber
