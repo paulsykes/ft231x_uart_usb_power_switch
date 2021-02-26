@@ -23,10 +23,10 @@ import:
 filters:
   - name: 'exclude_any'
     type: 'generic'
-    comment: 'Exclude logos, testpoints, mounting holes, fiducials and power'
+    comment: 'Exclude logos, testpoints, mounting holes, solder jumpers, fiducials and power'
     exclude_any:
       - column: Reference
-        regex: '^(G|#|TP|H|F).*'
+        regex: '^(G|#|TP|H|JP|F).*'
 
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
