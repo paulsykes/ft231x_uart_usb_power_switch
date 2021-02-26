@@ -74,6 +74,14 @@ outputs:
       - layer: B.Cu
       - layer: Dwgs.User
 
+  - name: step
+    comment: "Generate 3D model (STEP)"
+    type: step
+    dir: 3D
+    options:
+      metric_units: true
+      origin: 140,85
+
   - name: 'interactive_bom'
     comment: "Interactive Bill of Materials (HTML)"
     type: ibom
