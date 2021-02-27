@@ -23,10 +23,10 @@ import:
 filters:
   - name: 'exclude_any'
     type: 'generic'
-    comment: 'Exclude logos, testpoints, mounting holes, solder jumpers, fiducials and power'
+    comment: 'Exclude logos, testpoints, mounting holes, solder jumpers'
     exclude_any:
       - column: Reference
-        regex: '^(G|#|TP|H|JP|F).*'
+        regex: '^(G|#|TP|H|JP).*'
 
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
@@ -170,6 +170,7 @@ outputs:
           name: 'Designation'
         - field: 'manf'
           name: 'Supplier and ref'
+      exclude_filter: 'exclude_any'
       csv:
         hide_pcb_info: true
         hide_stats_info: true
