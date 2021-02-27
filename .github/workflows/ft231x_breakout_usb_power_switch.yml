@@ -4,15 +4,14 @@ name: "KiCad CI/CD for ft231x_breakout_usb_power_switch"
 # events but only for the master branch
 on:
   push:
-    # Sequence of patterns matched against refs/tags
-    tags:
-    - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
     paths:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.sch'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kibot.yaml'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/Makefile'
       - '.github/workflows/ft231x_breakout_usb_power_switch.yml'
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
   pull_request:
     paths:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.sch'
