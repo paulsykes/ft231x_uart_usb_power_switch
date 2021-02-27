@@ -1,11 +1,15 @@
 FT231X Breakout USB Power Switch
-=====================================
+================================
+![FT231X Breakout USB Power Switch](https://github.com/paulsykes/ft231x_breakout_usb_power_switch/releases/download/v0.10.1/ft231x_breakout_usb_power_switch.jpg)
+
 FT231X USB to serial UART breakout with integrated current limited USB power switch.
+
+This board a convenient breakout for the excellent FTDI FT231X USB to serial interface, it also allows you to switch on and off power to a USB powered device. This is super useful if you are debugging the serial output of a device during hard reset conditions and wish to automate the reset process, even more so if the device you are trying to monitor is connected to a remote computer.
 
 - USB power output switched by FT231X CBUS0 pin
 - Active low, over current status readable by FT231X CBUS3 pin (500 mA)
-
-On power up, the USB power output is switched on.
+- On power up, the USB power output is switched on
+- USB data lines are connected to the FT231X, they are *NOT* passed through to the power switchable USB Type A port. 
 
 Documentation
 -------------
