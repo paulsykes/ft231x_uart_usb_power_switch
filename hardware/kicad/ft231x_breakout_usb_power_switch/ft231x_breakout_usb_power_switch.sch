@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "ft231x breakout usb power switch"
 Date "2021-01-20"
-Rev "0.1"
+Rev "0.10"
 Comp ""
 Comment1 ""
 Comment2 ""
