@@ -6,4 +6,5 @@
   (lib (name -Module)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Module.lib)(options "")(descr ""))
   (lib (name -Passive)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Passive.lib)(options "")(descr ""))
   (lib (name -Jumper)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Jumper.lib)(options "")(descr ""))
+  (lib (name -Switch)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Switch.lib)(options "")(descr ""))
 )
