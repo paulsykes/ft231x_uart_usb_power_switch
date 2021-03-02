@@ -1198,108 +1198,20 @@ $EndComp
 Text Label 7750 1550 2    50   ~ 0
 FAULT
 $Comp
-L -Passive:R R11
-U 1 1 60E4C5B0
-P 2800 7000
-F 0 "R11" V 2900 7000 50  0000 C CNN
-F 1 "1k" V 2800 7000 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2730 7000 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2800 7000 50  0001 L CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2800 7000 50  0001 L CNN "Desc"
-F 5 "Yageo" V 2800 7000 50  0001 L CNN "manf"
-F 6 "RC0603JR-071KL" V 2800 7000 50  0001 L CNN "manf#"
-F 7 "Yes" V 2800 7000 50  0001 L CNN "substitute"
-F 8 "C14676" V 2800 7000 50  0001 L CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" V 2800 7000 50  0001 L CNN "digikey#"
-F 10 "9233385" V 2800 7000 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-071KL" V 2800 7000 50  0001 L CNN "mouser#"
-	1    2800 7000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L -Discrete:LED D4
-U 1 1 60E4C5B6
-P 2450 7000
-F 0 "D4" H 2500 6850 50  0000 C CNN
-F 1 "LED" H 2350 6850 50  0000 C CNN
-F 2 "-Discrete:LED_0603_1608Metric" H 2450 7000 50  0001 C CNN
-F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 2450 7000 50  0001 C CNN
-F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 2450 7000 50  0001 C CNN "Desc"
-F 5 "Everlight Electronics" H 2450 7000 50  0001 C CNN "manf"
-F 6 "19-217/GHC-YR1S2/3T" H 2450 7000 50  0001 C CNN "manf#"
-F 7 "Yes" H 2450 7000 50  0001 C CNN "substitute"
-F 8 "C72043" H 2450 7000 50  0001 C CNN "LCSC#"
-F 9 "19-217/GHC-YR1S2/3T-ND" H 2450 7000 50  0001 C CNN "digikey#"
-F 10 "" H 2450 7000 50  0001 C CNN "element14#"
-F 11 "638-19217GHCYR1S23T" H 2450 7000 50  0001 C CNN "mouser#"
-	1    2450 7000
-	-1   0    0    1   
-$EndComp
-$Comp
-L -Chip:SN74LVC1G04DBVR U4
-U 1 1 60F27EBB
-P 1850 7000
-F 0 "U4" H 1850 7467 50  0000 C CNN
-F 1 "SN74LVC1G04DBVR" H 1850 7376 50  0000 C CNN
-F 2 "-Chip:SOT-23-5" H 1850 7000 50  0001 L BNN
-F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g04" H 1850 7000 50  0001 L BNN
-F 4 "74LVC Inverter  1-ch 1-input 1.65V ~ 5.5V 10uA SOT-23-5 RoHS" H 1850 7000 50  0001 L BNN "Desc"
-F 5 "Texas Instruments" H 1850 7000 50  0001 L BNN "manf"
-F 6 "SN74LVC1G04DBVR" H 1850 7000 50  0001 L BNN "manf#"
-F 7 "Yes" H 1850 7000 50  0001 L BNN "substitute"
-F 8 "C7827" H 1850 7000 50  0001 L CNN "LCSC#"
-F 9 "296-11599-1-ND" H 1850 7000 50  0001 L CNN "digikey#"
-F 10 "3006604" H 1850 7000 50  0001 L CNN "element14#"
-F 11 "595-SN74LVC1G04DBVR" H 1850 7000 50  0001 L CNN "mouser#"
-	1    1850 7000
-	1    0    0    -1  
-$EndComp
-$Comp
 L -Flag:+3.3V #PWR015
 U 1 1 60F2D291
-P 950 6750
-F 0 "#PWR015" H 950 6600 50  0001 C CNN
-F 1 "+3.3V" H 850 6900 50  0000 L CNN
-F 2 "" H 950 6750 50  0001 C CNN
-F 3 "" H 950 6750 50  0001 C CNN
-	1    950  6750
+P 1000 6750
+F 0 "#PWR015" H 1000 6600 50  0001 C CNN
+F 1 "+3.3V" H 900 6900 50  0000 L CNN
+F 2 "" H 1000 6750 50  0001 C CNN
+F 3 "" H 1000 6750 50  0001 C CNN
+	1    1000 6750
 	1    0    0    -1  
 $EndComp
-$Comp
-L -Flag:GND #PWR016
-U 1 1 60F2DA0F
-P 2350 7250
-F 0 "#PWR016" H 2350 7000 50  0001 C CNN
-F 1 "GND" H 2350 7100 50  0000 C CNN
-F 2 "" H 2350 7250 50  0001 C CNN
-F 3 "" H 2350 7250 50  0001 C CNN
-	1    2350 7250
-	1    0    0    -1  
-$EndComp
-Text Label 1350 7000 2    50   ~ 0
+Text Label 1400 7000 2    50   ~ 0
 FAULT
-NoConn ~ 2250 6800
-$Comp
-L -Flag:GND #PWR018
-U 1 1 60F51220
-P 3350 7250
-F 0 "#PWR018" H 3350 7000 50  0001 C CNN
-F 1 "GND" H 3350 7100 50  0000 C CNN
-F 2 "" H 3350 7250 50  0001 C CNN
-F 3 "" H 3350 7250 50  0001 C CNN
-	1    3350 7250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1350 7000 1450 7000
-Wire Wire Line
-	2250 7000 2300 7000
-Wire Wire Line
-	2600 7000 2650 7000
-Wire Wire Line
-	2250 7200 2350 7200
-Wire Wire Line
-	2350 7200 2350 7250
+	1400 7000 1500 7000
 Wire Wire Line
 	1450 6050 1600 6050
 $Comp
@@ -1325,31 +1237,6 @@ Wire Wire Line
 	2250 6050 2300 6050
 Wire Wire Line
 	2600 6050 2700 6050
-$Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP7
-U 1 1 610CE943
-P 3150 7000
-F 0 "JP7" H 3100 7100 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 3195 7068 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3125 7000 50  0001 L CNN
-F 3 "" H 3125 7000 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 3150 7000 50  0001 L CNN "Desc"
-F 5 "N/A" H 3150 7000 50  0001 L CNN "manf"
-F 6 "N/A" H 3150 7000 50  0001 L CNN "manf#"
-F 7 "No" H 3150 7000 50  0001 L CNN "substitute"
-F 8 "" H 3150 7000 50  0001 L CNN "LCSC#"
-F 9 "" H 3150 7000 50  0001 L CNN "digikey#"
-F 10 "" H 3150 7000 50  0001 L CNN "element14#"
-F 11 "" H 3150 7000 50  0001 L CNN "mouser#"
-	1    3150 7000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3300 7000 3350 7000
-Wire Wire Line
-	3350 7000 3350 7250
-Wire Wire Line
-	2950 7000 3000 7000
 $Comp
 L -Passive:R R12
 U 1 1 6114CC1F
@@ -1510,42 +1397,42 @@ $EndComp
 $Comp
 L -Passive:C C10
 U 1 1 615D409A
-P 950 7000
-F 0 "C10" H 950 7100 50  0000 L CNN
-F 1 "0.1uF" H 950 6900 50  0000 L CNN
-F 2 "-Passive:C_0603" H 988 6850 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 950 7000 50  0001 L CNN
-F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 950 7000 50  0001 R CNN "Desc"
-F 5 "Yageo" H 950 7000 50  0001 L CNN "manf"
-F 6 "CC0603KRX7R9BB104" H 950 7000 50  0001 L CNN "manf#"
-F 7 "Yes" H 950 7000 50  0001 L CNN "substitute"
-F 8 "C14663" H 950 7000 50  0001 L CNN "LCSC#"
-F 9 "311-1344-1-ND" H 950 7000 50  0001 L CNN "digikey#"
-F 10 "1362556" H 950 7000 50  0001 L CNN "element14#"
-F 11 "603-CC603KRX7R9BB104" H 950 7000 50  0001 L CNN "mouser#"
-	1    950  7000
+P 1000 7000
+F 0 "C10" H 1000 7100 50  0000 L CNN
+F 1 "0.1uF" H 1000 6900 50  0000 L CNN
+F 2 "-Passive:C_0603" H 1038 6850 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 1000 7000 50  0001 L CNN
+F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 1000 7000 50  0001 R CNN "Desc"
+F 5 "Yageo" H 1000 7000 50  0001 L CNN "manf"
+F 6 "CC0603KRX7R9BB104" H 1000 7000 50  0001 L CNN "manf#"
+F 7 "Yes" H 1000 7000 50  0001 L CNN "substitute"
+F 8 "C14663" H 1000 7000 50  0001 L CNN "LCSC#"
+F 9 "311-1344-1-ND" H 1000 7000 50  0001 L CNN "digikey#"
+F 10 "1362556" H 1000 7000 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX7R9BB104" H 1000 7000 50  0001 L CNN "mouser#"
+	1    1000 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Flag:GND #PWR0113
 U 1 1 615E2284
-P 950 7250
-F 0 "#PWR0113" H 950 7000 50  0001 C CNN
-F 1 "GND" H 950 7100 50  0000 C CNN
-F 2 "" H 950 7250 50  0001 C CNN
-F 3 "" H 950 7250 50  0001 C CNN
-	1    950  7250
+P 1000 7250
+F 0 "#PWR0113" H 1000 7000 50  0001 C CNN
+F 1 "GND" H 1000 7100 50  0000 C CNN
+F 2 "" H 1000 7250 50  0001 C CNN
+F 3 "" H 1000 7250 50  0001 C CNN
+	1    1000 7250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  7250 950  7150
+	1000 7250 1000 7150
 Wire Wire Line
-	950  6850 950  6800
+	1000 6850 1000 6800
 Wire Wire Line
-	950  6800 1450 6800
-Connection ~ 950  6800
+	1000 6800 1500 6800
+Connection ~ 1000 6800
 Wire Wire Line
-	950  6800 950  6750
+	1000 6800 1000 6750
 $Comp
 L -Passive:C C11
 U 1 1 6163EFDB
@@ -1721,7 +1608,7 @@ $Comp
 L -Switch:SW_MEC_5G SW1
 U 1 1 603DC885
 P 7700 2800
-F 0 "SW1" V 7700 2750 50  0000 C CNN
+F 0 "SW1" V 7700 2700 50  0000 C CNN
 F 1 "B3U-1000P" H 7850 2700 50  0001 C CNN
 F 2 "-Switch:B3U-1000P" H 7700 3000 50  0001 L CNN
 F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-b3u.pdf" H 7700 3000 50  0001 L CNN
@@ -1935,173 +1822,169 @@ Wire Wire Line
 $Comp
 L -Chip:NC7SZ66M5X U5
 U 1 1 60ADA145
-P 7800 5950
-F 0 "U5" H 7650 6300 50  0000 C CNN
-F 1 "NC7SZ66M5X" H 7800 5600 50  0000 C CNN
-F 2 "-Chip:SOT-23-5" H 7950 5500 50  0001 L BNN
-F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 7800 5950 50  0001 L BNN
-F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 7600 5400 50  0001 L BNN "Desc"
-F 5 "On Semiconductor" H 7600 5350 50  0001 L CNN "manf"
-F 6 "NC7SZ66M5X" H 7600 5250 50  0001 L CNN "manf#"
-F 7 "C232791" H 7600 4950 50  0001 L CNN "LCSC#"
-F 8 "NC7SZ66M5XCT-ND" H 7600 5150 50  0001 L CNN "digikey#"
-F 9 "2822594" H 7600 4850 50  0001 L CNN "element14#"
-F 10 "512-NC7SZ66M5X" H 7600 5050 50  0001 L CNN "mouser#"
-	1    7800 5950
+P 8000 5950
+F 0 "U5" H 7850 6300 50  0000 C CNN
+F 1 "NC7SZ66M5X" H 8000 5600 50  0000 C CNN
+F 2 "-Chip:SOT-23-5" H 8150 5500 50  0001 L BNN
+F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 8000 5950 50  0001 L BNN
+F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 7800 5400 50  0001 L BNN "Desc"
+F 5 "On Semiconductor" H 7800 5350 50  0001 L CNN "manf"
+F 6 "NC7SZ66M5X" H 7800 5250 50  0001 L CNN "manf#"
+F 7 "C232791" H 7800 4950 50  0001 L CNN "LCSC#"
+F 8 "NC7SZ66M5XCT-ND" H 7800 5150 50  0001 L CNN "digikey#"
+F 9 "2822594" H 7800 4850 50  0001 L CNN "element14#"
+F 10 "512-NC7SZ66M5X" H 7800 5050 50  0001 L CNN "mouser#"
+	1    8000 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Passive:C C13
 U 1 1 60B4D253
-P 8550 5950
-F 0 "C13" H 8550 6050 50  0000 L CNN
-F 1 "0.1uF" H 8550 5850 50  0000 L CNN
-F 2 "-Passive:C_0603" H 8588 5800 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 8550 5950 50  0001 L CNN
-F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 8550 5950 50  0001 L CNN "Desc"
-F 5 "Yageo" H 8550 5950 50  0001 L CNN "manf"
-F 6 "CC0603KRX7R9BB104" H 8550 5950 50  0001 L CNN "manf#"
-F 7 "Yes" H 8550 5950 50  0001 L CNN "substitute"
-F 8 "C14663" H 8550 5950 50  0001 L CNN "LCSC#"
-F 9 "311-1344-1-ND" H 8550 5950 50  0001 L CNN "digikey#"
-F 10 "1362556" H 8550 5950 50  0001 L CNN "element14#"
-F 11 "603-CC603KRX7R9BB104" H 8550 5950 50  0001 L CNN "mouser#"
-	1    8550 5950
+P 8750 5950
+F 0 "C13" H 8750 6050 50  0000 L CNN
+F 1 "0.1uF" H 8750 5850 50  0000 L CNN
+F 2 "-Passive:C_0603" H 8788 5800 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 8750 5950 50  0001 L CNN
+F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 8750 5950 50  0001 L CNN "Desc"
+F 5 "Yageo" H 8750 5950 50  0001 L CNN "manf"
+F 6 "CC0603KRX7R9BB104" H 8750 5950 50  0001 L CNN "manf#"
+F 7 "Yes" H 8750 5950 50  0001 L CNN "substitute"
+F 8 "C14663" H 8750 5950 50  0001 L CNN "LCSC#"
+F 9 "311-1344-1-ND" H 8750 5950 50  0001 L CNN "digikey#"
+F 10 "1362556" H 8750 5950 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX7R9BB104" H 8750 5950 50  0001 L CNN "mouser#"
+	1    8750 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Flag:GND #PWR024
 U 1 1 60B50415
-P 8550 6200
-F 0 "#PWR024" H 8550 5950 50  0001 C CNN
-F 1 "GND" H 8550 6050 50  0000 C CNN
-F 2 "" H 8550 6200 50  0001 C CNN
-F 3 "" H 8550 6200 50  0001 C CNN
-	1    8550 6200
+P 8750 6200
+F 0 "#PWR024" H 8750 5950 50  0001 C CNN
+F 1 "GND" H 8750 6050 50  0000 C CNN
+F 2 "" H 8750 6200 50  0001 C CNN
+F 3 "" H 8750 6200 50  0001 C CNN
+	1    8750 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Flag:+3.3V #PWR023
 U 1 1 60B51F80
-P 8550 5700
-F 0 "#PWR023" H 8550 5550 50  0001 C CNN
-F 1 "+3.3V" H 8550 5850 50  0000 C CNN
-F 2 "" H 8550 5700 50  0001 C CNN
-F 3 "" H 8550 5700 50  0001 C CNN
-	1    8550 5700
+P 8750 5700
+F 0 "#PWR023" H 8750 5550 50  0001 C CNN
+F 1 "+3.3V" H 8750 5850 50  0000 C CNN
+F 2 "" H 8750 5700 50  0001 C CNN
+F 3 "" H 8750 5700 50  0001 C CNN
+	1    8750 5700
 	1    0    0    -1  
 $EndComp
-Text Label 7400 5950 2    50   ~ 0
+Text Label 8400 5950 0    50   ~ 0
 TXD
-Text Label 8200 5950 0    50   ~ 0
+Text Label 7600 5950 2    50   ~ 0
 STXD
-Text Label 7400 5750 2    50   ~ 0
+Text Label 7250 5750 2    50   ~ 0
 EN
 Wire Wire Line
-	7400 5750 7450 5750
+	7600 5950 7650 5950
 Wire Wire Line
-	7400 5950 7450 5950
+	8350 5950 8400 5950
 Wire Wire Line
-	8150 5950 8200 5950
+	8350 5750 8750 5750
 Wire Wire Line
-	8150 5750 8550 5750
+	8750 5750 8750 5700
 Wire Wire Line
-	8550 5750 8550 5700
+	8750 5800 8750 5750
+Connection ~ 8750 5750
 Wire Wire Line
-	8550 5800 8550 5750
-Connection ~ 8550 5750
+	8750 6100 8750 6150
 Wire Wire Line
-	8550 6100 8550 6150
+	8400 6150 8750 6150
+Connection ~ 8750 6150
 Wire Wire Line
-	8200 6150 8550 6150
-Connection ~ 8550 6150
-Wire Wire Line
-	8550 6150 8550 6200
+	8750 6150 8750 6200
 $Comp
 L -Chip:NC7SZ66M5X U6
 U 1 1 60BC9E11
-P 9850 5950
-F 0 "U6" H 9700 6300 50  0000 C CNN
-F 1 "NC7SZ66M5X" H 9850 5600 50  0000 C CNN
-F 2 "-Chip:SOT-23-5" H 10000 5500 50  0001 L BNN
-F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 9850 5950 50  0001 L BNN
-F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 9650 5400 50  0001 L BNN "Desc"
-F 5 "On Semiconductor" H 9650 5350 50  0001 L CNN "manf"
-F 6 "NC7SZ66M5X" H 9650 5250 50  0001 L CNN "manf#"
-F 7 "C232791" H 9650 4950 50  0001 L CNN "LCSC#"
-F 8 "NC7SZ66M5XCT-ND" H 9650 5150 50  0001 L CNN "digikey#"
-F 9 "2822594" H 9650 4850 50  0001 L CNN "element14#"
-F 10 "512-NC7SZ66M5X" H 9650 5050 50  0001 L CNN "mouser#"
-	1    9850 5950
+P 10000 5950
+F 0 "U6" H 9850 6300 50  0000 C CNN
+F 1 "NC7SZ66M5X" H 10000 5600 50  0000 C CNN
+F 2 "-Chip:SOT-23-5" H 10150 5500 50  0001 L BNN
+F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 10000 5950 50  0001 L BNN
+F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 9800 5400 50  0001 L BNN "Desc"
+F 5 "On Semiconductor" H 9800 5350 50  0001 L CNN "manf"
+F 6 "NC7SZ66M5X" H 9800 5250 50  0001 L CNN "manf#"
+F 7 "C232791" H 9800 4950 50  0001 L CNN "LCSC#"
+F 8 "NC7SZ66M5XCT-ND" H 9800 5150 50  0001 L CNN "digikey#"
+F 9 "2822594" H 9800 4850 50  0001 L CNN "element14#"
+F 10 "512-NC7SZ66M5X" H 9800 5050 50  0001 L CNN "mouser#"
+	1    10000 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Passive:C C14
 U 1 1 60BC9E1F
-P 10600 5950
-F 0 "C14" H 10600 6050 50  0000 L CNN
-F 1 "0.1uF" H 10600 5850 50  0000 L CNN
-F 2 "-Passive:C_0603" H 10638 5800 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 10600 5950 50  0001 L CNN
-F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 10600 5950 50  0001 L CNN "Desc"
-F 5 "Yageo" H 10600 5950 50  0001 L CNN "manf"
-F 6 "CC0603KRX7R9BB104" H 10600 5950 50  0001 L CNN "manf#"
-F 7 "Yes" H 10600 5950 50  0001 L CNN "substitute"
-F 8 "C14663" H 10600 5950 50  0001 L CNN "LCSC#"
-F 9 "311-1344-1-ND" H 10600 5950 50  0001 L CNN "digikey#"
-F 10 "1362556" H 10600 5950 50  0001 L CNN "element14#"
-F 11 "603-CC603KRX7R9BB104" H 10600 5950 50  0001 L CNN "mouser#"
-	1    10600 5950
+P 10750 5950
+F 0 "C14" H 10750 6050 50  0000 L CNN
+F 1 "0.1uF" H 10750 5850 50  0000 L CNN
+F 2 "-Passive:C_0603" H 10788 5800 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 10750 5950 50  0001 L CNN
+F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 10750 5950 50  0001 L CNN "Desc"
+F 5 "Yageo" H 10750 5950 50  0001 L CNN "manf"
+F 6 "CC0603KRX7R9BB104" H 10750 5950 50  0001 L CNN "manf#"
+F 7 "Yes" H 10750 5950 50  0001 L CNN "substitute"
+F 8 "C14663" H 10750 5950 50  0001 L CNN "LCSC#"
+F 9 "311-1344-1-ND" H 10750 5950 50  0001 L CNN "digikey#"
+F 10 "1362556" H 10750 5950 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX7R9BB104" H 10750 5950 50  0001 L CNN "mouser#"
+	1    10750 5950
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Flag:GND #PWR026
 U 1 1 60BC9E25
-P 10600 6200
-F 0 "#PWR026" H 10600 5950 50  0001 C CNN
-F 1 "GND" H 10600 6050 50  0000 C CNN
-F 2 "" H 10600 6200 50  0001 C CNN
-F 3 "" H 10600 6200 50  0001 C CNN
-	1    10600 6200
+P 10750 6200
+F 0 "#PWR026" H 10750 5950 50  0001 C CNN
+F 1 "GND" H 10750 6050 50  0000 C CNN
+F 2 "" H 10750 6200 50  0001 C CNN
+F 3 "" H 10750 6200 50  0001 C CNN
+	1    10750 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Flag:+3.3V #PWR025
 U 1 1 60BC9E2B
-P 10600 5700
-F 0 "#PWR025" H 10600 5550 50  0001 C CNN
-F 1 "+3.3V" H 10600 5850 50  0000 C CNN
-F 2 "" H 10600 5700 50  0001 C CNN
-F 3 "" H 10600 5700 50  0001 C CNN
-	1    10600 5700
+P 10750 5700
+F 0 "#PWR025" H 10750 5550 50  0001 C CNN
+F 1 "+3.3V" H 10750 5850 50  0000 C CNN
+F 2 "" H 10750 5700 50  0001 C CNN
+F 3 "" H 10750 5700 50  0001 C CNN
+	1    10750 5700
 	1    0    0    -1  
 $EndComp
-Text Label 9450 5950 2    50   ~ 0
+Text Label 10400 5950 0    50   ~ 0
 RES
-Text Label 10250 5950 0    50   ~ 0
+Text Label 9600 5950 2    50   ~ 0
 SRES
-Text Label 9450 5750 2    50   ~ 0
+Text Label 9250 5750 2    50   ~ 0
 EN
 Wire Wire Line
-	9450 5750 9500 5750
+	9600 5950 9650 5950
 Wire Wire Line
-	9450 5950 9500 5950
+	10350 5950 10400 5950
 Wire Wire Line
-	10200 5950 10250 5950
+	10350 5750 10750 5750
 Wire Wire Line
-	10200 5750 10600 5750
+	10750 5750 10750 5700
 Wire Wire Line
-	10600 5750 10600 5700
+	10750 5800 10750 5750
+Connection ~ 10750 5750
 Wire Wire Line
-	10600 5800 10600 5750
-Connection ~ 10600 5750
+	10750 6100 10750 6150
 Wire Wire Line
-	10600 6100 10600 6150
+	10400 6150 10750 6150
+Connection ~ 10750 6150
 Wire Wire Line
-	10250 6150 10600 6150
-Connection ~ 10600 6150
-Wire Wire Line
-	10600 6150 10600 6200
+	10750 6150 10750 6200
 Text Notes 7800 5450 0    61   ~ 12
 Bus Switch (To Prevent Back Powering Target Over UART)
 Wire Notes Line
@@ -2191,4 +2074,163 @@ Wire Wire Line
 	7400 3100 7400 3050
 Text Notes 5500 3050 0    61   ~ 0
 USB power output is enabled by\ndefault. To disable USB output\non power up, bridge jumper JP8.
+Wire Wire Line
+	2900 7000 2950 7000
+Wire Wire Line
+	3300 7000 3300 7250
+Wire Wire Line
+	3250 7000 3300 7000
+$Comp
+L -Jumper:SolderJumper_2_Bridged_Alt JP7
+U 1 1 610CE943
+P 3100 7000
+F 0 "JP7" H 3050 7100 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged_Alt" V 3145 7068 50  0001 L CNN
+F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3075 7000 50  0001 L CNN
+F 3 "" H 3075 7000 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 3100 7000 50  0001 L CNN "Desc"
+F 5 "N/A" H 3100 7000 50  0001 L CNN "manf"
+F 6 "N/A" H 3100 7000 50  0001 L CNN "manf#"
+F 7 "No" H 3100 7000 50  0001 L CNN "substitute"
+F 8 "" H 3100 7000 50  0001 L CNN "LCSC#"
+F 9 "" H 3100 7000 50  0001 L CNN "digikey#"
+F 10 "" H 3100 7000 50  0001 L CNN "element14#"
+F 11 "" H 3100 7000 50  0001 L CNN "mouser#"
+	1    3100 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 7200 2300 7250
+Wire Wire Line
+	2200 7200 2300 7200
+Wire Wire Line
+	2550 7000 2600 7000
+Wire Wire Line
+	2200 7000 2250 7000
+$Comp
+L -Flag:GND #PWR018
+U 1 1 60F51220
+P 3300 7250
+F 0 "#PWR018" H 3300 7000 50  0001 C CNN
+F 1 "GND" H 3300 7100 50  0000 C CNN
+F 2 "" H 3300 7250 50  0001 C CNN
+F 3 "" H 3300 7250 50  0001 C CNN
+	1    3300 7250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 2200 6800
+$Comp
+L -Flag:GND #PWR016
+U 1 1 60F2DA0F
+P 2300 7250
+F 0 "#PWR016" H 2300 7000 50  0001 C CNN
+F 1 "GND" H 2300 7100 50  0000 C CNN
+F 2 "" H 2300 7250 50  0001 C CNN
+F 3 "" H 2300 7250 50  0001 C CNN
+	1    2300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L -Chip:SN74LVC1G04DBVR U4
+U 1 1 60F27EBB
+P 1850 7000
+F 0 "U4" H 1850 7467 50  0000 C CNN
+F 1 "SN74LVC1G04DBVR" H 1850 7376 50  0000 C CNN
+F 2 "-Chip:SOT-23-5" H 1850 7000 50  0001 L BNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74lvc1g04" H 1850 7000 50  0001 L BNN
+F 4 "74LVC Inverter  1-ch 1-input 1.65V ~ 5.5V 10uA SOT-23-5 RoHS" H 1850 7000 50  0001 L BNN "Desc"
+F 5 "Texas Instruments" H 1850 7000 50  0001 L BNN "manf"
+F 6 "SN74LVC1G04DBVR" H 1850 7000 50  0001 L BNN "manf#"
+F 7 "Yes" H 1850 7000 50  0001 L BNN "substitute"
+F 8 "C7827" H 1850 7000 50  0001 L CNN "LCSC#"
+F 9 "296-11599-1-ND" H 1850 7000 50  0001 L CNN "digikey#"
+F 10 "3006604" H 1850 7000 50  0001 L CNN "element14#"
+F 11 "595-SN74LVC1G04DBVR" H 1850 7000 50  0001 L CNN "mouser#"
+	1    1850 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L -Discrete:LED D4
+U 1 1 60E4C5B6
+P 2400 7000
+F 0 "D4" H 2450 6850 50  0000 C CNN
+F 1 "LED" H 2300 6850 50  0000 C CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 2400 7000 50  0001 C CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 2400 7000 50  0001 C CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 2400 7000 50  0001 C CNN "Desc"
+F 5 "Everlight Electronics" H 2400 7000 50  0001 C CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 2400 7000 50  0001 C CNN "manf#"
+F 7 "Yes" H 2400 7000 50  0001 C CNN "substitute"
+F 8 "C72043" H 2400 7000 50  0001 C CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 2400 7000 50  0001 C CNN "digikey#"
+F 10 "" H 2400 7000 50  0001 C CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 2400 7000 50  0001 C CNN "mouser#"
+	1    2400 7000
+	-1   0    0    1   
+$EndComp
+$Comp
+L -Passive:R R11
+U 1 1 60E4C5B0
+P 2750 7000
+F 0 "R11" V 2850 7000 50  0000 C CNN
+F 1 "1k" V 2750 7000 50  0000 C CNN
+F 2 "-Passive:R_0603" V 2680 7000 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2750 7000 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2750 7000 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2750 7000 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2750 7000 50  0001 L CNN "manf#"
+F 7 "Yes" V 2750 7000 50  0001 L CNN "substitute"
+F 8 "C14676" V 2750 7000 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2750 7000 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2750 7000 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2750 7000 50  0001 L CNN "mouser#"
+	1    2750 7000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L -Passive:R R17
+U 1 1 6056C75A
+P 9450 5750
+F 0 "R17" V 9550 5750 50  0000 C CNN
+F 1 "1k" V 9450 5750 50  0000 C CNN
+F 2 "-Passive:R_0603" V 9380 5750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9450 5750 50  0001 C CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 9450 5750 50  0001 C CNN "Desc"
+F 5 "Yageo" H 9450 5750 50  0001 C CNN "manf"
+F 6 "RC0603JR-071KL" H 9450 5750 50  0001 C CNN "manf#"
+F 7 "Yes" H 9450 5750 50  0001 C CNN "substitute"
+F 8 "C14676" H 9450 5750 50  0001 C CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" H 9450 5750 50  0001 C CNN "digikey#"
+F 10 "9233385" H 9450 5750 50  0001 C CNN "element14#"
+F 11 "603-RC0603JR-071KL" H 9450 5750 50  0001 C CNN "mouser#"
+	1    9450 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9250 5750 9300 5750
+Wire Wire Line
+	9600 5750 9650 5750
+$Comp
+L -Passive:R R16
+U 1 1 6058B0AB
+P 7450 5750
+F 0 "R16" V 7550 5750 50  0000 C CNN
+F 1 "1k" V 7450 5750 50  0000 C CNN
+F 2 "-Passive:R_0603" V 7380 5750 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7450 5750 50  0001 C CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7450 5750 50  0001 C CNN "Desc"
+F 5 "Yageo" H 7450 5750 50  0001 C CNN "manf"
+F 6 "RC0603JR-071KL" H 7450 5750 50  0001 C CNN "manf#"
+F 7 "Yes" H 7450 5750 50  0001 C CNN "substitute"
+F 8 "C14676" H 7450 5750 50  0001 C CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" H 7450 5750 50  0001 C CNN "digikey#"
+F 10 "9233385" H 7450 5750 50  0001 C CNN "element14#"
+F 11 "603-RC0603JR-071KL" H 7450 5750 50  0001 C CNN "mouser#"
+	1    7450 5750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 5750 7650 5750
+Wire Wire Line
+	7300 5750 7250 5750
 $EndSCHEMATC
