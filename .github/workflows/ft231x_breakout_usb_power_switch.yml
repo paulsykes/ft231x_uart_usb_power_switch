@@ -10,7 +10,6 @@ on:
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kibot.yaml'
       - 'hardware/kicad/ft231x_breakout_usb_power_switch/Makefile'
       - '.github/workflows/ft231x_breakout_usb_power_switch.yml'
-  push:
     tags:
       - 'v*'
   pull_request:
