@@ -1174,7 +1174,7 @@ F 3 "" H 2700 6050 50  0001 C CNN
 	1    2700 6050
 	0    -1   -1   0   
 $EndComp
-Text Label 7750 2350 2    50   ~ 0
+Text Label 7800 2350 2    50   ~ 0
 EN
 Text Label 1450 6050 2    50   ~ 0
 EN
@@ -1241,7 +1241,7 @@ $Comp
 L -Passive:R R12
 U 1 1 6114CC1F
 P 8100 2050
-F 0 "R12" V 8200 2050 50  0000 C CNN
+F 0 "R12" H 7950 2050 50  0000 C CNN
 F 1 "1k" V 8100 2050 50  0000 C CNN
 F 2 "-Passive:R_0603" V 8030 2050 50  0001 C CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8100 2050 50  0001 C CNN
@@ -1724,8 +1724,6 @@ Wire Wire Line
 Wire Wire Line
 	5350 1450 4950 1450
 Wire Wire Line
-	8100 2350 8100 2200
-Wire Wire Line
 	8100 1900 8100 1750
 Wire Wire Line
 	7700 3000 7700 3100
@@ -1791,7 +1789,6 @@ Wire Wire Line
 Wire Wire Line
 	950  3050 950  2950
 Connection ~ 1100 3050
-Connection ~ 8100 2350
 Wire Wire Line
 	1250 1750 1250 2550
 Wire Wire Line
@@ -1810,8 +1807,6 @@ Wire Wire Line
 Connection ~ 10150 2550
 Wire Wire Line
 	10150 2550 10150 2650
-Wire Wire Line
-	8100 2350 8100 2550
 Wire Wire Line
 	8050 2550 8100 2550
 Connection ~ 8100 2550
@@ -2015,63 +2010,56 @@ Wire Wire Line
 $Comp
 L -Passive:R R15
 U 1 1 60FED1B8
-P 7400 2900
-F 0 "R15" H 7550 2900 50  0000 C CNN
-F 1 "1k" V 7400 2900 50  0000 C CNN
-F 2 "-Passive:R_0603" V 7330 2900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7400 2900 50  0001 C CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7400 2900 50  0001 C CNN "Desc"
-F 5 "Yageo" H 7400 2900 50  0001 C CNN "manf"
-F 6 "RC0603JR-071KL" H 7400 2900 50  0001 C CNN "manf#"
-F 7 "Yes" H 7400 2900 50  0001 C CNN "substitute"
-F 8 "C14676" H 7400 2900 50  0001 C CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" H 7400 2900 50  0001 C CNN "digikey#"
-F 10 "9233385" H 7400 2900 50  0001 C CNN "element14#"
-F 11 "603-RC0603JR-071KL" H 7400 2900 50  0001 C CNN "mouser#"
-	1    7400 2900
+P 8500 2900
+F 0 "R15" H 8350 2900 50  0000 C CNN
+F 1 "1k" V 8500 2900 50  0000 C CNN
+F 2 "-Passive:R_0603" V 8430 2900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8500 2900 50  0001 C CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 8500 2900 50  0001 C CNN "Desc"
+F 5 "Yageo" H 8500 2900 50  0001 C CNN "manf"
+F 6 "RC0603JR-071KL" H 8500 2900 50  0001 C CNN "manf#"
+F 7 "Yes" H 8500 2900 50  0001 C CNN "substitute"
+F 8 "C14676" H 8500 2900 50  0001 C CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" H 8500 2900 50  0001 C CNN "digikey#"
+F 10 "9233385" H 8500 2900 50  0001 C CNN "element14#"
+F 11 "603-RC0603JR-071KL" H 8500 2900 50  0001 C CNN "mouser#"
+	1    8500 2900
 	-1   0    0    1   
 $EndComp
 $Comp
 L -Jumper:SolderJumper_2_Bridged_Alt JP8
 U 1 1 60FEF385
-P 7400 2550
-F 0 "JP8" V 7400 2400 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 7445 2618 50  0001 L CNN
-F 2 "-Jumper:SolderJumper-2_P1.3mm_Un-Bridged_RoundedPad1.0x1.5mm" H 7375 2550 50  0001 L CNN
-F 3 "" H 7375 2550 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 7400 2550 50  0001 L CNN "Desc"
-F 5 "N/A" H 7400 2550 50  0001 L CNN "manf"
-F 6 "N/A" H 7400 2550 50  0001 L CNN "manf#"
-F 7 "No" H 7400 2550 50  0001 L CNN "substitute"
-F 8 "" H 7400 2550 50  0001 L CNN "LCSC#"
-F 9 "" H 7400 2550 50  0001 L CNN "digikey#"
-F 10 "" H 7400 2550 50  0001 L CNN "element14#"
-F 11 "" H 7400 2550 50  0001 L CNN "mouser#"
-	1    7400 2550
+P 8500 2550
+F 0 "JP8" V 8500 2700 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged_Alt" V 8545 2618 50  0001 L CNN
+F 2 "-Jumper:SolderJumper-2_P1.3mm_Un-Bridged_RoundedPad1.0x1.5mm" H 8475 2550 50  0001 L CNN
+F 3 "" H 8475 2550 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 8500 2550 50  0001 L CNN "Desc"
+F 5 "N/A" H 8500 2550 50  0001 L CNN "manf"
+F 6 "N/A" H 8500 2550 50  0001 L CNN "manf#"
+F 7 "No" H 8500 2550 50  0001 L CNN "substitute"
+F 8 "" H 8500 2550 50  0001 L CNN "LCSC#"
+F 9 "" H 8500 2550 50  0001 L CNN "digikey#"
+F 10 "" H 8500 2550 50  0001 L CNN "element14#"
+F 11 "" H 8500 2550 50  0001 L CNN "mouser#"
+	1    8500 2550
 	0    1    1    0   
 $EndComp
 $Comp
 L -Flag:GND #PWR022
 U 1 1 60FF6EA7
-P 7400 3100
-F 0 "#PWR022" H 7400 2850 50  0001 C CNN
-F 1 "GND" H 7400 2950 50  0000 C CNN
-F 2 "" H 7400 3100 50  0001 C CNN
-F 3 "" H 7400 3100 50  0001 C CNN
-	1    7400 3100
+P 8500 3100
+F 0 "#PWR022" H 8500 2850 50  0001 C CNN
+F 1 "GND" H 8500 2950 50  0000 C CNN
+F 2 "" H 8500 3100 50  0001 C CNN
+F 3 "" H 8500 3100 50  0001 C CNN
+	1    8500 3100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7350 2350 7400 2350
+	8500 2750 8500 2700
 Wire Wire Line
-	7400 2400 7400 2350
-Connection ~ 7400 2350
-Wire Wire Line
-	7400 2350 8100 2350
-Wire Wire Line
-	7400 2750 7400 2700
-Wire Wire Line
-	7400 3100 7400 3050
+	8500 3100 8500 3050
 Text Notes 5500 3050 0    61   ~ 0
 USB power output is enabled by\ndefault. To disable USB output\non power up, bridge jumper JP8.
 Wire Wire Line
@@ -2233,4 +2221,36 @@ Wire Wire Line
 	7600 5750 7650 5750
 Wire Wire Line
 	7300 5750 7250 5750
+$Comp
+L -Passive:R R18
+U 1 1 6044ADBA
+P 7550 2350
+F 0 "R18" V 7450 2350 50  0000 C CNN
+F 1 "10k" V 7550 2350 50  0000 C CNN
+F 2 "-Passive:R_0603" V 7480 2350 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7550 2350 50  0001 L CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7550 2350 50  0001 L CNN "Desc"
+F 5 "Yageo" H 7550 2350 50  0001 L CNN "manf"
+F 6 "RC0603JR-0710KL" H 7550 2350 50  0001 L CNN "manf#"
+F 7 "Yes" H 7550 2350 50  0001 L CNN "substitute"
+F 8 "C99198" H 7550 2350 50  0001 L CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 7550 2350 50  0001 L CNN "digikey#"
+F 10 "9233504" H 7550 2350 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 7550 2350 50  0001 L CNN "mouser#"
+	1    7550 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 2200 8100 2350
+Wire Wire Line
+	7700 2350 8100 2350
+Connection ~ 8100 2350
+Wire Wire Line
+	8100 2350 8100 2550
+Wire Wire Line
+	7350 2350 7400 2350
+Wire Wire Line
+	8500 2400 8500 2350
+Wire Wire Line
+	8500 2350 8100 2350
 $EndSCHEMATC
