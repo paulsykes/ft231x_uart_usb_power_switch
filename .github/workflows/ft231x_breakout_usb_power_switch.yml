@@ -87,6 +87,18 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Update git hash on PCB silk
+      if: github.ref != 'refs/heads/master'
+      run: |
+        export COMMIT=$(git rev-parse --short HEAD)
+        echo "COMMIT = ${COMMIT}"
+        sed -i "s!<<hash>>!-${COMMIT}!" hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb
+
+    # - name: Remove git hash on main branch PCB silk
+    #  if: github.ref == 'refs/heads/main'
+    #  run: |
+    #    sed -i "s!<<hash>>!!" hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb
+
     - name: Run PCB stuff
       run: |
         make -C hardware/kicad/ft231x_breakout_usb_power_switch pcb_fab
