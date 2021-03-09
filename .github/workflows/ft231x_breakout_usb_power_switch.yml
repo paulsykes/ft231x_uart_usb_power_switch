@@ -85,7 +85,13 @@ jobs:
     needs: DRC
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Install Additional Software
+      run: |
+        apt update
+        apt -y install git
+
+    - name: Checkout Repository
+      uses: actions/checkout@v2
 
     - name: Update git hash on PCB silk
       if: github.ref != 'refs/heads/master'
