@@ -1588,20 +1588,20 @@ Wire Wire Line
 $Comp
 L -Module:PCB PCB1
 U 1 1 602766F4
-P 5350 7300
-F 0 "PCB1" H 5350 7416 40  0000 C CNN
-F 1 "PCB - 2 Layer" H 5350 7300 30  0000 C CNN
-F 2 "" H 5350 7200 60  0001 L CNN
-F 3 "" H 5350 7200 60  0001 L CNN
-F 4 "PCB, 2 Layer 1.6mm, 1.0 oz Copper, Green Soldermask, White Silkscreen, ENIG,  RoHs" H 5350 7300 50  0001 L CNN "Desc"
-F 5 "N/A" H 5350 7300 50  0001 L CNN "manf"
-F 6 "N/A" H 5350 7300 50  0001 L CNN "manf#"
-F 7 "No" H 5350 7300 50  0001 L CNN "substitute"
-F 8 "" H 5350 7300 50  0001 L CNN "LCSC#"
-F 9 "" H 5350 7300 50  0001 L CNN "digikey#"
-F 10 "" H 5350 7300 50  0001 L CNN "element14#"
-F 11 "" H 5350 7300 50  0001 L CNN "mouser#"
-	1    5350 7300
+P 4800 7300
+F 0 "PCB1" H 4800 7416 40  0000 C CNN
+F 1 "PCB - 2 Layer" H 4800 7300 30  0000 C CNN
+F 2 "" H 4800 7200 60  0001 L CNN
+F 3 "" H 4800 7200 60  0001 L CNN
+F 4 "PCB, 2 Layer 1.6mm, 1.0 oz Copper, Green Soldermask, White Silkscreen, ENIG,  RoHs" H 4800 7300 50  0001 L CNN "Desc"
+F 5 "N/A" H 4800 7300 50  0001 L CNN "manf"
+F 6 "N/A" H 4800 7300 50  0001 L CNN "manf#"
+F 7 "No" H 4800 7300 50  0001 L CNN "substitute"
+F 8 "" H 4800 7300 50  0001 L CNN "LCSC#"
+F 9 "" H 4800 7300 50  0001 L CNN "digikey#"
+F 10 "" H 4800 7300 50  0001 L CNN "element14#"
+F 11 "" H 4800 7300 50  0001 L CNN "mouser#"
+	1    4800 7300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2253,4 +2253,26 @@ Wire Wire Line
 	8500 2400 8500 2350
 Wire Wire Line
 	8500 2350 8100 2350
+$Comp
+L -Mechanical:Fiducial FID1
+U 1 1 6051AB3D
+P 5350 7250
+F 0 "FID1" H 5435 7296 50  0000 L CNN
+F 1 "Fiducial" H 5435 7205 50  0000 L CNN
+F 2 "-Mechanical:Fiducial_1mm_Mask2mm" H 5350 7250 50  0001 C CNN
+F 3 "~" H 5350 7250 50  0001 C CNN
+	1    5350 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L -Mechanical:Fiducial FID2
+U 1 1 6051EF4F
+P 5850 7250
+F 0 "FID2" H 5935 7296 50  0000 L CNN
+F 1 "Fiducial" H 5935 7205 50  0000 L CNN
+F 2 "-Mechanical:Fiducial_1mm_Mask2mm" H 5850 7250 50  0001 C CNN
+F 3 "~" H 5850 7250 50  0001 C CNN
+	1    5850 7250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
