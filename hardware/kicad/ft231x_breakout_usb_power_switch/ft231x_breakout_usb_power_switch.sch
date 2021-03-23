@@ -2008,25 +2008,6 @@ Wire Wire Line
 Wire Wire Line
 	8150 1750 8100 1750
 $Comp
-L -Passive:R R15
-U 1 1 60FED1B8
-P 8500 2900
-F 0 "R15" H 8350 2900 50  0000 C CNN
-F 1 "1k" V 8500 2900 50  0000 C CNN
-F 2 "-Passive:R_0603" V 8430 2900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8500 2900 50  0001 C CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 8500 2900 50  0001 C CNN "Desc"
-F 5 "Yageo" H 8500 2900 50  0001 C CNN "manf"
-F 6 "RC0603JR-071KL" H 8500 2900 50  0001 C CNN "manf#"
-F 7 "Yes" H 8500 2900 50  0001 C CNN "substitute"
-F 8 "C14676" H 8500 2900 50  0001 C CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" H 8500 2900 50  0001 C CNN "digikey#"
-F 10 "9233385" H 8500 2900 50  0001 C CNN "element14#"
-F 11 "603-RC0603JR-071KL" H 8500 2900 50  0001 C CNN "mouser#"
-	1    8500 2900
-	-1   0    0    1   
-$EndComp
-$Comp
 L -Jumper:SolderJumper_2_Bridged_Alt JP8
 U 1 1 60FEF385
 P 8500 2550
@@ -2221,25 +2202,6 @@ Wire Wire Line
 	7600 5750 7650 5750
 Wire Wire Line
 	7300 5750 7250 5750
-$Comp
-L -Passive:R R18
-U 1 1 6044ADBA
-P 7550 2350
-F 0 "R18" V 7450 2350 50  0000 C CNN
-F 1 "10k" V 7550 2350 50  0000 C CNN
-F 2 "-Passive:R_0603" V 7480 2350 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7550 2350 50  0001 L CNN
-F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7550 2350 50  0001 L CNN "Desc"
-F 5 "Yageo" H 7550 2350 50  0001 L CNN "manf"
-F 6 "RC0603JR-0710KL" H 7550 2350 50  0001 L CNN "manf#"
-F 7 "Yes" H 7550 2350 50  0001 L CNN "substitute"
-F 8 "C99198" H 7550 2350 50  0001 L CNN "LCSC#"
-F 9 "311-10KGRTR-ND" H 7550 2350 50  0001 L CNN "digikey#"
-F 10 "9233504" H 7550 2350 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-0710KL" H 7550 2350 50  0001 L CNN "mouser#"
-	1    7550 2350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8100 2200 8100 2350
 Wire Wire Line
@@ -2274,5 +2236,43 @@ F 2 "-Mechanical:Fiducial_1mm_Mask2mm" H 5850 7250 50  0001 C CNN
 F 3 "~" H 5850 7250 50  0001 C CNN
 	1    5850 7250
 	1    0    0    -1  
+$EndComp
+$Comp
+L -Passive:R R15
+U 1 1 60FED1B8
+P 8500 2900
+F 0 "R15" H 8350 2900 50  0000 C CNN
+F 1 "10k" V 8500 2900 50  0000 C CNN
+F 2 "-Passive:R_0603" V 8430 2900 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8500 2900 50  0001 C CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 8500 2900 50  0001 C CNN "Desc"
+F 5 "Yageo" H 8500 2900 50  0001 C CNN "manf"
+F 6 "RC0603JR-0710KL" H 8500 2900 50  0001 C CNN "manf#"
+F 7 "Yes" H 8500 2900 50  0001 C CNN "substitute"
+F 8 "C99198" H 8500 2900 50  0001 C CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 8500 2900 50  0001 C CNN "digikey#"
+F 10 "9233504" H 8500 2900 50  0001 C CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 8500 2900 50  0001 C CNN "mouser#"
+	1    8500 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L -Passive:R R18
+U 1 1 6044ADBA
+P 7550 2350
+F 0 "R18" V 7450 2350 50  0000 C CNN
+F 1 "1k" V 7550 2350 50  0000 C CNN
+F 2 "-Passive:R_0603" V 7480 2350 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7550 2350 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7550 2350 50  0001 L CNN "Desc"
+F 5 "Yageo" H 7550 2350 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" H 7550 2350 50  0001 L CNN "manf#"
+F 7 "Yes" H 7550 2350 50  0001 L CNN "substitute"
+F 8 "C14676" H 7550 2350 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" H 7550 2350 50  0001 L CNN "digikey#"
+F 10 "9233385" H 7550 2350 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" H 7550 2350 50  0001 L CNN "mouser#"
+	1    7550 2350
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
