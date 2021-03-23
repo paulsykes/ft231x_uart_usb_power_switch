@@ -377,30 +377,18 @@ Wire Wire Line
 	6750 1250 6850 1250
 Text Label 6850 1250 0    50   ~ 0
 RXD
-Text Label 6850 1350 0    50   ~ 0
-RTS
 Wire Wire Line
 	6750 1350 6850 1350
-Text Label 6850 1450 0    50   ~ 0
-CTS
 Wire Wire Line
 	6750 1450 6850 1450
-Text Label 6850 1550 0    50   ~ 0
-DTR
 Wire Wire Line
 	6750 1550 6850 1550
-Text Label 6850 1650 0    50   ~ 0
-DSR
 Wire Wire Line
 	6750 1650 6850 1650
-Text Label 6850 1750 0    50   ~ 0
-DCD
 Wire Wire Line
 	6750 1750 6850 1750
 Wire Wire Line
 	6750 1850 6850 1850
-Text Label 6850 1850 0    50   ~ 0
-RI
 Text Label 6850 2050 0    50   ~ 0
 GPI
 $Comp
@@ -508,12 +496,12 @@ $EndComp
 $Comp
 L -Flag:+3.3V #PWR011
 U 1 1 60421F0D
-P 5050 1700
-F 0 "#PWR011" H 5050 1550 50  0001 C CNN
-F 1 "+3.3V" H 5050 1850 50  0000 C CNN
-F 2 "" H 5050 1700 50  0001 C CNN
-F 3 "" H 5050 1700 50  0001 C CNN
-	1    5050 1700
+P 5400 5100
+F 0 "#PWR011" H 5400 4950 50  0001 C CNN
+F 1 "+3.3V" H 5400 5250 50  0000 C CNN
+F 2 "" H 5400 5100 50  0001 C CNN
+F 3 "" H 5400 5100 50  0001 C CNN
+	1    5400 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -529,8 +517,6 @@ F 3 "" H 1550 5250 50  0001 C CNN
 $EndComp
 Text Label 2650 4450 0    50   ~ 0
 RXLED
-Wire Wire Line
-	2300 5250 2250 5250
 Wire Wire Line
 	1950 5250 1900 5250
 Wire Wire Line
@@ -587,13 +573,9 @@ $EndComp
 Text Label 2650 5250 0    50   ~ 0
 TXLED
 Wire Wire Line
-	2300 4450 2250 4450
-Wire Wire Line
 	1950 4450 1900 4450
 Wire Wire Line
 	1600 4450 1550 4450
-Wire Wire Line
-	1700 1150 1900 1150
 $Comp
 L -Flag:PWR_FLAG #FLG0101
 U 1 1 6049B3DA
@@ -605,242 +587,29 @@ F 3 "" H 4700 1100 50  0001 C CNN
 	1    4700 1100
 	1    0    0    -1  
 $EndComp
-$Comp
-L -Discrete:2N7002 Q3
-U 1 1 604BA055
-P 5350 4600
-F 0 "Q3" V 5599 4600 50  0000 C CNN
-F 1 "2N7002" V 5690 4600 50  0000 C CNN
-F 2 "-Chip:SOT-23-3" H 5550 4525 50  0001 L CIN
-F 3 "https://datasheet.lcsc.com/szlcsc/1809211430_Guangdong-Hottech-2N7002_C181082.pdf" H 5350 4600 50  0001 L CNN
-F 4 "N-Channel 60V 115mA 2.5V @ 250uA 5Ω @ 500mA,10V 225mW SOT-23(SOT-23-3) MOSFET RoHS" V 5350 4600 50  0001 L CNN "Desc"
-F 5 "Guangdong Hottech" V 5350 4600 50  0001 L CNN "manf"
-F 6 "2N7002" V 5350 4600 50  0001 L CNN "manf#"
-F 7 "Yes" V 5350 4600 50  0001 L CNN "substitute"
-F 8 "C181082" V 5350 4600 50  0001 L CNN "LCSC#"
-F 9 "" V 5350 4600 50  0001 L CNN "digikey#"
-F 10 "" V 5350 4600 50  0001 L CNN "element14#"
-F 11 "" V 5350 4600 50  0001 L CNN "mouser#"
-	1    5350 4600
-	0    1    1    0   
-$EndComp
-$Comp
-L -Flag:+3.3V #PWR0101
-U 1 1 604C30DA
-P 4850 4300
-F 0 "#PWR0101" H 4850 4150 50  0001 C CNN
-F 1 "+3.3V" H 4850 4450 50  0000 C CNN
-F 2 "" H 4850 4300 50  0001 C CNN
-F 3 "" H 4850 4300 50  0001 C CNN
-	1    4850 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L -Passive:R R9
-U 1 1 604CAC29
-P 5700 4500
-F 0 "R9" H 5800 4500 50  0000 C CNN
-F 1 "10k" V 5700 4500 50  0000 C CNN
-F 2 "-Passive:R_0603" V 5630 4500 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5700 4500 50  0001 L CNN
-F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 5700 4500 50  0001 L CNN "Desc"
-F 5 "Yageo" H 5700 4500 50  0001 L CNN "manf"
-F 6 "RC0603JR-0710KL" H 5700 4500 50  0001 L CNN "manf#"
-F 7 "Yes" H 5700 4500 50  0001 L CNN "substitute"
-F 8 "C99198" H 5700 4500 50  0001 L CNN "LCSC#"
-F 9 "311-10KGRTR-ND" H 5700 4500 50  0001 L CNN "digikey#"
-F 10 "9233504" H 5700 4500 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-0710KL" H 5700 4500 50  0001 L CNN "mouser#"
-	1    5700 4500
-	-1   0    0    1   
-$EndComp
-Text Label 5850 4700 0    50   ~ 0
-RES
-Text Label 4850 4700 2    50   ~ 0
-DTR
-$Comp
-L -Passive:R R8
-U 1 1 604C6F61
-P 5000 4500
-F 0 "R8" H 5100 4500 50  0000 C CNN
-F 1 "10k" V 5000 4500 50  0000 C CNN
-F 2 "-Passive:R_0603" V 4930 4500 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 5000 4500 50  0001 L CNN
-F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 5000 4500 50  0001 L CNN "Desc"
-F 5 "Yageo" H 5000 4500 50  0001 L CNN "manf"
-F 6 "RC0603JR-0710KL" H 5000 4500 50  0001 L CNN "manf#"
-F 7 "Yes" H 5000 4500 50  0001 L CNN "substitute"
-F 8 "C99198" H 5000 4500 50  0001 L CNN "LCSC#"
-F 9 "311-10KGRTR-ND" H 5000 4500 50  0001 L CNN "digikey#"
-F 10 "9233504" H 5000 4500 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-0710KL" H 5000 4500 50  0001 L CNN "mouser#"
-	1    5000 4500
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5550 4700 5700 4700
-Wire Wire Line
-	5700 4650 5700 4700
-Connection ~ 5700 4700
-Wire Wire Line
-	5700 4700 5850 4700
-Wire Wire Line
-	4850 4700 5000 4700
-Wire Wire Line
-	5000 4650 5000 4700
-Connection ~ 5000 4700
-Wire Wire Line
-	5000 4700 5150 4700
-Text Label 5850 4300 0    50   ~ 0
-VOUT
-Wire Wire Line
-	5000 4350 5000 4300
-Wire Wire Line
-	5700 4300 5700 4350
-Wire Wire Line
-	5700 4300 5850 4300
-Wire Wire Line
-	5000 4300 5350 4300
-Wire Wire Line
-	5350 4300 5350 4400
-Wire Wire Line
-	4850 4300 5000 4300
-Connection ~ 5000 4300
-Text Notes 4800 3900 0    61   ~ 12
-Arduino Style Auto-Reset
 Text Notes 1550 3900 0    61   ~ 12
 LED Activity Indicators
 Text Notes 1050 1400 2    61   ~ 12
 Micro USB\nInput
 Text Notes 10300 1400 0    61   ~ 12
 USB Type A \nSwitchable Power \nOutput (No Data)
-Text Label 9200 4150 0    50   ~ 0
-SRES
-Text Label 9200 4250 0    50   ~ 0
+Text Label 5350 5350 0    50   ~ 0
 RXD
-Text Label 9200 4350 0    50   ~ 0
+Text Label 5350 5250 0    50   ~ 0
 STXD
-$Comp
-L -Connector:Conn_01x06 J4
-U 1 1 605BA2B5
-P 8900 4450
-F 0 "J4" H 8900 4050 50  0000 C CNN
-F 1 "Conn_01x06" V 9000 4400 50  0000 C CNN
-F 2 "-Connector:PinHeader_1x06_P2.54mm_Vertical_Arduino" H 8900 4450 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811151421_Ckmtw-Shenzhen-Cankemeng-C124380_C124380.pdf" H 8900 4450 50  0001 L CNN
-F 4 "Pin Pin Header 6 1 Straight，180degrees 2.54mm Through Hole,P=2.54mm Pin Header & Female Header RoHS" H 8900 4450 50  0001 L CNN "Desc"
-F 5 "Ckmtw(Shenzhen Cankemeng)" H 8900 4450 50  0001 L CNN "manf"
-F 6 "C124380" H 8900 4450 50  0001 L CNN "manf#"
-F 7 "Yes" H 8900 4450 50  0001 L CNN "substitute"
-F 8 "C124380" H 8900 4450 50  0001 L CNN "LCSC#"
-F 9 "" H 8900 4450 50  0001 L CNN "digikey#"
-F 10 "" H 8900 4450 50  0001 L CNN "element14#"
-F 11 "" H 8900 4450 50  0001 L CNN "mouser#"
-	1    8900 4450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9100 4150 9200 4150
-Wire Wire Line
-	9100 4250 9200 4250
-Wire Wire Line
-	9100 4350 9200 4350
 $Comp
 L -Flag:GND #PWR0102
 U 1 1 605EAC41
-P 9250 4900
-F 0 "#PWR0102" H 9250 4650 50  0001 C CNN
-F 1 "GND" H 9250 4750 50  0000 C CNN
-F 2 "" H 9250 4900 50  0001 C CNN
-F 3 "" H 9250 4900 50  0001 C CNN
-	1    9250 4900
+P 5400 5700
+F 0 "#PWR0102" H 5400 5450 50  0001 C CNN
+F 1 "GND" H 5400 5550 50  0000 C CNN
+F 2 "" H 5400 5700 50  0001 C CNN
+F 3 "" H 5400 5700 50  0001 C CNN
+	1    5400 5700
 	-1   0    0    -1  
 $EndComp
-Text Label 9200 4550 0    50   ~ 0
-CTS
-Wire Wire Line
-	9100 4550 9200 4550
-Text Label 9200 4450 0    50   ~ 0
-VOUT
-Wire Wire Line
-	9100 4450 9200 4450
-Text Label 10200 4750 0    50   ~ 0
-CTS
-$Comp
-L -Flag:+3.3V #PWR0103
-U 1 1 6063D134
-P 10300 4050
-F 0 "#PWR0103" H 10300 3900 50  0001 C CNN
-F 1 "+3.3V" H 10300 4200 50  0000 C CNN
-F 2 "" H 10300 4050 50  0001 C CNN
-F 3 "" H 10300 4050 50  0001 C CNN
-	1    10300 4050
-	1    0    0    -1  
-$EndComp
-Text Label 10200 4250 0    50   ~ 0
-RTS
-Text Label 10200 4350 0    50   ~ 0
-RXD
-Text Label 10200 4450 0    50   ~ 0
-RI
-Text Label 10200 4550 0    50   ~ 0
-DSR
-Text Label 10200 4650 0    50   ~ 0
-DCD
-Text Label 8100 4450 0    50   ~ 0
-TXLED
-Text Label 8100 4550 0    50   ~ 0
-RXLED
 Text Label 6850 2350 0    50   ~ 0
 GPO
-Text Label 8100 4650 0    50   ~ 0
-GPO
-Wire Wire Line
-	8000 4450 8100 4450
-Text Label 8100 4750 0    50   ~ 0
-GPI
-Wire Wire Line
-	8000 4550 8100 4550
-Text Label 8100 4850 0    50   ~ 0
-TXD
-Wire Wire Line
-	8000 4650 8100 4650
-$Comp
-L -Flag:GND #PWR0104
-U 1 1 60682E23
-P 8450 4400
-F 0 "#PWR0104" H 8450 4150 50  0001 C CNN
-F 1 "GND" H 8450 4250 50  0000 C CNN
-F 2 "" H 8450 4400 50  0001 C CNN
-F 3 "" H 8450 4400 50  0001 C CNN
-	1    8450 4400
-	-1   0    0    -1  
-$EndComp
-$Comp
-L -Flag:VBUS #PWR0105
-U 1 1 6068B81B
-P 1900 1100
-F 0 "#PWR0105" H 1900 950 50  0001 C CNN
-F 1 "VBUS" H 1900 1250 50  0000 C CNN
-F 2 "" H 1900 1100 50  0001 C CNN
-F 3 "" H 1900 1100 50  0001 C CNN
-	1    1900 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 1100 1900 1150
-Connection ~ 1900 1150
-$Comp
-L -Flag:VBUS #PWR0106
-U 1 1 60696EFC
-P 8450 4200
-F 0 "#PWR0106" H 8450 4050 50  0001 C CNN
-F 1 "VBUS" H 8465 4373 50  0000 C CNN
-F 2 "" H 8450 4200 50  0001 C CNN
-F 3 "" H 8450 4200 50  0001 C CNN
-	1    8450 4200
-	1    0    0    -1  
-$EndComp
 $Comp
 L -Chip:TPS2553DBVR U3
 U 1 1 606F28F9
@@ -978,55 +747,11 @@ F 11 "80-T520B157M006ATE25" H 9550 2800 50  0001 L CNN "mouser#"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 4450 2600 4450
-$Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP2
-U 1 1 60887D1E
-P 2450 4450
-F 0 "JP2" H 2400 4550 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 2495 4518 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 4450 50  0001 L CNN
-F 3 "" H 2425 4450 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 2450 4450 50  0001 L CNN "Desc"
-F 5 "N/A" H 2450 4450 50  0001 L CNN "manf"
-F 6 "N/A" H 2450 4450 50  0001 L CNN "manf#"
-F 7 "No" H 2450 4450 50  0001 L CNN "substitute"
-F 8 "" H 2450 4450 50  0001 L CNN "LCSC#"
-F 9 "" H 2450 4450 50  0001 L CNN "digikey#"
-F 10 "" H 2450 4450 50  0001 L CNN "element14#"
-F 11 "" H 2450 4450 50  0001 L CNN "mouser#"
-	1    2450 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP3
-U 1 1 6088937A
-P 2450 5250
-F 0 "JP3" H 2400 5350 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 2495 5318 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 5250 50  0001 L CNN
-F 3 "" H 2425 5250 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 2450 5250 50  0001 L CNN "Desc"
-F 5 "N/A" H 2450 5250 50  0001 L CNN "manf"
-F 6 "N/A" H 2450 5250 50  0001 L CNN "manf#"
-F 7 "No" H 2450 5250 50  0001 L CNN "substitute"
-F 8 "" H 2450 5250 50  0001 L CNN "LCSC#"
-F 9 "" H 2450 5250 50  0001 L CNN "digikey#"
-F 10 "" H 2450 5250 50  0001 L CNN "element14#"
-F 11 "" H 2450 5250 50  0001 L CNN "mouser#"
-	1    2450 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2650 5250 2600 5250
-Wire Wire Line
 	4650 1350 4300 1350
 Wire Wire Line
 	4700 1100 4700 1150
 Connection ~ 4700 1150
 Connection ~ 3900 1150
-Wire Wire Line
-	3900 1150 4200 1150
 Wire Wire Line
 	3200 1150 3150 1150
 Connection ~ 3150 1150
@@ -1037,93 +762,9 @@ Wire Wire Line
 	3550 1150 3900 1150
 Connection ~ 4300 1350
 Connection ~ 4550 1450
-$Comp
-L -Flag:+3.3V #PWR0112
-U 1 1 609A3BA8
-P 5100 6050
-F 0 "#PWR0112" H 5100 5900 50  0001 C CNN
-F 1 "+3.3V" H 5100 6200 50  0000 C CNN
-F 2 "" H 5100 6050 50  0001 C CNN
-F 3 "" H 5100 6050 50  0001 C CNN
-	1    5100 6050
-	1    0    0    -1  
-$EndComp
-Text Label 5600 6300 0    50   ~ 0
-VOUT
-$Comp
-L -Jumper:SolderJumper_3_Bridged12 JP1
-U 1 1 609A91F3
-P 5400 6300
-F 0 "JP1" V 5400 6368 50  0000 L CNN
-F 1 "SolderJumper_3_Bridged12" V 5445 6368 50  0001 L CNN
-F 2 "-Switch:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 5400 6300 50  0001 L CNN
-F 3 "" H 5400 6300 50  0001 L CNN
-F 4 "Solder Jumper 3 Bridged 1-2" V 5400 6300 50  0001 L CNN "Desc"
-F 5 "N/A" V 5400 6300 50  0001 L CNN "manf"
-F 6 "N/A" V 5400 6300 50  0001 L CNN "manf#"
-F 7 "No" V 5400 6300 50  0001 L CNN "substitute"
-F 8 "" V 5400 6300 50  0001 L CNN "LCSC#"
-F 9 "" V 5400 6300 50  0001 L CNN "digikey#"
-F 10 "" V 5400 6300 50  0001 L CNN "element14#"
-F 11 "" V 5400 6300 50  0001 L CNN "mouser#"
-	1    5400 6300
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	5100 6050 5100 6550
-Wire Wire Line
-	5100 6550 5400 6550
-Wire Wire Line
-	5400 6550 5400 6500
-Wire Wire Line
-	5550 6300 5600 6300
-Wire Wire Line
-	5400 6100 5400 6050
-Text Notes 4700 5700 0    61   ~ 12
-Cut trace on JP1 to switch\nVOUT from 5V to 3.3V
-Text Notes 4700 6850 0    61   ~ 12
-Do not connect all three pads\non JP1 at the same time
-$Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP4
-U 1 1 60A05CD3
-P 7200 2050
-F 0 "JP4" H 7200 1950 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 7245 2118 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7175 2050 50  0001 L CNN
-F 3 "" H 7175 2050 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 7200 2050 50  0001 L CNN "Desc"
-F 5 "N/A" H 7200 2050 50  0001 L CNN "manf"
-F 6 "N/A" H 7200 2050 50  0001 L CNN "manf#"
-F 7 "No" H 7200 2050 50  0001 L CNN "substitute"
-F 8 "" H 7200 2050 50  0001 L CNN "LCSC#"
-F 9 "" H 7200 2050 50  0001 L CNN "digikey#"
-F 10 "" H 7200 2050 50  0001 L CNN "element14#"
-F 11 "" H 7200 2050 50  0001 L CNN "mouser#"
-	1    7200 2050
-	-1   0    0    1   
-$EndComp
-$Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP5
-U 1 1 60A09E2C
-P 7200 2350
-F 0 "JP5" H 7200 2250 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 7245 2418 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7175 2350 50  0001 L CNN
-F 3 "" H 7175 2350 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 7200 2350 50  0001 L CNN "Desc"
-F 5 "N/A" H 7200 2350 50  0001 L CNN "manf"
-F 6 "N/A" H 7200 2350 50  0001 L CNN "manf#"
-F 7 "No" H 7200 2350 50  0001 L CNN "substitute"
-F 8 "" H 7200 2350 50  0001 L CNN "LCSC#"
-F 9 "" H 7200 2350 50  0001 L CNN "digikey#"
-F 10 "" H 7200 2350 50  0001 L CNN "element14#"
-F 11 "" H 7200 2350 50  0001 L CNN "mouser#"
-	1    7200 2350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	4700 1150 5050 1150
-Text Notes 8650 3900 0    61   ~ 12
+Text Notes 4900 4700 0    61   ~ 12
 Output Headers
 $Comp
 L -Passive:R R10
@@ -1214,48 +855,6 @@ Wire Wire Line
 	1400 7000 1500 7000
 Wire Wire Line
 	1450 6050 1600 6050
-$Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP6
-U 1 1 610BB06B
-P 2450 6050
-F 0 "JP6" H 2400 6150 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 2495 6118 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 2425 6050 50  0001 L CNN
-F 3 "" H 2425 6050 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 2450 6050 50  0001 L CNN "Desc"
-F 5 "N/A" H 2450 6050 50  0001 L CNN "manf"
-F 6 "N/A" H 2450 6050 50  0001 L CNN "manf#"
-F 7 "No" H 2450 6050 50  0001 L CNN "substitute"
-F 8 "" H 2450 6050 50  0001 L CNN "LCSC#"
-F 9 "" H 2450 6050 50  0001 L CNN "digikey#"
-F 10 "" H 2450 6050 50  0001 L CNN "element14#"
-F 11 "" H 2450 6050 50  0001 L CNN "mouser#"
-	1    2450 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2250 6050 2300 6050
-Wire Wire Line
-	2600 6050 2700 6050
-$Comp
-L -Passive:R R12
-U 1 1 6114CC1F
-P 8100 2050
-F 0 "R12" H 7950 2050 50  0000 C CNN
-F 1 "1k" V 8100 2050 50  0000 C CNN
-F 2 "-Passive:R_0603" V 8030 2050 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8100 2050 50  0001 C CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 8100 2050 50  0001 C CNN "Desc"
-F 5 "Yageo" H 8100 2050 50  0001 C CNN "manf"
-F 6 "RC0603JR-071KL" H 8100 2050 50  0001 C CNN "manf#"
-F 7 "Yes" H 8100 2050 50  0001 C CNN "substitute"
-F 8 "C14676" H 8100 2050 50  0001 C CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" H 8100 2050 50  0001 C CNN "digikey#"
-F 10 "9233385" H 8100 2050 50  0001 C CNN "element14#"
-F 11 "603-RC0603JR-071KL" H 8100 2050 50  0001 C CNN "mouser#"
-	1    8100 2050
-	-1   0    0    1   
-$EndComp
 Wire Notes Line
 	500  3650 11200 3650
 Wire Wire Line
@@ -1268,8 +867,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 2350 1900 2350
 Connection ~ 1800 2150
-Wire Wire Line
-	1900 1150 2400 1150
 Wire Wire Line
 	2400 1750 2400 1150
 Connection ~ 2400 1150
@@ -1365,33 +962,6 @@ F 9 "" H 3950 7600 50  0001 L CNN "digikey#"
 F 10 "" H 3950 7600 50  0001 L CNN "element14#"
 F 11 "" H 3950 7600 50  0001 L CNN "mouser#"
 	1    3950 7600
-	1    0    0    -1  
-$EndComp
-$Comp
-L -Flag:+5V #PWR0109
-U 1 1 6151AB71
-P 4200 1100
-F 0 "#PWR0109" H 4200 950 50  0001 C CNN
-F 1 "+5V" H 4200 1250 50  0000 C CNN
-F 2 "" H 4200 1100 50  0001 C CNN
-F 3 "" H 4200 1100 50  0001 C CNN
-	1    4200 1100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 1100 4200 1150
-Connection ~ 4200 1150
-Wire Wire Line
-	4200 1150 4700 1150
-$Comp
-L -Flag:+5V #PWR0111
-U 1 1 6152903C
-P 5400 6050
-F 0 "#PWR0111" H 5400 5900 50  0001 C CNN
-F 1 "+5V" H 5400 6200 50  0000 C CNN
-F 2 "" H 5400 6050 50  0001 C CNN
-F 3 "" H 5400 6050 50  0001 C CNN
-	1    5400 6050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1494,97 +1064,9 @@ Wire Wire Line
 	10450 3050 10300 3050
 Connection ~ 10300 3050
 Wire Wire Line
-	8450 4350 8450 4400
+	5250 5450 5400 5450
 Wire Wire Line
-	8000 4350 8450 4350
-Wire Wire Line
-	8450 4250 8450 4200
-Wire Wire Line
-	8000 4250 8100 4250
-Wire Wire Line
-	8000 4750 8100 4750
-Wire Wire Line
-	8000 4850 8100 4850
-$Comp
-L -Connector:Conn_01x08 J3
-U 1 1 6011C66E
-P 7800 4450
-F 0 "J3" H 7800 4850 50  0000 C CNN
-F 1 "Conn_01x08" V 7900 4450 50  0000 C CNN
-F 2 "-Connector:PinHeader_1x08_P2.54mm_Vertical_CBUS" H 7800 4450 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811091829_Ckmtw-Shenzhen-Cankemeng-C124381_C124381.pdf" H 7800 4450 50  0001 L CNN
-F 4 "Pin Header 8 1 right-angle，180degrees 2.54mm Through Hole,P=2.54mm Pin Header & Female Header RoHS" H 7800 4450 50  0001 L CNN "Desc"
-F 5 "Ckmtw(Shenzhen Cankemeng)" H 7800 4450 50  0001 L CNN "manf"
-F 6 "C124381" H 7800 4450 50  0001 L CNN "manf#"
-F 7 "Yes" H 7800 4450 50  0001 L CNN "substitute"
-F 8 "C124381" H 7800 4450 50  0001 L CNN "LCSC#"
-F 9 "" H 7800 4450 50  0001 L CNN "digikey#"
-F 10 "" H 7800 4450 50  0001 L CNN "element14#"
-F 11 "" H 7800 4450 50  0001 L CNN "mouser#"
-	1    7800 4450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	8000 4150 8100 4150
-Wire Wire Line
-	8100 4150 8100 4250
-Connection ~ 8100 4250
-Wire Wire Line
-	8100 4250 8450 4250
-$Comp
-L -Connector:Conn_01x08 J5
-U 1 1 6015AC2A
-P 9900 4550
-F 0 "J5" H 9900 4050 50  0000 C CNN
-F 1 "Conn_01x08" V 10000 4550 50  0000 C CNN
-F 2 "-Connector:PinHeader_1x08_P2.54mm_Vertical_CTS" H 9900 4550 50  0001 L CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/1811091829_Ckmtw-Shenzhen-Cankemeng-C124381_C124381.pdf" H 9900 4550 50  0001 L CNN
-F 4 "Pin Header 8 1 right-angle，180degrees 2.54mm Through Hole,P=2.54mm Pin Header & Female Header RoHS" H 9900 4550 50  0001 L CNN "Desc"
-F 5 "Ckmtw(Shenzhen Cankemeng)" H 9900 4550 50  0001 L CNN "manf"
-F 6 "C124381" H 9900 4550 50  0001 L CNN "manf#"
-F 7 "Yes" H 9900 4550 50  0001 L CNN "substitute"
-F 8 "C124381" H 9900 4550 50  0001 L CNN "LCSC#"
-F 9 "" H 9900 4550 50  0001 L CNN "digikey#"
-F 10 "" H 9900 4550 50  0001 L CNN "element14#"
-F 11 "" H 9900 4550 50  0001 L CNN "mouser#"
-	1    9900 4550
-	-1   0    0    1   
-$EndComp
-$Comp
-L -Flag:GND #PWR0115
-U 1 1 6015BF62
-P 10300 4900
-F 0 "#PWR0115" H 10300 4650 50  0001 C CNN
-F 1 "GND" H 10300 4750 50  0000 C CNN
-F 2 "" H 10300 4900 50  0001 C CNN
-F 3 "" H 10300 4900 50  0001 C CNN
-	1    10300 4900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10100 4750 10200 4750
-Wire Wire Line
-	10100 4650 10200 4650
-Wire Wire Line
-	10100 4550 10200 4550
-Wire Wire Line
-	10100 4450 10200 4450
-Wire Wire Line
-	10100 4350 10200 4350
-Wire Wire Line
-	10100 4250 10200 4250
-Wire Wire Line
-	10300 4150 10300 4050
-Wire Wire Line
-	10100 4150 10300 4150
-Wire Wire Line
-	10100 4850 10300 4850
-Wire Wire Line
-	10300 4850 10300 4900
-Wire Wire Line
-	9100 4650 9250 4650
-Wire Wire Line
-	9250 4650 9250 4900
+	5400 5450 5400 5700
 $Comp
 L -Module:PCB PCB1
 U 1 1 602766F4
@@ -1685,18 +1167,12 @@ $EndComp
 Wire Wire Line
 	7700 2550 7700 2600
 Wire Wire Line
-	6750 2050 7050 2050
-Wire Wire Line
-	7350 2050 7400 2050
-Wire Wire Line
 	7400 2050 7400 1550
 Connection ~ 7400 1550
 Wire Wire Line
 	6750 2150 6850 2150
 Wire Wire Line
 	6750 2250 6850 2250
-Wire Wire Line
-	6750 2350 7050 2350
 Wire Wire Line
 	5350 1150 5050 1150
 Connection ~ 5050 1150
@@ -1723,8 +1199,6 @@ Wire Wire Line
 	4950 1350 5350 1350
 Wire Wire Line
 	5350 1450 4950 1450
-Wire Wire Line
-	8100 1900 8100 1750
 Wire Wire Line
 	7700 3000 7700 3100
 Wire Wire Line
@@ -1817,177 +1291,92 @@ Wire Wire Line
 $Comp
 L -Chip:NC7SZ66M5X U5
 U 1 1 60ADA145
-P 8000 5950
-F 0 "U5" H 7850 6300 50  0000 C CNN
-F 1 "NC7SZ66M5X" H 8000 5600 50  0000 C CNN
-F 2 "-Chip:SOT-23-5" H 8150 5500 50  0001 L BNN
-F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 8000 5950 50  0001 L BNN
-F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 7800 5400 50  0001 L BNN "Desc"
-F 5 "On Semiconductor" H 7800 5350 50  0001 L CNN "manf"
-F 6 "NC7SZ66M5X" H 7800 5250 50  0001 L CNN "manf#"
-F 7 "C232791" H 7800 4950 50  0001 L CNN "LCSC#"
-F 8 "NC7SZ66M5XCT-ND" H 7800 5150 50  0001 L CNN "digikey#"
-F 9 "2822594" H 7800 4850 50  0001 L CNN "element14#"
-F 10 "512-NC7SZ66M5X" H 7800 5050 50  0001 L CNN "mouser#"
-	1    8000 5950
+P 8950 5200
+F 0 "U5" H 8800 5550 50  0000 C CNN
+F 1 "NC7SZ66M5X" H 8950 4850 50  0000 C CNN
+F 2 "-Chip:SOT-23-5" H 9100 4750 50  0001 L BNN
+F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 8950 5200 50  0001 L BNN
+F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 8750 4650 50  0001 L BNN "Desc"
+F 5 "On Semiconductor" H 8750 4600 50  0001 L CNN "manf"
+F 6 "NC7SZ66M5X" H 8750 4500 50  0001 L CNN "manf#"
+F 7 "C232791" H 8750 4200 50  0001 L CNN "LCSC#"
+F 8 "NC7SZ66M5XCT-ND" H 8750 4400 50  0001 L CNN "digikey#"
+F 9 "2822594" H 8750 4100 50  0001 L CNN "element14#"
+F 10 "512-NC7SZ66M5X" H 8750 4300 50  0001 L CNN "mouser#"
+	1    8950 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Passive:C C13
 U 1 1 60B4D253
-P 8750 5950
-F 0 "C13" H 8750 6050 50  0000 L CNN
-F 1 "0.1uF" H 8750 5850 50  0000 L CNN
-F 2 "-Passive:C_0603" H 8788 5800 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 8750 5950 50  0001 L CNN
-F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 8750 5950 50  0001 L CNN "Desc"
-F 5 "Yageo" H 8750 5950 50  0001 L CNN "manf"
-F 6 "CC0603KRX7R9BB104" H 8750 5950 50  0001 L CNN "manf#"
-F 7 "Yes" H 8750 5950 50  0001 L CNN "substitute"
-F 8 "C14663" H 8750 5950 50  0001 L CNN "LCSC#"
-F 9 "311-1344-1-ND" H 8750 5950 50  0001 L CNN "digikey#"
-F 10 "1362556" H 8750 5950 50  0001 L CNN "element14#"
-F 11 "603-CC603KRX7R9BB104" H 8750 5950 50  0001 L CNN "mouser#"
-	1    8750 5950
+P 9700 5200
+F 0 "C13" H 9700 5300 50  0000 L CNN
+F 1 "0.1uF" H 9700 5100 50  0000 L CNN
+F 2 "-Passive:C_0603" H 9738 5050 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 9700 5200 50  0001 L CNN
+F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 9700 5200 50  0001 L CNN "Desc"
+F 5 "Yageo" H 9700 5200 50  0001 L CNN "manf"
+F 6 "CC0603KRX7R9BB104" H 9700 5200 50  0001 L CNN "manf#"
+F 7 "Yes" H 9700 5200 50  0001 L CNN "substitute"
+F 8 "C14663" H 9700 5200 50  0001 L CNN "LCSC#"
+F 9 "311-1344-1-ND" H 9700 5200 50  0001 L CNN "digikey#"
+F 10 "1362556" H 9700 5200 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX7R9BB104" H 9700 5200 50  0001 L CNN "mouser#"
+	1    9700 5200
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Flag:GND #PWR024
 U 1 1 60B50415
-P 8750 6200
-F 0 "#PWR024" H 8750 5950 50  0001 C CNN
-F 1 "GND" H 8750 6050 50  0000 C CNN
-F 2 "" H 8750 6200 50  0001 C CNN
-F 3 "" H 8750 6200 50  0001 C CNN
-	1    8750 6200
+P 9700 5450
+F 0 "#PWR024" H 9700 5200 50  0001 C CNN
+F 1 "GND" H 9700 5300 50  0000 C CNN
+F 2 "" H 9700 5450 50  0001 C CNN
+F 3 "" H 9700 5450 50  0001 C CNN
+	1    9700 5450
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Flag:+3.3V #PWR023
 U 1 1 60B51F80
-P 8750 5700
-F 0 "#PWR023" H 8750 5550 50  0001 C CNN
-F 1 "+3.3V" H 8750 5850 50  0000 C CNN
-F 2 "" H 8750 5700 50  0001 C CNN
-F 3 "" H 8750 5700 50  0001 C CNN
-	1    8750 5700
+P 9700 4950
+F 0 "#PWR023" H 9700 4800 50  0001 C CNN
+F 1 "+3.3V" H 9700 5100 50  0000 C CNN
+F 2 "" H 9700 4950 50  0001 C CNN
+F 3 "" H 9700 4950 50  0001 C CNN
+	1    9700 4950
 	1    0    0    -1  
 $EndComp
-Text Label 8400 5950 0    50   ~ 0
+Text Label 9350 5200 0    50   ~ 0
 TXD
-Text Label 7600 5950 2    50   ~ 0
+Text Label 8550 5200 2    50   ~ 0
 STXD
-Text Label 7250 5750 2    50   ~ 0
+Text Label 8550 5000 2    50   ~ 0
 EN
 Wire Wire Line
-	7600 5950 7650 5950
+	8550 5200 8600 5200
 Wire Wire Line
-	8350 5950 8400 5950
+	9300 5200 9350 5200
 Wire Wire Line
-	8350 5750 8750 5750
+	9300 5000 9700 5000
 Wire Wire Line
-	8750 5750 8750 5700
+	9700 5000 9700 4950
 Wire Wire Line
-	8750 5800 8750 5750
-Connection ~ 8750 5750
+	9700 5050 9700 5000
+Connection ~ 9700 5000
 Wire Wire Line
-	8750 6100 8750 6150
+	9700 5350 9700 5400
 Wire Wire Line
-	8400 6150 8750 6150
-Connection ~ 8750 6150
+	9350 5400 9700 5400
+Connection ~ 9700 5400
 Wire Wire Line
-	8750 6150 8750 6200
-$Comp
-L -Chip:NC7SZ66M5X U6
-U 1 1 60BC9E11
-P 10000 5950
-F 0 "U6" H 9850 6300 50  0000 C CNN
-F 1 "NC7SZ66M5X" H 10000 5600 50  0000 C CNN
-F 2 "-Chip:SOT-23-5" H 10150 5500 50  0001 L BNN
-F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 10000 5950 50  0001 L BNN
-F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 9800 5400 50  0001 L BNN "Desc"
-F 5 "On Semiconductor" H 9800 5350 50  0001 L CNN "manf"
-F 6 "NC7SZ66M5X" H 9800 5250 50  0001 L CNN "manf#"
-F 7 "C232791" H 9800 4950 50  0001 L CNN "LCSC#"
-F 8 "NC7SZ66M5XCT-ND" H 9800 5150 50  0001 L CNN "digikey#"
-F 9 "2822594" H 9800 4850 50  0001 L CNN "element14#"
-F 10 "512-NC7SZ66M5X" H 9800 5050 50  0001 L CNN "mouser#"
-	1    10000 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L -Passive:C C14
-U 1 1 60BC9E1F
-P 10750 5950
-F 0 "C14" H 10750 6050 50  0000 L CNN
-F 1 "0.1uF" H 10750 5850 50  0000 L CNN
-F 2 "-Passive:C_0603" H 10788 5800 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 10750 5950 50  0001 L CNN
-F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 10750 5950 50  0001 L CNN "Desc"
-F 5 "Yageo" H 10750 5950 50  0001 L CNN "manf"
-F 6 "CC0603KRX7R9BB104" H 10750 5950 50  0001 L CNN "manf#"
-F 7 "Yes" H 10750 5950 50  0001 L CNN "substitute"
-F 8 "C14663" H 10750 5950 50  0001 L CNN "LCSC#"
-F 9 "311-1344-1-ND" H 10750 5950 50  0001 L CNN "digikey#"
-F 10 "1362556" H 10750 5950 50  0001 L CNN "element14#"
-F 11 "603-CC603KRX7R9BB104" H 10750 5950 50  0001 L CNN "mouser#"
-	1    10750 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L -Flag:GND #PWR026
-U 1 1 60BC9E25
-P 10750 6200
-F 0 "#PWR026" H 10750 5950 50  0001 C CNN
-F 1 "GND" H 10750 6050 50  0000 C CNN
-F 2 "" H 10750 6200 50  0001 C CNN
-F 3 "" H 10750 6200 50  0001 C CNN
-	1    10750 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L -Flag:+3.3V #PWR025
-U 1 1 60BC9E2B
-P 10750 5700
-F 0 "#PWR025" H 10750 5550 50  0001 C CNN
-F 1 "+3.3V" H 10750 5850 50  0000 C CNN
-F 2 "" H 10750 5700 50  0001 C CNN
-F 3 "" H 10750 5700 50  0001 C CNN
-	1    10750 5700
-	1    0    0    -1  
-$EndComp
-Text Label 10400 5950 0    50   ~ 0
-RES
-Text Label 9600 5950 2    50   ~ 0
-SRES
-Text Label 9250 5750 2    50   ~ 0
-EN
-Wire Wire Line
-	9600 5950 9650 5950
-Wire Wire Line
-	10350 5950 10400 5950
-Wire Wire Line
-	10350 5750 10750 5750
-Wire Wire Line
-	10750 5750 10750 5700
-Wire Wire Line
-	10750 5800 10750 5750
-Connection ~ 10750 5750
-Wire Wire Line
-	10750 6100 10750 6150
-Wire Wire Line
-	10400 6150 10750 6150
-Connection ~ 10750 6150
-Wire Wire Line
-	10750 6150 10750 6200
-Text Notes 7800 5450 0    61   ~ 12
+	9700 5400 9700 5450
+Text Notes 7750 4700 0    61   ~ 12
 Bus Switch (To Prevent Back Powering Target Over UART)
 Wire Notes Line
 	3800 7750 3800 3650
 Wire Notes Line
 	7000 6500 7000 3650
-Wire Notes Line
-	11200 5250 3800 5250
 Wire Notes Line
 	3800 7050 6950 7050
 Wire Notes Line
@@ -2044,30 +1433,7 @@ Wire Wire Line
 Text Notes 5500 3050 0    61   ~ 0
 USB power output is enabled by\ndefault. To disable USB output\non power up, bridge jumper JP8.
 Wire Wire Line
-	2900 7000 2950 7000
-Wire Wire Line
 	3300 7000 3300 7250
-Wire Wire Line
-	3250 7000 3300 7000
-$Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP7
-U 1 1 610CE943
-P 3100 7000
-F 0 "JP7" H 3050 7100 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 3145 7068 50  0001 L CNN
-F 2 "-Switch:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 3075 7000 50  0001 L CNN
-F 3 "" H 3075 7000 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 3100 7000 50  0001 L CNN "Desc"
-F 5 "N/A" H 3100 7000 50  0001 L CNN "manf"
-F 6 "N/A" H 3100 7000 50  0001 L CNN "manf#"
-F 7 "No" H 3100 7000 50  0001 L CNN "substitute"
-F 8 "" H 3100 7000 50  0001 L CNN "LCSC#"
-F 9 "" H 3100 7000 50  0001 L CNN "digikey#"
-F 10 "" H 3100 7000 50  0001 L CNN "element14#"
-F 11 "" H 3100 7000 50  0001 L CNN "mouser#"
-	1    3100 7000
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2300 7200 2300 7250
 Wire Wire Line
@@ -2156,61 +1522,13 @@ F 11 "603-RC0603JR-071KL" V 2750 7000 50  0001 L CNN "mouser#"
 	1    2750 7000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L -Passive:R R17
-U 1 1 6056C75A
-P 9450 5750
-F 0 "R17" V 9550 5750 50  0000 C CNN
-F 1 "1k" V 9450 5750 50  0000 C CNN
-F 2 "-Passive:R_0603" V 9380 5750 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 9450 5750 50  0001 C CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 9450 5750 50  0001 C CNN "Desc"
-F 5 "Yageo" H 9450 5750 50  0001 C CNN "manf"
-F 6 "RC0603JR-071KL" H 9450 5750 50  0001 C CNN "manf#"
-F 7 "Yes" H 9450 5750 50  0001 C CNN "substitute"
-F 8 "C14676" H 9450 5750 50  0001 C CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" H 9450 5750 50  0001 C CNN "digikey#"
-F 10 "9233385" H 9450 5750 50  0001 C CNN "element14#"
-F 11 "603-RC0603JR-071KL" H 9450 5750 50  0001 C CNN "mouser#"
-	1    9450 5750
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
-	9250 5750 9300 5750
-Wire Wire Line
-	9600 5750 9650 5750
-$Comp
-L -Passive:R R16
-U 1 1 6058B0AB
-P 7450 5750
-F 0 "R16" V 7550 5750 50  0000 C CNN
-F 1 "1k" V 7450 5750 50  0000 C CNN
-F 2 "-Passive:R_0603" V 7380 5750 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7450 5750 50  0001 C CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7450 5750 50  0001 C CNN "Desc"
-F 5 "Yageo" H 7450 5750 50  0001 C CNN "manf"
-F 6 "RC0603JR-071KL" H 7450 5750 50  0001 C CNN "manf#"
-F 7 "Yes" H 7450 5750 50  0001 C CNN "substitute"
-F 8 "C14676" H 7450 5750 50  0001 C CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" H 7450 5750 50  0001 C CNN "digikey#"
-F 10 "9233385" H 7450 5750 50  0001 C CNN "element14#"
-F 11 "603-RC0603JR-071KL" H 7450 5750 50  0001 C CNN "mouser#"
-	1    7450 5750
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7600 5750 7650 5750
-Wire Wire Line
-	7300 5750 7250 5750
-Wire Wire Line
-	8100 2200 8100 2350
+	8550 5000 8600 5000
 Wire Wire Line
 	7700 2350 8100 2350
 Connection ~ 8100 2350
 Wire Wire Line
 	8100 2350 8100 2550
-Wire Wire Line
-	7350 2350 7400 2350
 Wire Wire Line
 	8500 2400 8500 2350
 Wire Wire Line
@@ -2274,5 +1592,59 @@ F 10 "9233385" H 7550 2350 50  0001 L CNN "element14#"
 F 11 "603-RC0603JR-071KL" H 7550 2350 50  0001 L CNN "mouser#"
 	1    7550 2350
 	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8100 1750 8100 2350
+NoConn ~ 6850 1450
+NoConn ~ 6850 1550
+NoConn ~ 6850 1650
+NoConn ~ 6850 1750
+NoConn ~ 6850 1850
+NoConn ~ 6850 1350
+Wire Wire Line
+	3900 1150 4700 1150
+Wire Wire Line
+	1700 1150 2400 1150
+Wire Wire Line
+	6750 2350 7400 2350
+Wire Wire Line
+	6750 2050 7400 2050
+Wire Wire Line
+	2250 4450 2650 4450
+Wire Wire Line
+	2250 5250 2650 5250
+Wire Wire Line
+	2250 6050 2700 6050
+Wire Wire Line
+	2900 7000 3300 7000
+$Comp
+L -Connector:Conn_01x04 J4
+U 1 1 608102F5
+P 5050 5250
+F 0 "J4" H 5050 4950 50  0000 C CNN
+F 1 "Conn_01x04" V 5150 5200 50  0000 C CNN
+F 2 "-Connector:PinHeader_1x04_P2.54mm_Vertical_Arduino" H 5050 5250 50  0001 C CNN
+F 3 "~" H 5050 5250 50  0001 C CNN
+	1    5050 5250
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 5250 5350 5250
+Wire Wire Line
+	5250 5350 5350 5350
+Wire Wire Line
+	5250 5150 5400 5150
+Wire Wire Line
+	5400 5150 5400 5100
+$Comp
+L -Flag:+3.3V #PWR?
+U 1 1 60866490
+P 5050 1700
+F 0 "#PWR?" H 5050 1550 50  0001 C CNN
+F 1 "+3.3V" H 5050 1850 50  0000 C CNN
+F 2 "" H 5050 1700 50  0001 C CNN
+F 3 "" H 5050 1700 50  0001 C CNN
+	1    5050 1700
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
