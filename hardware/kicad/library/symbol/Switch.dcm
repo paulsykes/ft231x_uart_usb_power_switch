@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP PTS810SJK250SMTRLFS
+D single pole normally-open tactile switch
+K switch normally-open pushbutton push-button
+F https://www.ckswitches.com/media/1476/pts810.pdf
+$ENDCMP
+#
 $CMP SW_MEC_5G
 D MEC 5G single pole normally-open tactile switch
 K switch normally-open pushbutton push-button
