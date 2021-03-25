@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ft231x breakout usb power switch"
+Title "ft231x uart usb power switch"
 Date "2021-03-25"
 Rev "0.30"
 Comp ""
