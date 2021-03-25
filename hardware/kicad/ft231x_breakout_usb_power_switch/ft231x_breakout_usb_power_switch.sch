@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "ft231x breakout usb power switch"
-Date "2021-03-01"
-Rev "0.20"
+Date "2021-03-25"
+Rev "0.30"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1346,7 +1346,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 3100 8500 3050
 Text Notes 5500 3050 0    61   ~ 0
-USB power output is enabled by\ndefault. To disable USB output\non power up, bridge jumper JP8.
+USB power output is enabled by\ndefault. To disable USB output\non power up, bridge jumper JP1.
 Wire Wire Line
 	2700 6400 2750 6400
 $Comp
@@ -1676,4 +1676,28 @@ Wire Wire Line
 	5250 5150 5550 5150
 Wire Wire Line
 	5250 5450 5550 5450
+$Comp
+L -Logo:Logo_CC_BY_SA LOGO2
+U 1 1 60602088
+P 6050 6850
+F 0 "LOGO2" H 5450 6850 50  0000 C CNN
+F 1 "Logo_CC_BY_SA" H 6050 6625 50  0001 C CNN
+F 2 "-Logo:cc_by_sa" H 6050 6850 50  0001 C CNN
+F 3 "~" H 6050 6850 50  0001 C CNN
+	1    6050 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L -Logo:Logo_Open_Hardware_Small LOGO1
+U 1 1 606028E2
+P 4700 6850
+F 0 "LOGO1" H 4250 6850 50  0000 C CNN
+F 1 "Logo_Open_Hardware_Small" H 4700 6625 50  0001 C CNN
+F 2 "-Logo:OSHW-Logo2_7.3x6mm_SilkScreen" H 4700 6850 50  0001 C CNN
+F 3 "~" H 4700 6850 50  0001 C CNN
+	1    4700 6850
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	6950 6550 3800 6550
 $EndSCHEMATC

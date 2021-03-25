@@ -8,4 +8,5 @@
   (lib (name -Jumper)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Jumper.lib)(options "")(descr ""))
   (lib (name -Switch)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Switch.lib)(options "")(descr ""))
   (lib (name -Mechanical)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Mechanical.lib)(options "")(descr ""))
+  (lib (name -Logo)(type Legacy)(uri ${KIPRJMOD}/../library/symbol/Logo.lib)(options "")(descr ""))
 )
