@@ -26,7 +26,7 @@ filters:
     comment: 'Exclude logos, testpoints, mounting holes, solder jumpers'
     exclude_any:
       - column: Reference
-        regex: '^(G|#|TP|H|JP).*'
+        regex: '^(G|#|TP|H|JP|LOGO).*'
 
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
@@ -73,14 +73,6 @@ outputs:
     layers:
       - layer: B.Cu
       - layer: Dwgs.User
-
-  - name: step
-    comment: "Generate 3D model (STEP)"
-    type: step
-    dir: 3D
-    options:
-      metric_units: true
-      origin: 140,85
 
   - name: 'interactive_bom'
     comment: "Interactive Bill of Materials (HTML)"
