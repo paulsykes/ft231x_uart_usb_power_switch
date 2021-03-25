@@ -494,17 +494,6 @@ F 11 "603-RC0603JR-071KL" V 2100 5250 50  0001 L CNN "mouser#"
 	0    1    1    0   
 $EndComp
 $Comp
-L -Flag:+3.3V #PWR011
-U 1 1 60421F0D
-P 5400 5100
-F 0 "#PWR011" H 5400 4950 50  0001 C CNN
-F 1 "+3.3V" H 5400 5250 50  0000 C CNN
-F 2 "" H 5400 5100 50  0001 C CNN
-F 3 "" H 5400 5100 50  0001 C CNN
-	1    5400 5100
-	1    0    0    -1  
-$EndComp
-$Comp
 L -Flag:+3.3V #PWR02
 U 1 1 60424856
 P 1550 5250
@@ -600,13 +589,13 @@ STXD
 $Comp
 L -Flag:GND #PWR0102
 U 1 1 605EAC41
-P 5400 5700
-F 0 "#PWR0102" H 5400 5450 50  0001 C CNN
-F 1 "GND" H 5400 5550 50  0000 C CNN
-F 2 "" H 5400 5700 50  0001 C CNN
-F 3 "" H 5400 5700 50  0001 C CNN
-	1    5400 5700
-	-1   0    0    -1  
+P 5550 5450
+F 0 "#PWR0102" H 5550 5200 50  0001 C CNN
+F 1 "GND" V 5550 5250 50  0000 C CNN
+F 2 "" H 5550 5450 50  0001 C CNN
+F 3 "" H 5550 5450 50  0001 C CNN
+	1    5550 5450
+	0    -1   1    0   
 $EndComp
 Text Label 6850 2350 0    50   ~ 0
 GPO
@@ -882,7 +871,7 @@ U 1 1 613522DE
 P 5500 7600
 F 0 "H3" H 5600 7646 50  0000 L CNN
 F 1 "MountingHole" H 5600 7555 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 5500 7600 50  0001 L CNN
+F 2 "-Connector:MountingHole_2.6mm_annular" H 5500 7600 50  0001 L CNN
 F 3 "N/A" H 5500 7600 50  0001 L CNN
 F 4 "M2 mounting hole" H 5500 7600 50  0001 L CNN "Desc"
 F 5 "N/A" H 5500 7600 50  0001 L CNN "manf"
@@ -901,7 +890,7 @@ U 1 1 613532C5
 P 6200 7600
 F 0 "H4" H 6300 7646 50  0000 L CNN
 F 1 "MountingHole" H 6300 7555 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 6200 7600 50  0001 L CNN
+F 2 "-Connector:MountingHole_2.6mm_nocrtyd" H 6200 7600 50  0001 L CNN
 F 3 "N/A" H 6200 7600 50  0001 L CNN
 F 4 "M2 mounting hole" H 6200 7600 50  0001 L CNN "Desc"
 F 5 "N/A" H 6200 7600 50  0001 L CNN "manf"
@@ -920,7 +909,7 @@ U 1 1 6135359D
 P 4750 7600
 F 0 "H2" H 4850 7646 50  0000 L CNN
 F 1 "MountingHole" H 4850 7555 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 4750 7600 50  0001 L CNN
+F 2 "-Connector:MountingHole_2.6mm_nocrtyd" H 4750 7600 50  0001 L CNN
 F 3 "N/A" H 4750 7600 50  0001 L CNN
 F 4 "M2 mounting hole" H 4750 7600 50  0001 R CNN "Desc"
 F 5 "N/A" H 4750 7600 50  0001 L CNN "manf"
@@ -939,7 +928,7 @@ U 1 1 61353EB2
 P 3950 7600
 F 0 "H1" H 4050 7646 50  0000 L CNN
 F 1 "MountingHole" H 4050 7555 50  0000 L CNN
-F 2 "-Connector:MountingHole_2.1mm" H 3950 7600 50  0001 L CNN
+F 2 "-Connector:MountingHole_2.6mm_annular" H 3950 7600 50  0001 L CNN
 F 3 "N/A" H 3950 7600 50  0001 L CNN
 F 4 "M2 mounting hole" H 3950 7600 50  0001 L CNN "Desc"
 F 5 "N/A" H 3950 7600 50  0001 L CNN "manf"
@@ -1031,10 +1020,6 @@ Wire Wire Line
 Wire Wire Line
 	10450 3050 10300 3050
 Connection ~ 10300 3050
-Wire Wire Line
-	5250 5450 5400 5450
-Wire Wire Line
-	5400 5450 5400 5700
 $Comp
 L -Module:PCB PCB1
 U 1 1 602766F4
@@ -1057,12 +1042,12 @@ $EndComp
 $Comp
 L -Flag:GND #PWR020
 U 1 1 603FF2D8
-P 7700 3100
-F 0 "#PWR020" H 7700 2850 50  0001 C CNN
-F 1 "GND" H 7700 2950 50  0000 C CNN
-F 2 "" H 7700 3100 50  0001 C CNN
-F 3 "" H 7700 3100 50  0001 C CNN
-	1    7700 3100
+P 7450 3100
+F 0 "#PWR020" H 7450 2850 50  0001 C CNN
+F 1 "GND" H 7450 2950 50  0000 C CNN
+F 2 "" H 7450 3100 50  0001 C CNN
+F 3 "" H 7450 3100 50  0001 C CNN
+	1    7450 3100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1098,24 +1083,22 @@ $EndComp
 $Comp
 L -Passive:R R14
 U 1 1 60428CCA
-P 7900 2550
-F 0 "R14" V 8000 2550 50  0000 C CNN
-F 1 "1k" V 7900 2550 50  0000 C CNN
-F 2 "-Passive:R_0603" V 7830 2550 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7900 2550 50  0001 C CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7900 2550 50  0001 C CNN "Desc"
-F 5 "Yageo" H 7900 2550 50  0001 C CNN "manf"
-F 6 "RC0603JR-071KL" H 7900 2550 50  0001 C CNN "manf#"
-F 7 "Yes" H 7900 2550 50  0001 C CNN "substitute"
-F 8 "C14676" H 7900 2550 50  0001 C CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" H 7900 2550 50  0001 C CNN "digikey#"
-F 10 "9233385" H 7900 2550 50  0001 C CNN "element14#"
-F 11 "603-RC0603JR-071KL" H 7900 2550 50  0001 C CNN "mouser#"
-	1    7900 2550
-	0    -1   -1   0   
+P 7450 2800
+F 0 "R14" V 7550 2800 50  0000 C CNN
+F 1 "1k" V 7450 2800 50  0000 C CNN
+F 2 "-Passive:R_0603" V 7380 2800 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7450 2800 50  0001 C CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 7450 2800 50  0001 C CNN "Desc"
+F 5 "Yageo" H 7450 2800 50  0001 C CNN "manf"
+F 6 "RC0603JR-071KL" H 7450 2800 50  0001 C CNN "manf#"
+F 7 "Yes" H 7450 2800 50  0001 C CNN "substitute"
+F 8 "C14676" H 7450 2800 50  0001 C CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" H 7450 2800 50  0001 C CNN "digikey#"
+F 10 "9233385" H 7450 2800 50  0001 C CNN "element14#"
+F 11 "603-RC0603JR-071KL" H 7450 2800 50  0001 C CNN "mouser#"
+	1    7450 2800
+	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	7700 2550 7700 2600
 Wire Wire Line
 	7400 2050 7400 1550
 Connection ~ 7400 1550
@@ -1149,8 +1132,6 @@ Wire Wire Line
 	4950 1350 5350 1350
 Wire Wire Line
 	5350 1450 4950 1450
-Wire Wire Line
-	7700 3000 7700 3100
 Wire Wire Line
 	8100 2950 8100 3100
 Wire Wire Line
@@ -1219,13 +1200,9 @@ Wire Wire Line
 Connection ~ 10150 2550
 Wire Wire Line
 	10150 2550 10150 2650
-Wire Wire Line
-	8050 2550 8100 2550
 Connection ~ 8100 2550
 Wire Wire Line
 	8100 2550 8100 2650
-Wire Wire Line
-	7750 2550 7700 2550
 $Comp
 L -Chip:NC7SZ66M5X U5
 U 1 1 60ADA145
@@ -1335,22 +1312,22 @@ Wire Wire Line
 Wire Wire Line
 	8150 1750 8100 1750
 $Comp
-L -Jumper:SolderJumper_2_Bridged_Alt JP8
+L -Jumper:SolderJumper_2_Bridged_Alt JP1
 U 1 1 60FEF385
-P 8500 2550
-F 0 "JP8" V 8500 2700 50  0000 C CNN
-F 1 "SolderJumper_2_Bridged_Alt" V 8545 2618 50  0001 L CNN
-F 2 "-Jumper:SolderJumper-2_P1.3mm_Un-Bridged_RoundedPad1.0x1.5mm" H 8475 2550 50  0001 L CNN
-F 3 "" H 8475 2550 50  0001 L CNN
-F 4 "Solder Jumper Bridged" H 8500 2550 50  0001 L CNN "Desc"
-F 5 "N/A" H 8500 2550 50  0001 L CNN "manf"
-F 6 "N/A" H 8500 2550 50  0001 L CNN "manf#"
-F 7 "No" H 8500 2550 50  0001 L CNN "substitute"
-F 8 "" H 8500 2550 50  0001 L CNN "LCSC#"
-F 9 "" H 8500 2550 50  0001 L CNN "digikey#"
-F 10 "" H 8500 2550 50  0001 L CNN "element14#"
-F 11 "" H 8500 2550 50  0001 L CNN "mouser#"
-	1    8500 2550
+P 8500 2900
+F 0 "JP1" V 8500 3050 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged_Alt" V 8545 2968 50  0001 L CNN
+F 2 "-Jumper:SolderJumper-2_P1.3mm_Un-Bridged_RoundedPad1.0x1.5mm" H 8475 2900 50  0001 L CNN
+F 3 "" H 8475 2900 50  0001 L CNN
+F 4 "Solder Jumper Bridged" H 8500 2900 50  0001 L CNN "Desc"
+F 5 "N/A" H 8500 2900 50  0001 L CNN "manf"
+F 6 "N/A" H 8500 2900 50  0001 L CNN "manf#"
+F 7 "No" H 8500 2900 50  0001 L CNN "substitute"
+F 8 "" H 8500 2900 50  0001 L CNN "LCSC#"
+F 9 "" H 8500 2900 50  0001 L CNN "digikey#"
+F 10 "" H 8500 2900 50  0001 L CNN "element14#"
+F 11 "" H 8500 2900 50  0001 L CNN "mouser#"
+	1    8500 2900
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1455,29 +1432,29 @@ F 3 "~" H 5850 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L -Passive:R R15
+L -Passive:R R9
 U 1 1 60FED1B8
-P 8500 2900
-F 0 "R15" H 8350 2900 50  0000 C CNN
-F 1 "10k" V 8500 2900 50  0000 C CNN
-F 2 "-Passive:R_0603" V 8430 2900 50  0001 C CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8500 2900 50  0001 C CNN
-F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 8500 2900 50  0001 C CNN "Desc"
-F 5 "Yageo" H 8500 2900 50  0001 C CNN "manf"
-F 6 "RC0603JR-0710KL" H 8500 2900 50  0001 C CNN "manf#"
-F 7 "Yes" H 8500 2900 50  0001 C CNN "substitute"
-F 8 "C99198" H 8500 2900 50  0001 C CNN "LCSC#"
-F 9 "311-10KGRTR-ND" H 8500 2900 50  0001 C CNN "digikey#"
-F 10 "9233504" H 8500 2900 50  0001 C CNN "element14#"
-F 11 "603-RC0603JR-0710KL" H 8500 2900 50  0001 C CNN "mouser#"
-	1    8500 2900
+P 8500 2550
+F 0 "R9" H 8400 2550 50  0000 C CNN
+F 1 "10k" V 8500 2550 50  0000 C CNN
+F 2 "-Passive:R_0603" V 8430 2550 50  0001 C CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 8500 2550 50  0001 C CNN
+F 4 "10kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 8500 2550 50  0001 C CNN "Desc"
+F 5 "Yageo" H 8500 2550 50  0001 C CNN "manf"
+F 6 "RC0603JR-0710KL" H 8500 2550 50  0001 C CNN "manf#"
+F 7 "Yes" H 8500 2550 50  0001 C CNN "substitute"
+F 8 "C99198" H 8500 2550 50  0001 C CNN "LCSC#"
+F 9 "311-10KGRTR-ND" H 8500 2550 50  0001 C CNN "digikey#"
+F 10 "9233504" H 8500 2550 50  0001 C CNN "element14#"
+F 11 "603-RC0603JR-0710KL" H 8500 2550 50  0001 C CNN "mouser#"
+	1    8500 2550
 	-1   0    0    1   
 $EndComp
 $Comp
-L -Passive:R R18
+L -Passive:R R8
 U 1 1 6044ADBA
 P 7550 2350
-F 0 "R18" V 7450 2350 50  0000 C CNN
+F 0 "R8" V 7450 2350 50  0000 C CNN
 F 1 "5k1" V 7550 2350 50  0000 C CNN
 F 2 "-Passive:R_0603" V 7480 2350 50  0001 L CNN
 F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 7550 2350 50  0001 L CNN
@@ -1513,10 +1490,10 @@ Wire Wire Line
 Wire Wire Line
 	2250 5250 2650 5250
 $Comp
-L -Connector:Conn_01x04 J4
+L -Connector:Conn_01x04 J3
 U 1 1 608102F5
 P 5050 5250
-F 0 "J4" H 5050 4950 50  0000 C CNN
+F 0 "J3" H 5050 4950 50  0000 C CNN
 F 1 "Conn_01x04" V 5150 5200 50  0000 C CNN
 F 2 "-Connector:PinHeader_1x04_P2.54mm_Vertical_Arduino" H 5050 5250 50  0001 C CNN
 F 3 "~" H 5050 5250 50  0001 C CNN
@@ -1527,10 +1504,6 @@ Wire Wire Line
 	5250 5250 5350 5250
 Wire Wire Line
 	5250 5350 5350 5350
-Wire Wire Line
-	5250 5150 5400 5150
-Wire Wire Line
-	5400 5150 5400 5100
 $Comp
 L -Flag:+3.3V #PWR0101
 U 1 1 60866490
@@ -1542,26 +1515,26 @@ F 3 "" H 5050 1700 50  0001 C CNN
 	1    5050 1700
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7750 2600
-NoConn ~ 7750 3000
+NoConn ~ 7550 2600
+NoConn ~ 7950 2600
 $Comp
 L -Switch:PTS810SJK250SMTRLFS SW1
 U 1 1 605F7932
-P 7700 2800
-F 0 "SW1" V 7700 3100 50  0000 R CNN
-F 1 "PTS810SJK250SMTRLFS" V 7655 2702 50  0001 R CNN
-F 2 "-Switch:PTS810SJK250SMTRLFS-TACT4.2MM" H 7700 3000 50  0001 C CNN
-F 3 "https://www.ckswitches.com/media/1476/pts810.pdf" H 7700 3000 50  0001 L CNN
-F 4 "SPST 50mA @ 16VDC Vertical Round Button SMD Tactile Switches RoHS" H 7250 2550 50  0001 L CNN "Desc"
-F 5 "C&K" H 7250 2450 50  0001 L CNN "manf"
-F 6 "PTS810SJK250SMTRLFS" H 7250 2350 50  0001 L CNN "manf#"
-F 7 "Yes" H 7250 2050 50  0001 L CNN "substitute"
-F 8 "C221896" H 7250 2150 50  0001 L CNN "LCSC#"
-F 9 "CKN10503TR-ND" H 7250 1950 50  0001 L CNN "digikey#"
-F 10 "3023215" H 7250 1850 50  0001 L CNN "element14#"
-F 11 "611-PTS810SJK250SMTR" H 7250 2250 50  0001 L CNN "mouser#"
-	1    7700 2800
-	0    -1   -1   0   
+P 7750 2550
+F 0 "SW1" H 7850 2400 50  0000 R CNN
+F 1 "PTS810SJK250SMTRLFS" V 7705 2452 50  0001 R CNN
+F 2 "-Switch:PTS810SJK250SMTRLFS-TACT4.2MM" H 7750 2750 50  0001 C CNN
+F 3 "https://www.ckswitches.com/media/1476/pts810.pdf" H 7750 2750 50  0001 L CNN
+F 4 "SPST 50mA @ 16VDC Vertical Round Button SMD Tactile Switches RoHS" H 7300 2300 50  0001 L CNN "Desc"
+F 5 "C&K" H 7300 2200 50  0001 L CNN "manf"
+F 6 "PTS810SJK250SMTRLFS" H 7300 2100 50  0001 L CNN "manf#"
+F 7 "Yes" H 7300 1800 50  0001 L CNN "substitute"
+F 8 "C221896" H 7300 1900 50  0001 L CNN "LCSC#"
+F 9 "CKN10503TR-ND" H 7300 1700 50  0001 L CNN "digikey#"
+F 10 "3023215" H 7300 1600 50  0001 L CNN "element14#"
+F 11 "611-PTS810SJK250SMTR" H 7300 2000 50  0001 L CNN "mouser#"
+	1    7750 2550
+	1    0    0    -1  
 $EndComp
 $Comp
 L -Passive:C C14
@@ -1680,4 +1653,27 @@ Wire Wire Line
 	2000 6800 2050 6800
 Wire Wire Line
 	2050 6800 2050 6850
+Wire Wire Line
+	7950 2550 8100 2550
+Wire Wire Line
+	7550 2550 7450 2550
+Wire Wire Line
+	7450 2550 7450 2650
+Wire Wire Line
+	7450 3100 7450 2950
+$Comp
+L -Flag:GND #PWR0104
+U 1 1 6072DAA8
+P 5550 5150
+F 0 "#PWR0104" H 5550 4900 50  0001 C CNN
+F 1 "GND" V 5550 4950 50  0000 C CNN
+F 2 "" H 5550 5150 50  0001 C CNN
+F 3 "" H 5550 5150 50  0001 C CNN
+	1    5550 5150
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5250 5150 5550 5150
+Wire Wire Line
+	5250 5450 5550 5450
 $EndSCHEMATC
