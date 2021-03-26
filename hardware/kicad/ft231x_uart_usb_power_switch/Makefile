@@ -30,6 +30,9 @@ erc_and_fab: $(MAK)
 drc_and_fab: $(MAK)
 	$(MAKE) -f $(MAK) all_pcb
 
+pcb_stencil:
+	kikit stencil create --jigsize 60 60 $(PCB) $(DEST)/kikit
+
 clean:
 	rm -rf ${DEST} drc_result.rpt ${NAME}.erc kibot.mak kibot_error.log
 

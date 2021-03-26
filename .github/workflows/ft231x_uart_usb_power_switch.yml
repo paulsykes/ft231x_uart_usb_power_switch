@@ -109,6 +109,7 @@ jobs:
     - name: Run PCB stuff
       run: |
         make -C hardware/kicad/ft231x_uart_usb_power_switch pcb_fab
+        make -C hardware/kicad/ft231x_uart_usb_power_switch pcb_stencil
 
     - name: Retrieve results
       if: ${{ always() }}
