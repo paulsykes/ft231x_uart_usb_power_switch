@@ -1,22 +1,22 @@
-name: "KiCad CI/CD for ft231x_breakout_usb_power_switch"
+name: "KiCad CI/CD for ft231x_uart_usb_power_switch"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
   push:
     paths:
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.sch'
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb'
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kibot.yaml'
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/Makefile'
-      - '.github/workflows/ft231x_breakout_usb_power_switch.yml'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/*.sch'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/*.kicad_pcb'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/*.kibot.yaml'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/Makefile'
+      - '.github/workflows/ft231x_uart_usb_power_switch.yml'
   pull_request:
     paths:
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.sch'
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb'
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/*.kibot.yaml'
-      - 'hardware/kicad/ft231x_breakout_usb_power_switch/Makefile'
-      - '.github/workflows/ft231x_breakout_usb_power_switch.yml'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/*.sch'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/*.kicad_pcb'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/*.kibot.yaml'
+      - 'hardware/kicad/ft231x_uart_usb_power_switch/Makefile'
+      - '.github/workflows/ft231x_uart_usb_power_switch.yml'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -29,13 +29,13 @@ jobs:
 
     - name: Run ERC
       run: |
-        make -C hardware/kicad/ft231x_breakout_usb_power_switch erc
+        make -C hardware/kicad/ft231x_uart_usb_power_switch erc
 
     - name: Retrieve results
       uses: actions/upload-artifact@v1
       with:
         name: ERC_Output
-        path: hardware/kicad/ft231x_breakout_usb_power_switch/fabrication
+        path: hardware/kicad/ft231x_uart_usb_power_switch/fabrication
 
   DRC:
     runs-on: ubuntu-latest
@@ -47,13 +47,13 @@ jobs:
 
     - name: Run DRC
       run: |
-        make -C hardware/kicad/ft231x_breakout_usb_power_switch drc
+        make -C hardware/kicad/ft231x_uart_usb_power_switch drc
 
     - name: Retrieve results
       uses: actions/upload-artifact@v1
       with:
         name: DRC_Output
-        path: hardware/kicad/ft231x_breakout_usb_power_switch/fabrication
+        path: hardware/kicad/ft231x_uart_usb_power_switch/fabrication
 
   FabSch:
     name: Schematic fabrication files
@@ -66,7 +66,7 @@ jobs:
 
     - name: Run schematic stuff
       run: |
-        make -C hardware/kicad/ft231x_breakout_usb_power_switch sch_fab
+        make -C hardware/kicad/ft231x_uart_usb_power_switch sch_fab
 
     - name: Retrieve results
       if: ${{ always() }}
@@ -74,8 +74,8 @@ jobs:
       with:
         name: FabSch_Output
         path: |
-          hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/
-          hardware/kicad/ft231x_breakout_usb_power_switch/kibot_error.log
+          hardware/kicad/ft231x_uart_usb_power_switch/fabrication/
+          hardware/kicad/ft231x_uart_usb_power_switch/kibot_error.log
         if-no-files-found: warn
 
   FabPCB:
@@ -98,16 +98,16 @@ jobs:
       run: |
         export COMMIT=$(git rev-parse --short HEAD)
         echo "COMMIT = ${COMMIT}"
-        sed -i "s!<<hash>>!-${COMMIT}!" hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb
+        sed -i "s!<<hash>>!-${COMMIT}!" hardware/kicad/ft231x_uart_usb_power_switch/*.kicad_pcb
 
     # - name: Remove git hash on main branch PCB silk
     #  if: github.ref == 'refs/heads/main'
     #  run: |
-    #    sed -i "s!<<hash>>!!" hardware/kicad/ft231x_breakout_usb_power_switch/*.kicad_pcb
+    #    sed -i "s!<<hash>>!!" hardware/kicad/ft231x_uart_usb_power_switch/*.kicad_pcb
 
     - name: Run PCB stuff
       run: |
-        make -C hardware/kicad/ft231x_breakout_usb_power_switch pcb_fab
+        make -C hardware/kicad/ft231x_uart_usb_power_switch pcb_fab
 
     - name: Retrieve results
       if: ${{ always() }}
@@ -115,8 +115,8 @@ jobs:
       with:
         name: FabPCB_Output
         path: |
-          hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/
-          hardware/kicad/ft231x_breakout_usb_power_switch/kibot_error.log
+          hardware/kicad/ft231x_uart_usb_power_switch/fabrication/
+          hardware/kicad/ft231x_uart_usb_power_switch/kibot_error.log
         if-no-files-found: warn
 
   Release:

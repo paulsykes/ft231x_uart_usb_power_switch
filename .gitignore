@@ -38,8 +38,8 @@ drc_result.rpt
 kibot.mak
 kibot_error.log
 
-hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/*
-!hardware/kicad/ft231x_breakout_usb_power_switch/fabrication/!.gitignore
+hardware/kicad/ft231x_uart_usb_power_switch/fabrication/*
+!hardware/kicad/ft231x_uart_usb_power_switch/fabrication/!.gitignore
 
 ###########
 # FreeCAD #
