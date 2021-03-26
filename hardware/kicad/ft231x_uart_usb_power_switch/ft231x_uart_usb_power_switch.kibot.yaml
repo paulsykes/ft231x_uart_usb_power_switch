@@ -26,7 +26,7 @@ filters:
     comment: 'Exclude logos, testpoints, mounting holes, solder jumpers'
     exclude_any:
       - column: Reference
-        regex: '^(G|#|TP|H|JP|LOGO).*'
+        regex: '^(G|#|TP|H|JP|LOGO|FID).*'
 
   - name: fix_rotation
     comment: 'Adjust rotation for JLC'
