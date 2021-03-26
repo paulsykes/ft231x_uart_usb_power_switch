@@ -88,7 +88,7 @@ jobs:
     - name: Install Additional Software
       run: |
         apt update
-        apt -y install git openscad python3-pip
+        apt -y install git openscad python3-pip zip
         pip3 install kikit
 
     - name: Checkout Repository
