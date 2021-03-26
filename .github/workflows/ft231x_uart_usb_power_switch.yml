@@ -88,7 +88,8 @@ jobs:
     - name: Install Additional Software
       run: |
         apt update
-        apt -y install git
+        apt -y install git openscad
+        pip3 install kikit
 
     - name: Checkout Repository
       uses: actions/checkout@v2
