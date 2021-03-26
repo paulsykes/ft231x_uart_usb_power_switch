@@ -1,4 +1,4 @@
-First we determine the base GPIO address of the breakout. To do this, look for new entries in /sys/class/gpio after you connect the breakout.
+First we determine the base GPIO address of the device. To do this, look for new entries in /sys/class/gpio after you connect the device.
 
 .. code-block:: console
 

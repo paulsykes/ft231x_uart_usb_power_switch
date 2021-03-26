@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to FT231X Breakout with USB Power Switch's documentation!
+Welcome to FT231X UART with USB Power Switch's documentation!
 =================================================================
 
-FT231X USB to serial UART breakout with integrated current limited USB power switch.
+FT231X USB to serial UART with integrated current limited USB power switch.
 
 
 .. toctree::
