@@ -1214,10 +1214,11 @@ F 3 "https://www.onsemi.com/pub/Collateral/NC7SZ66-D.pdf" H 8950 5200 50  0001 L
 F 4 "Low Voltage Single SPST Normally Open Bus Switch" H 8750 4650 50  0001 L BNN "Desc"
 F 5 "On Semiconductor" H 8750 4600 50  0001 L CNN "manf"
 F 6 "NC7SZ66M5X" H 8750 4500 50  0001 L CNN "manf#"
-F 7 "C232791" H 8750 4200 50  0001 L CNN "LCSC#"
-F 8 "NC7SZ66M5XCT-ND" H 8750 4400 50  0001 L CNN "digikey#"
-F 9 "2822594" H 8750 4100 50  0001 L CNN "element14#"
-F 10 "512-NC7SZ66M5X" H 8750 4300 50  0001 L CNN "mouser#"
+F 7 "No" H 8950 5200 50  0001 C CNN "substitute"
+F 8 "C232791" H 8750 4200 50  0001 L CNN "LCSC#"
+F 9 "NC7SZ66M5XCT-ND" H 8750 4400 50  0001 L CNN "digikey#"
+F 10 "2822594" H 8750 4100 50  0001 L CNN "element14#"
+F 11 "512-NC7SZ66M5X" H 8750 4300 50  0001 L CNN "mouser#"
 	1    8950 5200
 	1    0    0    -1  
 $EndComp
@@ -1495,8 +1496,14 @@ U 1 1 608102F5
 P 5050 5250
 F 0 "J3" H 5050 4950 50  0000 C CNN
 F 1 "Conn_01x04" V 5150 5200 50  0000 C CNN
-F 2 "-Connector:PinHeader_1x04_P2.54mm_Vertical_Arduino" H 5050 5250 50  0001 C CNN
-F 3 "~" H 5050 5250 50  0001 C CNN
+F 2 "-Connector:PinHeader_1x04_P2.54mm_Vertical_Arduino" H 5050 5250 50  0001 L CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/1811151421_Ckmtw-Shenzhen-Cankemeng-C124378_C124378.pdf" H 5050 5250 50  0001 L CNN
+F 4 "Pin Header 4 1 Straight，180degrees 2.54mm Through Hole,P=2.54mm Pin Header & Female Header RoHS" H 5050 5250 50  0001 L CNN "Desc"
+F 5 "Ckmtw(Shenzhen Cankemeng)" H 5050 5250 50  0001 L CNN "manf"
+F 6 "C124378" H 5050 5250 50  0001 L CNN "manf#"
+F 7 "Yes" H 5050 5250 50  0001 L CNN "substitute"
+F 8 "C124378" H 5050 5250 50  0001 L CNN "LCSC#"
+F 9 "732-5317-ND" H 5050 5250 50  0001 L CNN "digikey#"
 	1    5050 5250
 	-1   0    0    -1  
 $EndComp
@@ -1604,7 +1611,7 @@ F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc3g04.pdf?ts=1616570625271&ref_url=
 F 4 "74LVC Inverter 3 3 1.65V ~ 5.5V 10uA MSOP-8 Gates and Inverters RoHS" H 1550 6500 50  0001 L CNN "Desc"
 F 5 "Texas Instruments" H 1550 6500 50  0001 L CNN "manf"
 F 6 "SN74LVC3G04DCTR" H 1550 6500 50  0001 L CNN "manf#"
-F 7 "Yes" H 1550 6500 50  0001 L CNN "substitute"
+F 7 "No" H 1550 6500 50  0001 L CNN "substitute"
 F 8 "C139324" H 1550 6500 50  0001 L CNN "LCSC#"
 F 9 "296-13278-2-ND" H 1550 6500 50  0001 L CNN "digikey#"
 F 10 "3006639" H 1550 6500 50  0001 L CNN "element14#"
