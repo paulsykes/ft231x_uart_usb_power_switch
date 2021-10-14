@@ -458,113 +458,113 @@ TXLED
 $Comp
 L -Discrete:LED D1
 U 1 1 60418569
-P 1750 5250
-F 0 "D1" H 1850 5100 50  0000 R CNN
-F 1 "LED" H 1700 5100 50  0000 R CNN
-F 2 "-Discrete:LED_0603_1608Metric" H 1750 5250 50  0001 L CNN
-F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 5250 50  0001 L CNN
-F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 5250 50  0001 L CNN "Desc"
-F 5 "Everlight Electronics" H 1750 5250 50  0001 L CNN "manf"
-F 6 "19-217/GHC-YR1S2/3T" H 1750 5250 50  0001 L CNN "manf#"
-F 7 "Yes" H 1750 5250 50  0001 L CNN "substitute"
-F 8 "C72043" H 1750 5250 50  0001 L CNN "LCSC#"
-F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 5250 50  0001 L CNN "digikey#"
-F 10 "" H 1750 5250 50  0001 L CNN "element14#"
-F 11 "638-19217GHCYR1S23T" H 1750 5250 50  0001 L CNN "mouser#"
-	1    1750 5250
+P 1750 5550
+F 0 "D1" H 1850 5400 50  0000 R CNN
+F 1 "LED" H 1700 5400 50  0000 R CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 1750 5550 50  0001 L CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 5550 50  0001 L CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 5550 50  0001 L CNN "Desc"
+F 5 "Everlight Electronics" H 1750 5550 50  0001 L CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 1750 5550 50  0001 L CNN "manf#"
+F 7 "Yes" H 1750 5550 50  0001 L CNN "substitute"
+F 8 "C72043" H 1750 5550 50  0001 L CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 5550 50  0001 L CNN "digikey#"
+F 10 "" H 1750 5550 50  0001 L CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 1750 5550 50  0001 L CNN "mouser#"
+	1    1750 5550
 	-1   0    0    1   
 $EndComp
 $Comp
 L -Passive:R R1
 U 1 1 6041DE11
-P 2100 5250
-F 0 "R1" V 2200 5250 50  0000 C CNN
-F 1 "1k" V 2100 5250 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2030 5250 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 5250 50  0001 L CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2100 5250 50  0001 L CNN "Desc"
-F 5 "Yageo" V 2100 5250 50  0001 L CNN "manf"
-F 6 "RC0603JR-071KL" V 2100 5250 50  0001 L CNN "manf#"
-F 7 "Yes" V 2100 5250 50  0001 L CNN "substitute"
-F 8 "C14676" V 2100 5250 50  0001 L CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" V 2100 5250 50  0001 L CNN "digikey#"
-F 10 "9233385" V 2100 5250 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-071KL" V 2100 5250 50  0001 L CNN "mouser#"
-	1    2100 5250
+P 2100 5550
+F 0 "R1" V 2200 5550 50  0000 C CNN
+F 1 "1k" V 2100 5550 50  0000 C CNN
+F 2 "-Passive:R_0603" V 2030 5550 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 5550 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2100 5550 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2100 5550 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2100 5550 50  0001 L CNN "manf#"
+F 7 "Yes" V 2100 5550 50  0001 L CNN "substitute"
+F 8 "C14676" V 2100 5550 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2100 5550 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2100 5550 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2100 5550 50  0001 L CNN "mouser#"
+	1    2100 5550
 	0    1    1    0   
 $EndComp
 $Comp
 L -Flag:+3.3V #PWR02
 U 1 1 60424856
-P 1550 5250
-F 0 "#PWR02" H 1550 5100 50  0001 C CNN
-F 1 "+3.3V" V 1550 5500 50  0000 C CNN
-F 2 "" H 1550 5250 50  0001 C CNN
-F 3 "" H 1550 5250 50  0001 C CNN
-	1    1550 5250
+P 1550 5550
+F 0 "#PWR02" H 1550 5400 50  0001 C CNN
+F 1 "+3.3V" V 1550 5800 50  0000 C CNN
+F 2 "" H 1550 5550 50  0001 C CNN
+F 3 "" H 1550 5550 50  0001 C CNN
+	1    1550 5550
 	0    -1   -1   0   
 $EndComp
-Text Label 2650 4450 0    50   ~ 0
+Text Label 2650 5000 0    50   ~ 0
 RXLED
 Wire Wire Line
-	1950 5250 1900 5250
+	1950 5550 1900 5550
 Wire Wire Line
-	1600 5250 1550 5250
+	1600 5550 1550 5550
 $Comp
 L -Discrete:LED D2
 U 1 1 60447444
-P 1750 4450
-F 0 "D2" H 1900 4300 50  0000 R CNN
-F 1 "LED" H 1750 4300 50  0000 R CNN
-F 2 "-Discrete:LED_0603_1608Metric" H 1750 4450 50  0001 L CNN
-F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 4450 50  0001 L CNN
-F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 4450 50  0001 L CNN "Desc"
-F 5 "Everlight Electronics" H 1750 4450 50  0001 L CNN "manf"
-F 6 "19-217/GHC-YR1S2/3T" H 1750 4450 50  0001 L CNN "manf#"
-F 7 "Yes" H 1750 4450 50  0001 L CNN "substitute"
-F 8 "C72043" H 1750 4450 50  0001 L CNN "LCSC#"
-F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 4450 50  0001 L CNN "digikey#"
-F 10 "" H 1750 4450 50  0001 L CNN "element14#"
-F 11 "638-19217GHCYR1S23T" H 1750 4450 50  0001 L CNN "mouser#"
-	1    1750 4450
+P 1750 5000
+F 0 "D2" H 1900 4850 50  0000 R CNN
+F 1 "LED" H 1750 4850 50  0000 R CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 1750 5000 50  0001 L CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 5000 50  0001 L CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 5000 50  0001 L CNN "Desc"
+F 5 "Everlight Electronics" H 1750 5000 50  0001 L CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 1750 5000 50  0001 L CNN "manf#"
+F 7 "Yes" H 1750 5000 50  0001 L CNN "substitute"
+F 8 "C72043" H 1750 5000 50  0001 L CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 5000 50  0001 L CNN "digikey#"
+F 10 "" H 1750 5000 50  0001 L CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 1750 5000 50  0001 L CNN "mouser#"
+	1    1750 5000
 	-1   0    0    1   
 $EndComp
 $Comp
 L -Passive:R R2
 U 1 1 6044744A
-P 2100 4450
-F 0 "R2" V 2200 4450 50  0000 C CNN
-F 1 "1k" V 2100 4450 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2030 4450 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 4450 50  0001 L CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2100 4450 50  0001 L CNN "Desc"
-F 5 "Yageo" V 2100 4450 50  0001 L CNN "manf"
-F 6 "RC0603JR-071KL" V 2100 4450 50  0001 L CNN "manf#"
-F 7 "Yes" V 2100 4450 50  0001 L CNN "substitute"
-F 8 "C14676" V 2100 4450 50  0001 L CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" V 2100 4450 50  0001 L CNN "digikey#"
-F 10 "9233385" V 2100 4450 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-071KL" V 2100 4450 50  0001 L CNN "mouser#"
-	1    2100 4450
+P 2100 5000
+F 0 "R2" V 2200 5000 50  0000 C CNN
+F 1 "1k" V 2100 5000 50  0000 C CNN
+F 2 "-Passive:R_0603" V 2030 5000 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 5000 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2100 5000 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2100 5000 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2100 5000 50  0001 L CNN "manf#"
+F 7 "Yes" V 2100 5000 50  0001 L CNN "substitute"
+F 8 "C14676" V 2100 5000 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2100 5000 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2100 5000 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2100 5000 50  0001 L CNN "mouser#"
+	1    2100 5000
 	0    1    1    0   
 $EndComp
 $Comp
 L -Flag:+3.3V #PWR04
 U 1 1 60447450
-P 1550 4450
-F 0 "#PWR04" H 1550 4300 50  0001 C CNN
-F 1 "+3.3V" V 1550 4700 50  0000 C CNN
-F 2 "" H 1550 4450 50  0001 C CNN
-F 3 "" H 1550 4450 50  0001 C CNN
-	1    1550 4450
+P 1550 5000
+F 0 "#PWR04" H 1550 4850 50  0001 C CNN
+F 1 "+3.3V" V 1550 5250 50  0000 C CNN
+F 2 "" H 1550 5000 50  0001 C CNN
+F 3 "" H 1550 5000 50  0001 C CNN
+	1    1550 5000
 	0    -1   -1   0   
 $EndComp
-Text Label 2650 5250 0    50   ~ 0
+Text Label 2650 5550 0    50   ~ 0
 TXLED
 Wire Wire Line
-	1950 4450 1900 4450
+	1950 5000 1900 5000
 Wire Wire Line
-	1600 4450 1550 4450
+	1600 5000 1550 5000
 $Comp
 L -Flag:PWR_FLAG #FLG0101
 U 1 1 6049B3DA
@@ -576,27 +576,16 @@ F 3 "" H 4700 1100 50  0001 C CNN
 	1    4700 1100
 	1    0    0    -1  
 $EndComp
-Text Notes 1550 3900 0    61   ~ 12
+Text Notes 1550 3950 0    61   ~ 12
 LED Activity Indicators
 Text Notes 1050 1400 2    61   ~ 12
 Micro USB\nInput
 Text Notes 10300 1400 0    61   ~ 12
 USB Type A \nSwitchable Power \nOutput (No Data)
-Text Label 5350 5350 0    50   ~ 0
+Text Label 5350 5450 0    50   ~ 0
 RXD
-Text Label 5350 5250 0    50   ~ 0
+Text Label 5350 5350 0    50   ~ 0
 STXD
-$Comp
-L -Flag:GND #PWR0102
-U 1 1 605EAC41
-P 5550 5450
-F 0 "#PWR0102" H 5550 5200 50  0001 C CNN
-F 1 "GND" V 5550 5250 50  0000 C CNN
-F 2 "" H 5550 5450 50  0001 C CNN
-F 3 "" H 5550 5450 50  0001 C CNN
-	1    5550 5450
-	0    -1   1    0   
-$EndComp
 Text Label 6850 2350 0    50   ~ 0
 GPO
 $Comp
@@ -750,58 +739,58 @@ Output Headers
 $Comp
 L -Passive:R R10
 U 1 1 60CCDDDE
-P 2900 6600
-F 0 "R10" V 3000 6600 50  0000 C CNN
-F 1 "1k" V 2900 6600 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2830 6600 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2900 6600 50  0001 L CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2900 6600 50  0001 L CNN "Desc"
-F 5 "Yageo" V 2900 6600 50  0001 L CNN "manf"
-F 6 "RC0603JR-071KL" V 2900 6600 50  0001 L CNN "manf#"
-F 7 "Yes" V 2900 6600 50  0001 L CNN "substitute"
-F 8 "C14676" V 2900 6600 50  0001 L CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" V 2900 6600 50  0001 L CNN "digikey#"
-F 10 "9233385" V 2900 6600 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-071KL" V 2900 6600 50  0001 L CNN "mouser#"
-	1    2900 6600
+P 2900 6750
+F 0 "R10" V 3000 6750 50  0000 C CNN
+F 1 "1k" V 2900 6750 50  0000 C CNN
+F 2 "-Passive:R_0603" V 2830 6750 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2900 6750 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2900 6750 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2900 6750 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2900 6750 50  0001 L CNN "manf#"
+F 7 "Yes" V 2900 6750 50  0001 L CNN "substitute"
+F 8 "C14676" V 2900 6750 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2900 6750 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2900 6750 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2900 6750 50  0001 L CNN "mouser#"
+	1    2900 6750
 	0    1    1    0   
 $EndComp
 $Comp
 L -Discrete:LED D3
 U 1 1 60CCE775
-P 2550 6600
-F 0 "D3" H 2650 6750 50  0000 R CNN
-F 1 "LED" H 2500 6750 50  0000 R CNN
-F 2 "-Discrete:LED_0603_1608Metric" H 2550 6600 50  0001 C CNN
-F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 2550 6600 50  0001 C CNN
-F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 2550 6600 50  0001 C CNN "Desc"
-F 5 "Everlight Electronics" H 2550 6600 50  0001 C CNN "manf"
-F 6 "19-217/GHC-YR1S2/3T" H 2550 6600 50  0001 C CNN "manf#"
-F 7 "Yes" H 2550 6600 50  0001 C CNN "substitute"
-F 8 "C72043" H 2550 6600 50  0001 C CNN "LCSC#"
-F 9 "19-217/GHC-YR1S2/3T-ND" H 2550 6600 50  0001 C CNN "digikey#"
-F 10 "" H 2550 6600 50  0001 C CNN "element14#"
-F 11 "638-19217GHCYR1S23T" H 2550 6600 50  0001 C CNN "mouser#"
-	1    2550 6600
+P 2550 6750
+F 0 "D3" H 2650 6900 50  0000 R CNN
+F 1 "LED" H 2500 6900 50  0000 R CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 2550 6750 50  0001 C CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 2550 6750 50  0001 C CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 2550 6750 50  0001 C CNN "Desc"
+F 5 "Everlight Electronics" H 2550 6750 50  0001 C CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 2550 6750 50  0001 C CNN "manf#"
+F 7 "Yes" H 2550 6750 50  0001 C CNN "substitute"
+F 8 "C72043" H 2550 6750 50  0001 C CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 2550 6750 50  0001 C CNN "digikey#"
+F 10 "" H 2550 6750 50  0001 C CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 2550 6750 50  0001 C CNN "mouser#"
+	1    2550 6750
 	-1   0    0    1   
 $EndComp
 $Comp
 L -Flag:GND #PWR014
 U 1 1 60CD0AE2
-P 3150 6850
-F 0 "#PWR014" H 3150 6600 50  0001 C CNN
-F 1 "GND" H 3150 6700 50  0000 C CNN
-F 2 "" H 3150 6850 50  0001 C CNN
-F 3 "" H 3150 6850 50  0001 C CNN
-	1    3150 6850
+P 3150 7000
+F 0 "#PWR014" H 3150 6750 50  0001 C CNN
+F 1 "GND" H 3150 6850 50  0000 C CNN
+F 2 "" H 3150 7000 50  0001 C CNN
+F 3 "" H 3150 7000 50  0001 C CNN
+	1    3150 7000
 	1    0    0    -1  
 $EndComp
 Text Label 7800 2350 2    50   ~ 0
 EN
-Text Label 1000 6500 2    50   ~ 0
+Text Label 1000 6650 2    50   ~ 0
 EN
 Wire Wire Line
-	2750 6600 2700 6600
+	2750 6750 2700 6750
 Wire Wire Line
 	7400 1200 7400 1150
 Wire Wire Line
@@ -822,15 +811,15 @@ FAULT
 $Comp
 L -Flag:+3.3V #PWR015
 U 1 1 60F2D291
-P 2050 6100
-F 0 "#PWR015" H 2050 5950 50  0001 C CNN
-F 1 "+3.3V" H 1950 6250 50  0000 L CNN
-F 2 "" H 2050 6100 50  0001 C CNN
-F 3 "" H 2050 6100 50  0001 C CNN
-	1    2050 6100
+P 2050 6250
+F 0 "#PWR015" H 2050 6100 50  0001 C CNN
+F 1 "+3.3V" H 1950 6400 50  0000 L CNN
+F 2 "" H 2050 6250 50  0001 C CNN
+F 3 "" H 2050 6250 50  0001 C CNN
+	1    2050 6250
 	1    0    0    -1  
 $EndComp
-Text Label 1000 6400 2    50   ~ 0
+Text Label 1000 6550 2    50   ~ 0
 FAULT
 Wire Notes Line
 	500  3650 11200 3650
@@ -944,20 +933,20 @@ $EndComp
 $Comp
 L -Passive:C C10
 U 1 1 615D409A
-P 2250 6200
-F 0 "C10" V 2400 6150 50  0000 L CNN
-F 1 "0.1uF" V 2100 6100 50  0000 L CNN
-F 2 "-Passive:C_0603" H 2288 6050 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 2250 6200 50  0001 L CNN
-F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 2250 6200 50  0001 R CNN "Desc"
-F 5 "Yageo" H 2250 6200 50  0001 L CNN "manf"
-F 6 "CC0603KRX7R9BB104" H 2250 6200 50  0001 L CNN "manf#"
-F 7 "Yes" H 2250 6200 50  0001 L CNN "substitute"
-F 8 "C14663" H 2250 6200 50  0001 L CNN "LCSC#"
-F 9 "311-1344-1-ND" H 2250 6200 50  0001 L CNN "digikey#"
-F 10 "1362556" H 2250 6200 50  0001 L CNN "element14#"
-F 11 "603-CC603KRX7R9BB104" H 2250 6200 50  0001 L CNN "mouser#"
-	1    2250 6200
+P 2250 6350
+F 0 "C10" V 2400 6300 50  0000 L CNN
+F 1 "0.1uF" V 2100 6250 50  0000 L CNN
+F 2 "-Passive:C_0603" H 2288 6200 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/mlcc/UPY-GPHC_X7R_6.3V-to-50V_20.pdf" H 2250 6350 50  0001 L CNN
+F 4 "100nF ±10% 50V X7R 0603 Multilayer Ceramic Capacitors MLCC - SMD/SMT RoHS" H 2250 6350 50  0001 R CNN "Desc"
+F 5 "Yageo" H 2250 6350 50  0001 L CNN "manf"
+F 6 "CC0603KRX7R9BB104" H 2250 6350 50  0001 L CNN "manf#"
+F 7 "Yes" H 2250 6350 50  0001 L CNN "substitute"
+F 8 "C14663" H 2250 6350 50  0001 L CNN "LCSC#"
+F 9 "311-1344-1-ND" H 2250 6350 50  0001 L CNN "digikey#"
+F 10 "1362556" H 2250 6350 50  0001 L CNN "element14#"
+F 11 "603-CC603KRX7R9BB104" H 2250 6350 50  0001 L CNN "mouser#"
+	1    2250 6350
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1349,54 +1338,54 @@ Wire Wire Line
 Text Notes 5500 3050 0    61   ~ 0
 USB power output is enabled by\ndefault. To disable USB output\non power up, bridge jumper JP1.
 Wire Wire Line
-	2700 6400 2750 6400
+	2700 6550 2750 6550
 $Comp
 L -Flag:GND #PWR016
 U 1 1 60F2DA0F
-P 2050 6850
-F 0 "#PWR016" H 2050 6600 50  0001 C CNN
-F 1 "GND" H 2050 6700 50  0000 C CNN
-F 2 "" H 2050 6850 50  0001 C CNN
-F 3 "" H 2050 6850 50  0001 C CNN
-	1    2050 6850
+P 2050 7000
+F 0 "#PWR016" H 2050 6750 50  0001 C CNN
+F 1 "GND" H 2050 6850 50  0000 C CNN
+F 2 "" H 2050 7000 50  0001 C CNN
+F 3 "" H 2050 7000 50  0001 C CNN
+	1    2050 7000
 	1    0    0    -1  
 $EndComp
 $Comp
 L -Discrete:LED D4
 U 1 1 60E4C5B6
-P 2550 6400
-F 0 "D4" H 2600 6250 50  0000 C CNN
-F 1 "LED" H 2450 6250 50  0000 C CNN
-F 2 "-Discrete:LED_0603_1608Metric" H 2550 6400 50  0001 C CNN
-F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 2550 6400 50  0001 C CNN
-F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 2550 6400 50  0001 C CNN "Desc"
-F 5 "Everlight Electronics" H 2550 6400 50  0001 C CNN "manf"
-F 6 "19-217/GHC-YR1S2/3T" H 2550 6400 50  0001 C CNN "manf#"
-F 7 "Yes" H 2550 6400 50  0001 C CNN "substitute"
-F 8 "C72043" H 2550 6400 50  0001 C CNN "LCSC#"
-F 9 "19-217/GHC-YR1S2/3T-ND" H 2550 6400 50  0001 C CNN "digikey#"
-F 10 "" H 2550 6400 50  0001 C CNN "element14#"
-F 11 "638-19217GHCYR1S23T" H 2550 6400 50  0001 C CNN "mouser#"
-	1    2550 6400
+P 2550 6550
+F 0 "D4" H 2600 6400 50  0000 C CNN
+F 1 "LED" H 2450 6400 50  0000 C CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 2550 6550 50  0001 C CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 2550 6550 50  0001 C CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 2550 6550 50  0001 C CNN "Desc"
+F 5 "Everlight Electronics" H 2550 6550 50  0001 C CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 2550 6550 50  0001 C CNN "manf#"
+F 7 "Yes" H 2550 6550 50  0001 C CNN "substitute"
+F 8 "C72043" H 2550 6550 50  0001 C CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 2550 6550 50  0001 C CNN "digikey#"
+F 10 "" H 2550 6550 50  0001 C CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 2550 6550 50  0001 C CNN "mouser#"
+	1    2550 6550
 	-1   0    0    1   
 $EndComp
 $Comp
 L -Passive:R R11
 U 1 1 60E4C5B0
-P 2900 6400
-F 0 "R11" V 3000 6400 50  0000 C CNN
-F 1 "1k" V 2900 6400 50  0000 C CNN
-F 2 "-Passive:R_0603" V 2830 6400 50  0001 L CNN
-F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2900 6400 50  0001 L CNN
-F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2900 6400 50  0001 L CNN "Desc"
-F 5 "Yageo" V 2900 6400 50  0001 L CNN "manf"
-F 6 "RC0603JR-071KL" V 2900 6400 50  0001 L CNN "manf#"
-F 7 "Yes" V 2900 6400 50  0001 L CNN "substitute"
-F 8 "C14676" V 2900 6400 50  0001 L CNN "LCSC#"
-F 9 "311-1.0KGRTR-ND" V 2900 6400 50  0001 L CNN "digikey#"
-F 10 "9233385" V 2900 6400 50  0001 L CNN "element14#"
-F 11 "603-RC0603JR-071KL" V 2900 6400 50  0001 L CNN "mouser#"
-	1    2900 6400
+P 2900 6550
+F 0 "R11" V 3000 6550 50  0000 C CNN
+F 1 "1k" V 2900 6550 50  0000 C CNN
+F 2 "-Passive:R_0603" V 2830 6550 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2900 6550 50  0001 L CNN
+F 4 "1kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" V 2900 6550 50  0001 L CNN "Desc"
+F 5 "Yageo" V 2900 6550 50  0001 L CNN "manf"
+F 6 "RC0603JR-071KL" V 2900 6550 50  0001 L CNN "manf#"
+F 7 "Yes" V 2900 6550 50  0001 L CNN "substitute"
+F 8 "C14676" V 2900 6550 50  0001 L CNN "LCSC#"
+F 9 "311-1.0KGRTR-ND" V 2900 6550 50  0001 L CNN "digikey#"
+F 10 "9233385" V 2900 6550 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-071KL" V 2900 6550 50  0001 L CNN "mouser#"
+	1    2900 6550
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
@@ -1481,15 +1470,15 @@ NoConn ~ 6850 1350
 Wire Wire Line
 	3900 1150 4700 1150
 Wire Wire Line
-	1700 1150 2400 1150
+	1700 1150 1800 1150
 Wire Wire Line
 	6750 2350 7400 2350
 Wire Wire Line
 	6750 2050 7400 2050
 Wire Wire Line
-	2250 4450 2650 4450
+	2250 5000 2650 5000
 Wire Wire Line
-	2250 5250 2650 5250
+	2250 5550 2650 5550
 $Comp
 L -Connector:Conn_01x04 J3
 U 1 1 608102F5
@@ -1507,8 +1496,6 @@ F 9 "732-5317-ND" H 5050 5250 50  0001 L CNN "digikey#"
 	1    5050 5250
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	5250 5250 5350 5250
 Wire Wire Line
 	5250 5350 5350 5350
 $Comp
@@ -1603,63 +1590,63 @@ Wire Wire Line
 $Comp
 L -Chip:SN74LVC3G04DCTR U4
 U 1 1 605C6286
-P 1550 6500
-F 0 "U4" H 1300 6950 50  0000 C CNN
-F 1 "SN74LVC3G04DCTR" H 1550 6050 50  0000 C CNN
-F 2 "-Chip:SSOP-8_2.95x2.8mm_P0.65mm" H 1550 6500 50  0001 L BNN
-F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc3g04.pdf?ts=1616570625271&ref_url=https%253A%252F%252Fwww.google.com%252F" H 1550 6500 50  0001 L BNN
-F 4 "74LVC Inverter 3 3 1.65V ~ 5.5V 10uA MSOP-8 Gates and Inverters RoHS" H 1550 6500 50  0001 L CNN "Desc"
-F 5 "Texas Instruments" H 1550 6500 50  0001 L CNN "manf"
-F 6 "SN74LVC3G04DCTR" H 1550 6500 50  0001 L CNN "manf#"
-F 7 "No" H 1550 6500 50  0001 L CNN "substitute"
-F 8 "C139324" H 1550 6500 50  0001 L CNN "LCSC#"
-F 9 "296-13278-2-ND" H 1550 6500 50  0001 L CNN "digikey#"
-F 10 "3006639" H 1550 6500 50  0001 L CNN "element14#"
-F 11 "595-SN74LVC3G04DCTR" H 1550 6500 50  0001 L CNN "mouser#"
-	1    1550 6500
+P 1550 6650
+F 0 "U4" H 1300 7100 50  0000 C CNN
+F 1 "SN74LVC3G04DCTR" H 1550 6200 50  0000 C CNN
+F 2 "-Chip:SSOP-8_2.95x2.8mm_P0.65mm" H 1550 6650 50  0001 L BNN
+F 3 "https://www.ti.com/lit/ds/symlink/sn74lvc3g04.pdf?ts=1616570625271&ref_url=https%253A%252F%252Fwww.google.com%252F" H 1550 6650 50  0001 L BNN
+F 4 "74LVC Inverter 3 3 1.65V ~ 5.5V 10uA MSOP-8 Gates and Inverters RoHS" H 1550 6650 50  0001 L CNN "Desc"
+F 5 "Texas Instruments" H 1550 6650 50  0001 L CNN "manf"
+F 6 "SN74LVC3G04DCTR" H 1550 6650 50  0001 L CNN "manf#"
+F 7 "No" H 1550 6650 50  0001 L CNN "substitute"
+F 8 "C139324" H 1550 6650 50  0001 L CNN "LCSC#"
+F 9 "296-13278-2-ND" H 1550 6650 50  0001 L CNN "digikey#"
+F 10 "3006639" H 1550 6650 50  0001 L CNN "element14#"
+F 11 "595-SN74LVC3G04DCTR" H 1550 6650 50  0001 L CNN "mouser#"
+	1    1550 6650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1000 6500 1100 6500
+	1000 6650 1100 6650
 Wire Wire Line
-	1000 6400 1100 6400
+	1000 6550 1100 6550
 Wire Wire Line
-	2000 6500 2100 6500
-Text Label 2100 6500 0    50   ~ 0
+	2000 6650 2100 6650
+Text Label 2100 6650 0    50   ~ 0
 ~EN
-Text Label 1000 6600 2    50   ~ 0
+Text Label 1000 6750 2    50   ~ 0
 ~EN
 Wire Wire Line
-	1100 6600 1000 6600
+	1100 6750 1000 6750
 Wire Wire Line
-	3050 6600 3150 6600
+	3050 6750 3150 6750
 Wire Wire Line
-	3150 6600 3150 6850
+	3150 6750 3150 7000
 Wire Wire Line
-	3050 6400 3150 6400
+	3050 6550 3150 6550
 Wire Wire Line
-	3150 6400 3150 6600
-Connection ~ 3150 6600
+	3150 6550 3150 6750
+Connection ~ 3150 6750
 Wire Wire Line
-	2000 6200 2050 6200
+	2000 6350 2050 6350
 Wire Wire Line
-	2050 6100 2050 6200
-Connection ~ 2050 6200
+	2050 6250 2050 6350
+Connection ~ 2050 6350
 Wire Wire Line
-	2050 6200 2100 6200
+	2050 6350 2100 6350
 Wire Wire Line
-	2400 6200 3150 6200
+	2400 6350 3150 6350
 Wire Wire Line
-	3150 6200 3150 6400
-Connection ~ 3150 6400
+	3150 6350 3150 6550
+Connection ~ 3150 6550
 Wire Wire Line
-	2000 6400 2400 6400
+	2000 6550 2400 6550
 Wire Wire Line
-	2000 6600 2400 6600
+	2000 6750 2400 6750
 Wire Wire Line
-	2000 6800 2050 6800
+	2000 6950 2050 6950
 Wire Wire Line
-	2050 6800 2050 6850
+	2050 6950 2050 7000
 Wire Wire Line
 	7950 2550 8100 2550
 Wire Wire Line
@@ -1671,18 +1658,16 @@ Wire Wire Line
 $Comp
 L -Flag:GND #PWR0104
 U 1 1 6072DAA8
-P 5550 5150
-F 0 "#PWR0104" H 5550 4900 50  0001 C CNN
-F 1 "GND" V 5550 4950 50  0000 C CNN
-F 2 "" H 5550 5150 50  0001 C CNN
-F 3 "" H 5550 5150 50  0001 C CNN
-	1    5550 5150
+P 5550 5250
+F 0 "#PWR0104" H 5550 5000 50  0001 C CNN
+F 1 "GND" V 5550 5050 50  0000 C CNN
+F 2 "" H 5550 5250 50  0001 C CNN
+F 3 "" H 5550 5250 50  0001 C CNN
+	1    5550 5250
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
 	5250 5150 5550 5150
-Wire Wire Line
-	5250 5450 5550 5450
 $Comp
 L -Logo:Logo_CC_BY_SA LOGO2
 U 1 1 60602088
@@ -1707,4 +1692,101 @@ F 3 "~" H 4700 6850 50  0001 C CNN
 $EndComp
 Wire Notes Line
 	6950 6550 3800 6550
+$Comp
+L -Flag:GND #PWR025
+U 1 1 61696216
+P 2600 4450
+F 0 "#PWR025" H 2600 4200 50  0001 C CNN
+F 1 "GND" V 2600 4250 50  0000 C CNN
+F 2 "" H 2600 4450 50  0001 C CNN
+F 3 "" H 2600 4450 50  0001 C CNN
+	1    2600 4450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L -Discrete:LED D5
+U 1 1 616C2876
+P 1750 4450
+F 0 "D5" H 1800 4300 50  0000 C CNN
+F 1 "LED" H 1650 4300 50  0000 C CNN
+F 2 "-Discrete:LED_0603_1608Metric" H 1750 4450 50  0001 C CNN
+F 3 "https://everlighteurope.com/index.php?controller=attachment?id_attachment=5728" H 1750 4450 50  0001 C CNN
+F 4 "Green 520~535nm 0603 Light Emitting Diodes (LED) RoHS" H 1750 4450 50  0001 C CNN "Desc"
+F 5 "Everlight Electronics" H 1750 4450 50  0001 C CNN "manf"
+F 6 "19-217/GHC-YR1S2/3T" H 1750 4450 50  0001 C CNN "manf#"
+F 7 "Yes" H 1750 4450 50  0001 C CNN "substitute"
+F 8 "C72043" H 1750 4450 50  0001 C CNN "LCSC#"
+F 9 "19-217/GHC-YR1S2/3T-ND" H 1750 4450 50  0001 C CNN "digikey#"
+F 10 "" H 1750 4450 50  0001 C CNN "element14#"
+F 11 "638-19217GHCYR1S23T" H 1750 4450 50  0001 C CNN "mouser#"
+	1    1750 4450
+	-1   0    0    1   
+$EndComp
+$Comp
+L -Passive:R R12
+U 1 1 616E2BD2
+P 2100 4450
+F 0 "R12" V 2000 4500 50  0000 R CNN
+F 1 "2k" V 2100 4450 50  0000 C CNN
+F 2 "-Passive:R_0603" V 2030 4450 50  0001 L CNN
+F 3 "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_11.pdf" H 2100 4450 50  0001 L CNN
+F 4 "2kΩ ±5% 0.1W ±100ppm/℃ 0603 Chip Resistor - Surface Mount RoHS" H 2100 4450 50  0001 L CNN "Desc"
+F 5 "Yageo" H 2100 4450 50  0001 L CNN "manf"
+F 6 "RC0603JR-072KL" H 2100 4450 50  0001 L CNN "manf#"
+F 7 "Yes" H 2100 4450 50  0001 L CNN "substitute"
+F 8 "C105581" H 2100 4450 50  0001 L CNN "LCSC#"
+F 9 "311-2.0KGRTR-ND" H 2100 4450 50  0001 L CNN "digikey#"
+F 10 "1799398" H 2100 4450 50  0001 L CNN "element14#"
+F 11 "603-RC0603JR-072KL" H 2100 4450 50  0001 L CNN "mouser#"
+	1    2100 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2250 4450 2600 4450
+$Comp
+L -Flag:VBUS #PWR018
+U 1 1 61743239
+P 1800 1100
+F 0 "#PWR018" H 1800 950 50  0001 C CNN
+F 1 "VBUS" H 1815 1273 50  0000 C CNN
+F 2 "" H 1800 1100 50  0001 C CNN
+F 3 "" H 1800 1100 50  0001 C CNN
+	1    1800 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 1100 1800 1150
+Connection ~ 1800 1150
+Wire Wire Line
+	1800 1150 2400 1150
+$Comp
+L -Flag:VBUS #PWR011
+U 1 1 617528E6
+P 1550 4450
+F 0 "#PWR011" H 1550 4300 50  0001 C CNN
+F 1 "VBUS" V 1565 4577 50  0000 L CNN
+F 2 "" H 1550 4450 50  0001 C CNN
+F 3 "" H 1550 4450 50  0001 C CNN
+	1    1550 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1550 4450 1600 4450
+Wire Wire Line
+	1900 4450 1950 4450
+Wire Wire Line
+	5250 5450 5350 5450
+Wire Wire Line
+	5250 5250 5550 5250
+$Comp
+L -Flag:+3.3V #PWR0102
+U 1 1 617A8458
+P 5550 5150
+F 0 "#PWR0102" H 5550 5000 50  0001 C CNN
+F 1 "+3.3V" V 5565 5278 50  0000 L CNN
+F 2 "" H 5550 5150 50  0001 C CNN
+F 3 "" H 5550 5150 50  0001 C CNN
+	1    5550 5150
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
