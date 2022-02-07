@@ -81,7 +81,7 @@ jobs:
   FabPCB:
     name: PCB fabrication files
     runs-on: ubuntu-latest
-    container: setsoft/kicad_auto:latest
+    container: setsoft/kicad_auto:dev_k6
     needs: DRC
 
     steps:
@@ -109,7 +109,7 @@ jobs:
     - name: Run PCB stuff
       run: |
         make -C hardware/kicad/ft231x_uart_usb_power_switch pcb_fab
-        make -C hardware/kicad/ft231x_uart_usb_power_switch pcb_stencil
+        #make -C hardware/kicad/ft231x_uart_usb_power_switch pcb_stencil
 
     - name: Retrieve results
       if: ${{ always() }}
