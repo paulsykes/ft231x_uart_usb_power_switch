@@ -7,8 +7,8 @@
   (paper "A4")
   (title_block
     (title "ft231x uart usb power switch")
-    (date "2021-03-25")
-    (rev "0.30")
+    (date "2022-02-07")
+    (rev "0.40")
   )
 
   (layers
@@ -6216,7 +6216,7 @@
   (gr_line (start 165.4 128.85) (end 165.4 111.15) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-0000605b6ed5))
   (gr_line (start 162.85 108.6) (end 117.15 108.6) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-0000605b6ed8))
   (gr_arc (start 114.600001 111.15) (mid 115.346878 109.346878) (end 117.15 108.600001) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-0000605b6edb))
-  (gr_text "v0.3<<hash>>" (at 152.4 121) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-0000603fff5c)
+  (gr_text "v0.4<<hash>>" (at 152.4 121) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-0000603fff5c)
     (effects (font (size 1 1) (thickness 0.15)) (justify left mirror))
   )
   (gr_text "Short JP1 to default USB \npower to off." (at 152.4 113.9) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-0000605d860c)
