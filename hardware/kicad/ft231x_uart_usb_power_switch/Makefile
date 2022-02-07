@@ -4,7 +4,7 @@ MAK=kibot.mak
 NAME=$(notdir $(CURDIR))
 PCB=${NAME}.kicad_pcb
 CONFIG=${NAME}.kibot.yaml
-SCH=${NAME}.sch
+SCH=${NAME}.kicad_sch
 DEST=fabrication
 
 all: erc_and_fab drc_and_fab
