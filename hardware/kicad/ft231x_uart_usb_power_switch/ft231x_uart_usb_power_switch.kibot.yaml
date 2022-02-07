@@ -251,7 +251,7 @@ outputs:
       separate_files_for_front_and_back: true
       only_smd: true
 
-  - name: 'position'
+  - name: 'positionjlc'
     comment: "Pick and place file, JLC style"
     type: position
     dir: Position
