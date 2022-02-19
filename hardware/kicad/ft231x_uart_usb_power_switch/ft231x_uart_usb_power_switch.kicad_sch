@@ -6,8 +6,8 @@
 
   (title_block
     (title "ft231x uart usb power switch")
-    (date "2022-02-07")
-    (rev "0.40")
+    (date "2022-02-19")
+    (rev "0.50")
   )
 
   (lib_symbols

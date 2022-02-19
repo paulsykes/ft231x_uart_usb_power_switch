@@ -1,6 +1,6 @@
 FT231X UART USB Power Switch
 ================================
-![FT231X UART USB Power Switch](https://github.com/paulsykes/ft231x_uart_usb_power_switch/releases/download/v0.30.0/ft231x_breakout_usb_power_switch.jpg)
+![FT231X UART USB Power Switch](https://github.com/paulsykes/ft231x_uart_usb_power_switch/releases/download/v0.50.0/ft231x_breakout_usb_power_switch.jpg)
 
 FT231X USB to serial UART with integrated current limited USB power switch.
 
