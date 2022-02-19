@@ -41,6 +41,9 @@ kibot_error.log
 hardware/kicad/ft231x_uart_usb_power_switch/fabrication/*
 !hardware/kicad/ft231x_uart_usb_power_switch/fabrication/!.gitignore
 
+# KiCad 6
+*-backups
+
 ###########
 # FreeCAD #
 ###########
